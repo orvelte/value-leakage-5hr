@@ -194,6 +194,36 @@ def main():
                   "removes an effect that survives removing the entire chain of thought.",
                   ""]
 
+    rs = load(RUNS / "resample_admission" / "results.json")
+    if rs:
+        bc = rs["by_cut"]
+        lines += [
+            "### 7. Deleting the admission sentence: an inconclusive test",
+            "",
+            "24 overt rollouts, admission located by a separate judge, 10 continuations per cut.",
+            "",
+            "| cut | n | P(favoured) | mean cut position |", "|---|---|---|---|"]
+        for k, nm in (("pre", "before the admission"), ("post", "after the admission"),
+                      ("random", "random other sentence")):
+            d = bc.get(k, {})
+            lines.append(f"| {nm} | {d.get('n')} | {d.get('p_favored', float('nan')):.3f} | "
+                         f"{d.get('mean_norm_pos', float('nan')):.2f} of the CoT |")
+        lines += ["",
+                  "**This does not show the admission is causally inert — it shows the design "
+                  "cannot tell.** 20–22 of 24 rollouts return a favoured number on *all ten* "
+                  "continuations in *every* condition. The admission sits at 0.78 of the CoT, so "
+                  "even the \"before\" prefix contains most of a trace that has already "
+                  "converged. Paired within-rollout differences run in the predicted direction "
+                  "but are negligible: pre − post = −0.008 (p=0.16), pre − random = −0.004 "
+                  "(p=0.57).",
+                  "",
+                  "Note the whole-population +0.420 is **not** the right reference for this "
+                  "table: these rollouts were selected as INFLUENCED, a subpopulation that lands "
+                  "favoured 0.875 of the time unprompted. Only the between-cut comparison is "
+                  "legitimate. The prefill experiment (finding 6) answers the same question from "
+                  "the other direction and is the better instrument.",
+                  ""]
+
     lines += ["## Figures", ""]
     for f in figs:
         lines.append(f"### {f.stem}")

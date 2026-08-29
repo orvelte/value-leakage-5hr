@@ -359,46 +359,73 @@ def fig_prefill():
 
 # ---------------------------------------------------------------- F7: admission resampling
 def fig_resample():
-    """H1's direct test. Two controls carry the weight, so both are plotted next to the treatment.
+    """H1's direct test — reported as INCONCLUSIVE, and the figure has to show why.
 
-    'random' isolates the sentence from truncation-in-general; 'post' keeps the admission at
-    nearly the same position. Cut position is annotated per row because it differs between
-    conditions by construction and is the obvious alternative explanation.
+    An earlier draft plotted only the bias CIs per cut, which made a clean-looking null. It was
+    not a null: 20-22 of 24 rollouts sit at P(favoured)=1.000 in EVERY condition, so the design
+    has no room to detect a decrease. Panel A shows the pile-up at the ceiling; panel B shows the
+    paired within-rollout differences that are all that can be said. Plot the saturation, not a
+    conclusion the data cannot support.
     """
-    r = json.load(open(RUNS / "resample_admission" / "results.json"))
-    bc = r["by_cut"]
-    fig, ax = F.new_fig(11.0, 4.9, top=0.635, left=0.245, right=0.955, bottom=0.16)
-    rows = [("no truncation\n(reference)", 0.420, 0.220, 0.622, None, F.GRAY),
-            ("cut AFTER the admission\n(sentence kept)", None, None, None, "post", F.AQUA),
-            ("cut at a RANDOM other\nsentence", None, None, None, "random", F.BLUE),
-            ("cut BEFORE the admission\n(sentence removed)", None, None, None, "pre", F.ORANGE)]
-    for i, (lab, pt, lo, hi, key, c) in enumerate(rows):
-        y = len(rows) - 1 - i
-        if key:
-            d = bc.get(key, {})
-            pt, lo, hi = d.get("bias"), d.get("ci_low"), d.get("ci_high")
-            if pt is None:
-                continue
-        ax.plot([lo, hi], [y, y], color=c, lw=2.4, solid_capstyle="round", zorder=3)
-        ax.scatter([pt], [y], s=90, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
-        ax.annotate(f"{pt:+.3f}", (0.72, y), va="center", ha="left", fontsize=10.5, color=F.INK,
-                    fontweight="semibold", zorder=6)
-        if key and bc[key].get("mean_norm_pos") is not None:
-            ax.annotate(f"cut at {bc[key]['mean_norm_pos']:.2f} of the CoT · n={bc[key]['n']}",
-                        (0.72, y - 0.28), fontsize=8.5, color=F.MUTED, va="center")
-    F.null_line(ax, 0.0, "0 = no leakage", y=len(rows) - 0.55)
-    ax.set_xlim(-0.35, 1.02)
-    ax.set_ylim(-0.6, len(rows) - 0.3)
-    ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels([x[0] for x in rows][::-1], fontsize=9, color=F.INK, linespacing=1.35)
-    ax.set_xlabel("bias in the regenerated continuations (95% CI)", fontsize=9.5,
-                  color=F.INK_2, labelpad=7)
-    F.panel_title(ax, "Bias after regenerating from a truncated CoT", pad=14)
-    F.title_block(fig, "Does deleting the admission sentence delete the bias?",
-                  "24 overt rollouts, 10 continuations per cut. The admission is located by a separate judge and sits late — median 0.78 of the\n"
-                  "way through the CoT. Truncating anywhere discards the rest of the trace, so the random-sentence and keep-the-sentence arms are\n"
-                  "what make the pre-admission cut interpretable. Bullet-merged segmentation means each cut removes a block, not a lone clause.",
-                  x=0.245)
+    import collections
+    rows = [json.loads(l) for l in
+            open(RUNS / "resample_admission" / "raw" / "continuations.jsonl")]
+    rows = [r for r in rows if r["on_good_side"] is not None]
+    by = collections.defaultdict(lambda: collections.defaultdict(list))
+    for r in rows:
+        by[r["source"]][r["cut"]].append(r["on_good_side"])
+
+    fig, (axA, axB) = F.new_fig(12.4, 5.0, n_axes=2, width_ratios=[1.25, 1.0], wspace=0.32,
+                                left=0.155, right=0.965, top=0.635, bottom=0.15)
+    cuts = [("cut BEFORE admission", "pre", F.ORANGE),
+            ("cut AFTER admission", "post", F.AQUA),
+            ("cut at random sentence", "random", F.BLUE)]
+    rng = np.random.default_rng(2)
+    for row, (lab, key, c) in enumerate(cuts):
+        per = [np.mean(v[key]) for v in by.values() if v.get(key)]
+        y = len(cuts) - 1 - row + rng.uniform(-0.16, 0.16, size=len(per))
+        axA.scatter(per, y, s=42, color=c, alpha=0.6, edgecolors=F.SURFACE, linewidths=1.2,
+                    zorder=3)
+        n_ceil = sum(1 for x in per if x == 1.0)
+        axA.annotate(f"{n_ceil}/{len(per)} at 1.00", (1.075, len(cuts) - 1 - row),
+                     va="center", ha="left", fontsize=9.5, color=F.INK, fontweight="semibold")
+    axA.axvline(1.0, color=F.INK_2, lw=1.4, zorder=5)
+    axA.set_xlim(0.3, 1.42)
+    axA.set_xticks([0.4, 0.6, 0.8, 1.0])
+    axA.set_ylim(-0.55, len(cuts) - 0.35)
+    axA.set_yticks(range(len(cuts)))
+    axA.set_yticklabels([c[0] for c in cuts][::-1], fontsize=9.5, color=F.INK)
+    axA.set_xlabel("P(favoured side) per rollout, 10 continuations each", fontsize=9.5,
+                   color=F.INK_2, labelpad=7)
+    F.panel_title(axA, "A.  Every condition is pinned at the ceiling")
+
+    for row, (lab, a, b, c) in enumerate([("pre − post", "pre", "post", F.ORANGE),
+                                          ("pre − random", "pre", "random", F.BLUE)]):
+        d = np.array([np.mean(v[a]) - np.mean(v[b]) for v in by.values()
+                      if v.get(a) and v.get(b)])
+        y = 1 - row
+        jit = rng.uniform(-0.13, 0.13, size=len(d))
+        axB.scatter(d, y + jit, s=42, color=c, alpha=0.55, edgecolors=F.SURFACE, linewidths=1.2,
+                    zorder=3)
+        m = float(d.mean())
+        axB.plot([m, m], [y - 0.25, y + 0.25], color=c, lw=2.6, zorder=4)
+        pv = sps.ttest_1samp(d, 0).pvalue
+        axB.annotate(f"mean {m:+.3f}  p={pv:.2f}", (0.135, y), va="center", ha="left",
+                     fontsize=9.5, color=F.INK, fontweight="semibold")
+    F.null_line(axB, 0.0, "no difference", y=1.45)
+    axB.set_xlim(-0.30, 0.52)
+    axB.set_ylim(-0.5, 1.85)
+    axB.set_yticks([1, 0])
+    axB.set_yticklabels(["pre − post", "pre − random"], fontsize=9.5, color=F.INK)
+    axB.set_xlabel("paired within-rollout difference in P(favoured)", fontsize=9.5,
+                   color=F.INK_2, labelpad=7)
+    F.panel_title(axB, "B.  Paired differences, n=24")
+
+    F.title_block(fig, "Deleting the admission sentence: an inconclusive test, by design",
+                  "24 overt rollouts, 10 continuations per cut. The admission sits at 0.78 of the CoT, so a prefix that stops just short of it still\n"
+                  "contains most of a trace already converging on a favoured answer — and nearly every rollout returns a favoured number every\n"
+                  "time. This cannot detect a decrease. Differences run in the predicted direction but are tiny and not significant. Cut far earlier.",
+                  x=0.155)
     F.save(fig, OUT / "f7_admission_resampling.png")
 
 

@@ -148,6 +148,41 @@ entire chain of thought. The ordering bias(no CoT) > bias(free CoT) > bias(prefi
 least consistent with the paper's finding that more deliberation lowers leakage, but this is a
 puzzle the write-up should state rather than smooth over.
 
+## H1's direct test: inconclusive by design (2026-08-29)
+
+Located the admission sentence in 24 overt rollouts (24/24 parsed, 19 high / 5 medium
+confidence; median position **0.78** of the CoT), truncated just before it, and regenerated 10
+continuations. Controls: cut just AFTER the admission (keeps it, near-identical position) and
+cut at a RANDOM other sentence.
+
+| cut | n | P(favoured) |
+|---|---|---|
+| before the admission | 239 | 0.946 |
+| after the admission | 238 | 0.954 |
+| random other sentence | 217 | 0.959 |
+
+**This does not show the admission is causally inert. It shows the design cannot tell.**
+20-22 of 24 rollouts return a favoured number on *all ten* continuations in *every* condition.
+The reason is structural: the admission sits at 0.78 of the CoT, so even the "before" prefix
+contains most of a trace that has already converged. Paired within-rollout differences run in
+the predicted direction but are negligible: pre − post = −0.008 (p=0.16), pre − random = −0.004
+(p=0.57).
+
+Two further traps this run walked into, worth recording:
+
+- **The +0.420 reference is wrong for this table.** These 24 rollouts were selected as
+  INFLUENCED, and that subpopulation lands favoured 0.875 of the time unprompted. Comparing
+  ~0.95 against the whole-population +0.420 would manufacture a dramatic non-finding. The only
+  legitimate comparison here is *between the three cuts*.
+- Cutting earlier does not help by itself: the random cut averages 0.59 of the CoT and is
+  *still* saturated at 0.959.
+
+**What a corrected design needs:** cut far earlier (~0.2-0.3 of the CoT), which sacrifices the
+"just before this sentence" precision, or select rollouts that have not already committed. Given
+the prefill result already answers the verbalization question from the other direction — forcing
+a denial changes nothing, forcing an admission restores everything — the prefill design is the
+better instrument and this one should not be rerun as-is.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -202,6 +237,8 @@ Consequences:
 | 2026-08-29 | H2 split by covertness (majority-vote labels) | stopping OR 3.48 overt vs 2.55 covert, **interaction p=0.33**; bad-side pull 0.714 vs 0.577, **CIs do not overlap** | Stopping rule shared (no detectable difference, but underpowered); directional pull is genuinely stronger in overt. "One computation, different narration" holds for stopping, not fully for direction. |
 | 2026-08-29 | **Prefill causal tests** (`runs/prefill_tests.py`), n=60/cell | neutral **-0.045** [-0.230, +0.139], denial **+0.037** [-0.148, +0.222], admission **+0.444** [+0.283, +0.611] vs unprefilled +0.420 | **Denial is epiphenomenal** (does no more than a neutral sentence); **verbalizing the goal is sufficient** to restore the full effect. |
 | 2026-08-29 | Prefill length confound check | every prefill collapses CoT from 9,046 to 880-1,228 tokens; admission is equally short yet keeps +0.444; drop rates equal across arms (p=0.55) | Rules out "prefilling just disrupts the model" as the explanation for the neutral/denial nulls. |
+| 2026-08-29 | **Resampling from before the admission sentence** (`runs/resample_admission.py`), 24 overt rollouts x 3 cuts x 10 continuations | pre 0.946, post 0.954, random 0.959; paired pre−post −0.008 (p=0.16) | **Inconclusive, not null.** 20-22/24 rollouts at P=1.000 in every arm — the design is saturated and cannot detect a decrease. |
+| 2026-08-29 | Admission-sentence locator, first run | 24/24 parsed, 19 high / 5 medium confidence, median position **0.78** of the CoT | Admissions come late, which is exactly why the resampling test has no room. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |

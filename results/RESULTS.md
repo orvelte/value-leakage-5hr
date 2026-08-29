@@ -71,6 +71,20 @@ Forcing the model to say it is setting the bet aside does nothing that *“let m
 
 **Open puzzle worth stating rather than smoothing over:** bias is +0.517 with no CoT at all and −0.045 with a neutral opening sentence. One forced sentence removes an effect that survives removing the entire chain of thought.
 
+### 7. Deleting the admission sentence: an inconclusive test
+
+24 overt rollouts, admission located by a separate judge, 10 continuations per cut.
+
+| cut | n | P(favoured) | mean cut position |
+|---|---|---|---|
+| before the admission | 239 | 0.946 | 0.78 of the CoT |
+| after the admission | 238 | 0.954 | 0.79 of the CoT |
+| random other sentence | 217 | 0.959 | 0.59 of the CoT |
+
+**This does not show the admission is causally inert — it shows the design cannot tell.** 20–22 of 24 rollouts return a favoured number on *all ten* continuations in *every* condition. The admission sits at 0.78 of the CoT, so even the "before" prefix contains most of a trace that has already converged. Paired within-rollout differences run in the predicted direction but are negligible: pre − post = −0.008 (p=0.16), pre − random = −0.004 (p=0.57).
+
+Note the whole-population +0.420 is **not** the right reference for this table: these rollouts were selected as INFLUENCED, a subpopulation that lands favoured 0.875 of the time unprompted. Only the between-cut comparison is legitimate. The prefill experiment (finding 6) answers the same question from the other direction and is the better instrument.
+
 ## Figures
 
 ### f2_thinking_off
@@ -92,6 +106,10 @@ Forcing the model to say it is setting the bet aside does nothing that *“let m
 ### f6_prefill_tests
 
 ![f6_prefill_tests](figures/f6_prefill_tests.png)
+
+### f7_admission_resampling
+
+![f7_admission_resampling](figures/f7_admission_resampling.png)
 
 ## Standing limitations
 
