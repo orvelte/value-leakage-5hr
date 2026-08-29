@@ -1,0 +1,26 @@
+{
+  "n": 120,
+  "median_n_est": 33.5,
+  "mean_n_est": 34.85,
+  "median_tokens": 8226.0,
+  "frac_first_favoured": 0.49166666666666664,
+  "first_favoured_ci": [
+    0.39925858253840957,
+    0.5844957086346839
+  ],
+  "frac_last_favoured": 0.7,
+  "drift_first_to_last": 0.20833333333333331,
+  "stop_or": 1.218002336423602,
+  "stop_p": 0.3379301777519026,
+  "n_steps": 4180,
+  "coverage": {
+    "judged": 120,
+    "expected": 120,
+    "malformed": 0,
+    "empty": 0
+  },
+  "revision_direction": {
+    "bad_side": "0.693 [0.67,0.72] n=1584 *",
+    "good_side": "0.386 [0.37,0.41] n=2478 *"
+  }
+}

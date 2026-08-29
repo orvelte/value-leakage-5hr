@@ -1,0 +1,222 @@
+{
+  "arms": {
+    "neutral": {
+      "bias": -0.045470819906910265,
+      "ci": [
+        -0.2295649838882922,
+        0.13856068743286798
+      ],
+      "median_tokens": 1227.5,
+      "n_raw": 120,
+      "n_valid": 106,
+      "n_truncated": 0,
+      "drop_rate": 0.1166666666666667
+    },
+    "denial": {
+      "bias": 0.03703703703703698,
+      "ci": [
+        -0.14814814814814814,
+        0.22222222222222232
+      ],
+      "median_tokens": 880.5,
+      "n_raw": 120,
+      "n_valid": 108,
+      "n_truncated": 0,
+      "drop_rate": 0.09999999999999998
+    },
+    "admission": {
+      "bias": 0.4444444444444444,
+      "ci": [
+        0.2826510721247564,
+        0.611330409356724
+      ],
+      "median_tokens": 1025.5,
+      "n_raw": 120,
+      "n_valid": 111,
+      "n_truncated": 1,
+      "drop_rate": 0.07499999999999996
+    },
+    "minimal": {
+      "bias": 0.40423861852433274,
+      "ci": [
+        0.2276295133437991,
+        0.5843799058084773
+      ],
+      "median_tokens": 8226.0,
+      "n_raw": 120,
+      "n_valid": 101,
+      "n_truncated": 7,
+      "drop_rate": 0.15833333333333333
+    },
+    "newline": {
+      "bias": 0.4701928696668616,
+      "ci": [
+        0.3158971361776739,
+        0.6402688486265342
+      ],
+      "median_tokens": 11.0,
+      "n_raw": 120,
+      "n_valid": 117,
+      "n_truncated": 0,
+      "drop_rate": 0.025000000000000022
+    },
+    "admit_then_deny": {
+      "bias": 0.12447552447552446,
+      "ci": [
+        -0.05944055944055948,
+        0.32450174825174805
+      ],
+      "median_tokens": 1096.5,
+      "n_raw": 120,
+      "n_valid": 107,
+      "n_truncated": 1,
+      "drop_rate": 0.10833333333333328
+    },
+    "deny_then_admit": {
+      "bias": 0.3653846153846154,
+      "ci": [
+        0.1923076923076923,
+        0.5576923076923075
+      ],
+      "median_tokens": 938.0,
+      "n_raw": 120,
+      "n_valid": 104,
+      "n_truncated": 0,
+      "drop_rate": 0.1333333333333333
+    },
+    "admit_twice": {
+      "bias": 0.4278752436647173,
+      "ci": [
+        0.2660575048732944,
+        0.6033625730994148
+      ],
+      "median_tokens": 1286.5,
+      "n_raw": 120,
+      "n_valid": 111,
+      "n_truncated": 1,
+      "drop_rate": 0.07499999999999996
+    },
+    "neutral_b": {
+      "bias": 0.34006734006733996,
+      "ci": [
+        0.17407407407407405,
+        0.5232323232323233
+      ],
+      "median_tokens": 1173.5,
+      "n_raw": 120,
+      "n_valid": 109,
+      "n_truncated": 0,
+      "drop_rate": 0.09166666666666667
+    },
+    "neutral_c": {
+      "bias": 0.2511111111111113,
+      "ci": [
+        0.07403703703703693,
+        0.4437037037037037
+      ],
+      "median_tokens": 1234.0,
+      "n_raw": 120,
+      "n_valid": 104,
+      "n_truncated": 1,
+      "drop_rate": 0.1333333333333333
+    },
+    "admit_then_reverse": {
+      "bias": 0.36613190730837797,
+      "ci": [
+        0.19675579322638145,
+        0.5508021390374331
+      ],
+      "median_tokens": 996.0,
+      "n_raw": 120,
+      "n_valid": 106,
+      "n_truncated": 0,
+      "drop_rate": 0.1166666666666667
+    },
+    "admit_deny_admit": {
+      "bias": 0.37797619047619047,
+      "ci": [
+        0.2053571428571428,
+        0.5595982142857139
+      ],
+      "median_tokens": 1114.5,
+      "n_raw": 120,
+      "n_valid": 104,
+      "n_truncated": 1,
+      "drop_rate": 0.1333333333333333
+    }
+  },
+  "contrasts": {
+    "neutral_b - neutral": {
+      "diff": 0.3855381599742502,
+      "ci": [
+        0.1261560557237249,
+        0.6417596028310308
+      ],
+      "boot_p": 0.0038,
+      "why": "A9: does 'be careful' alone reproduce the neutral null?"
+    },
+    "neutral_c - neutral": {
+      "diff": 0.29658193101802155,
+      "ci": [
+        0.030904364084815276,
+        0.5600116760154352
+      ],
+      "boot_p": 0.0276,
+      "why": "A9: does naming the decomposition procedure reproduce it?"
+    },
+    "neutral_b - neutral_c": {
+      "diff": 0.08895622895622868,
+      "ci": [
+        -0.163436026936027,
+        0.34471380471380475
+      ],
+      "boot_p": 0.4989,
+      "why": "A9: deliberation vs procedure, against each other"
+    },
+    "neutral_b - minimal": {
+      "diff": -0.06417127845699278,
+      "ci": [
+        -0.31116367098509956,
+        0.1859723940081079
+      ],
+      "boot_p": 0.6136,
+      "why": "A9: is 'be careful' distinguishable from a contentless prefill?"
+    },
+    "admit_then_reverse - admit_then_deny": {
+      "diff": 0.2416563828328535,
+      "ci": [
+        -0.009262306321129898,
+        0.492519025092552
+      ],
+      "boot_p": 0.0622,
+      "why": "A10: does a non-honesty reversal act like the denial?"
+    },
+    "admit_then_reverse - admit_twice": {
+      "diff": -0.06174333635633933,
+      "ci": [
+        -0.297692899062868,
+        0.17608273133814906
+      ],
+      "boot_p": 0.6067,
+      "why": "A10: or like no reversal at all?"
+    },
+    "admit_deny_admit - admit_then_deny": {
+      "diff": 0.253500666000666,
+      "ci": [
+        2.861721611737192e-05,
+        0.507889402264402
+      ],
+      "boot_p": 0.0498,
+      "why": "last-stance control: re-admitting after the denial"
+    },
+    "admit_deny_admit - admit_twice": {
+      "diff": -0.04989905318852683,
+      "ci": [
+        -0.2861145920356447,
+        0.18958898983570013
+      ],
+      "boot_p": 0.6901,
+      "why": "does re-admitting fully restore the goal?"
+    }
+  }
+}
