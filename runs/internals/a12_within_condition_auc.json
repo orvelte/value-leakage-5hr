@@ -1,0 +1,26 @@
+{
+  "layer": 31,
+  "n": 79,
+  "threshold": 75000000.0,
+  "conditions": {
+    "above_good": {
+      "n": 39,
+      "n_above_T": 31,
+      "auc_outcome": 0.625,
+      "rand_null_mean": 0.49905040322580646,
+      "rand_null_sd": 0.1473333817780402,
+      "p_random_dir": 0.4245,
+      "p_shuffled": 0.3075
+    },
+    "below_good": {
+      "n": 40,
+      "n_above_T": 15,
+      "auc_outcome": 0.45066666666666666,
+      "rand_null_mean": 0.497624,
+      "rand_null_sd": 0.1242836932255305,
+      "p_random_dir": 0.706,
+      "p_shuffled": 0.617
+    }
+  },
+  "verdict": "at chance within condition against a random-direction null \u2014 'encoded, not shown to be used' stands"
+}

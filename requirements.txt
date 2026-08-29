@@ -6,5 +6,7 @@ vllm==0.27.1
 transformers>=5.0
 torch
 huggingface_hub
+# required by the HF `generate`/hook path (internals_*, ablate_during_cot, a7_*): transformers needs it for device_map="cuda".
+accelerate
 numpy
 scipy

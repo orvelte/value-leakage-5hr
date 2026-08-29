@@ -1,0 +1,144 @@
+{
+  "rule_zero": "0 is not an estimate; dropped from trajectories",
+  "rule_non_english": "kept; counted only",
+  "sets": {
+    "free_cot": {
+      "n": 110,
+      "rollouts_with_zero": 2,
+      "zero_entries": 2,
+      "cjk": 20,
+      "non_en_latin": 5,
+      "zeros_kept": {
+        "n": 80,
+        "median_n_est": 24.0,
+        "first_favoured": 0.5125,
+        "last_favoured": 0.6875,
+        "stop_or": 2.106250301070912,
+        "stop_p": 0.005276391258236535,
+        "bad_side_pull": 0.6211734693877551,
+        "n_pull": 784
+      },
+      "zeros_dropped": {
+        "n": 80,
+        "median_n_est": 24.0,
+        "first_favoured": 0.5125,
+        "last_favoured": 0.6875,
+        "stop_or": 2.104902997340273,
+        "stop_p": 0.005296690363575607,
+        "bad_side_pull": 0.6211734693877551,
+        "n_pull": 784
+      }
+    },
+    "minimal": {
+      "n": 120,
+      "rollouts_with_zero": 2,
+      "zero_entries": 3,
+      "cjk": 31,
+      "non_en_latin": 2,
+      "zeros_kept": {
+        "n": 120,
+        "median_n_est": 33.5,
+        "first_favoured": 0.49166666666666664,
+        "last_favoured": 0.7,
+        "stop_or": 1.218002336423602,
+        "stop_p": 0.3379301777519026,
+        "bad_side_pull": 0.6931818181818182,
+        "n_pull": 1584
+      },
+      "zeros_dropped": {
+        "n": 120,
+        "median_n_est": 33.0,
+        "first_favoured": 0.49166666666666664,
+        "last_favoured": 0.6916666666666667,
+        "stop_or": 1.1657551063795126,
+        "stop_p": 0.4530631508018601,
+        "bad_side_pull": 0.693864642631246,
+        "n_pull": 1581
+      }
+    },
+    "neutral": {
+      "n": 117,
+      "rollouts_with_zero": 0,
+      "zero_entries": 0,
+      "cjk": 43,
+      "non_en_latin": 0,
+      "zeros_kept": {
+        "n": 117,
+        "median_n_est": 4,
+        "first_favoured": 0.452991452991453,
+        "last_favoured": 0.47863247863247865,
+        "stop_or": 1.1422336853789403,
+        "stop_p": 0.5925623897992829,
+        "bad_side_pull": 0.6509433962264151,
+        "n_pull": 212
+      },
+      "zeros_dropped": {
+        "n": 117,
+        "median_n_est": 4,
+        "first_favoured": 0.452991452991453,
+        "last_favoured": 0.47863247863247865,
+        "stop_or": 1.1422336853789403,
+        "stop_p": 0.5925623897992829,
+        "bad_side_pull": 0.6509433962264151,
+        "n_pull": 212
+      }
+    },
+    "denial": {
+      "n": 117,
+      "rollouts_with_zero": 0,
+      "zero_entries": 0,
+      "cjk": 8,
+      "non_en_latin": 0,
+      "zeros_kept": {
+        "n": 117,
+        "median_n_est": 3,
+        "first_favoured": 0.4700854700854701,
+        "last_favoured": 0.49572649572649574,
+        "stop_or": 1.5114393594563071,
+        "stop_p": 0.14616449282709532,
+        "bad_side_pull": 0.6108108108108108,
+        "n_pull": 185
+      },
+      "zeros_dropped": {
+        "n": 117,
+        "median_n_est": 3,
+        "first_favoured": 0.4700854700854701,
+        "last_favoured": 0.49572649572649574,
+        "stop_or": 1.5114393594563071,
+        "stop_p": 0.14616449282709532,
+        "bad_side_pull": 0.6108108108108108,
+        "n_pull": 185
+      }
+    },
+    "admission": {
+      "n": 115,
+      "rollouts_with_zero": 0,
+      "zero_entries": 0,
+      "cjk": 20,
+      "non_en_latin": 0,
+      "zeros_kept": {
+        "n": 115,
+        "median_n_est": 4,
+        "first_favoured": 0.5130434782608696,
+        "last_favoured": 0.6869565217391305,
+        "stop_or": 1.4133313262414344,
+        "stop_p": 0.21047828721093298,
+        "bad_side_pull": 0.7368421052631579,
+        "n_pull": 171
+      },
+      "zeros_dropped": {
+        "n": 115,
+        "median_n_est": 4,
+        "first_favoured": 0.5130434782608696,
+        "last_favoured": 0.6869565217391305,
+        "stop_or": 1.4133313262414344,
+        "stop_p": 0.21047828721093298,
+        "bad_side_pull": 0.7368421052631579,
+        "n_pull": 171
+      }
+    }
+  },
+  "moved": [
+    "minimal.stop_or: 1.22 -> 1.17"
+  ]
+}

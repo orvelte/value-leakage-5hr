@@ -1,0 +1,344 @@
+{
+  "free_cot": {
+    "n_rollouts": 80,
+    "n_with_think_block": 79,
+    "threshold_value": {
+      "mean_per_rollout": 32.139240506329116,
+      "median": 30.0,
+      "per_1k_think_tokens": 3.625805977928408,
+      "frac_with_ge1": 1.0
+    },
+    "threshold_word": {
+      "mean_per_rollout": 21.31645569620253,
+      "median": 20.0,
+      "per_1k_think_tokens": 2.4370898071126987,
+      "frac_with_ge1": 1.0
+    },
+    "donat": {
+      "mean_per_rollout": 9.936708860759493,
+      "median": 9.0,
+      "per_1k_think_tokens": 1.146580844097221,
+      "frac_with_ge1": 1.0
+    },
+    "cause": {
+      "mean_per_rollout": 24.873417721518987,
+      "median": 25.0,
+      "per_1k_think_tokens": 2.8843380566951136,
+      "frac_with_ge1": 1.0
+    },
+    "frac_any_incentive_mention": 1.0,
+    "log10_estimate": {
+      "n": 79,
+      "median": 7.903089986991944,
+      "iqr": 0.2545178663697243,
+      "q25": 7.8061799739838875,
+      "q75": 8.060697840353612,
+      "median_as_value": 80000000.00000003
+    },
+    "median_think_ktokens": 8.615381862588935
+  },
+  "thinkon_base": {
+    "n_rollouts": 30,
+    "n_with_think_block": 30,
+    "threshold_value": {
+      "mean_per_rollout": 0.6333333333333333,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0637778489033095,
+      "frac_with_ge1": 0.13333333333333333
+    },
+    "threshold_word": {
+      "mean_per_rollout": 0.1,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.008967736164232947,
+      "frac_with_ge1": 0.03333333333333333
+    },
+    "donat": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "cause": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "frac_any_incentive_mention": 0.13333333333333333,
+    "log10_estimate": {
+      "n": 30,
+      "median": 7.877212394638629,
+      "iqr": 0.7865612453083468,
+      "q25": 7.409460166835155,
+      "q75": 8.196021412143502,
+      "median_as_value": 75372408.7448451
+    },
+    "median_think_ktokens": 8.936687473371926
+  },
+  "neutral": {
+    "n_rollouts": 120,
+    "n_with_think_block": 120,
+    "threshold_value": {
+      "mean_per_rollout": 2.95,
+      "median": 3.0,
+      "per_1k_think_tokens": 2.7233713767559893,
+      "frac_with_ge1": 0.875
+    },
+    "threshold_word": {
+      "mean_per_rollout": 2.45,
+      "median": 2.0,
+      "per_1k_think_tokens": 2.2807926699750705,
+      "frac_with_ge1": 0.8166666666666667
+    },
+    "donat": {
+      "mean_per_rollout": 0.525,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.5218961556408104,
+      "frac_with_ge1": 0.35
+    },
+    "cause": {
+      "mean_per_rollout": 0.6083333333333333,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.6093461561239628,
+      "frac_with_ge1": 0.35833333333333334
+    },
+    "frac_any_incentive_mention": 0.8833333333333333,
+    "log10_estimate": {
+      "n": 119,
+      "median": 7.845098040014257,
+      "iqr": 0.6318017488616787,
+      "q25": 7.41924351389424,
+      "q75": 8.051045262755919,
+      "median_as_value": 70000000.00000001
+    },
+    "median_think_ktokens": 0.9860990684236508
+  },
+  "denial": {
+    "n_rollouts": 120,
+    "n_with_think_block": 120,
+    "threshold_value": {
+      "mean_per_rollout": 2.441666666666667,
+      "median": 2.0,
+      "per_1k_think_tokens": 6.909054988580596,
+      "frac_with_ge1": 0.875
+    },
+    "threshold_word": {
+      "mean_per_rollout": 1.775,
+      "median": 1.5,
+      "per_1k_think_tokens": 2.8902635735398925,
+      "frac_with_ge1": 0.7833333333333333
+    },
+    "donat": {
+      "mean_per_rollout": 0.18333333333333332,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.28397914952781067,
+      "frac_with_ge1": 0.15
+    },
+    "cause": {
+      "mean_per_rollout": 0.20833333333333334,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.2935836976729172,
+      "frac_with_ge1": 0.13333333333333333
+    },
+    "frac_any_incentive_mention": 0.8833333333333333,
+    "log10_estimate": {
+      "n": 120,
+      "median": 7.854295422575172,
+      "iqr": 0.6379185038998081,
+      "q25": 7.520556887958735,
+      "q75": 8.158475391858543,
+      "median_as_value": 71498251.7268779
+    },
+    "median_think_ktokens": 0.6548713761713554
+  },
+  "admission": {
+    "n_rollouts": 120,
+    "n_with_think_block": 119,
+    "threshold_value": {
+      "mean_per_rollout": 5.689075630252101,
+      "median": 5.0,
+      "per_1k_think_tokens": 6.049696797114432,
+      "frac_with_ge1": 0.957983193277311
+    },
+    "threshold_word": {
+      "mean_per_rollout": 4.226890756302521,
+      "median": 4.0,
+      "per_1k_think_tokens": 4.510214505207161,
+      "frac_with_ge1": 0.9411764705882353
+    },
+    "donat": {
+      "mean_per_rollout": 1.9579831932773109,
+      "median": 1.0,
+      "per_1k_think_tokens": 2.119126295065151,
+      "frac_with_ge1": 0.7394957983193278
+    },
+    "cause": {
+      "mean_per_rollout": 3.8403361344537816,
+      "median": 3.0,
+      "per_1k_think_tokens": 4.094166157120003,
+      "frac_with_ge1": 0.9327731092436975
+    },
+    "frac_any_incentive_mention": 0.9747899159663865,
+    "log10_estimate": {
+      "n": 119,
+      "median": 7.857332496431268,
+      "iqr": 0.5314789170422554,
+      "q25": 7.3979400086720375,
+      "q75": 7.929418925714293,
+      "median_as_value": 71999999.99999994
+    },
+    "median_think_ktokens": 0.7583346153846154
+  },
+  "minimal": {
+    "n_rollouts": 120,
+    "n_with_think_block": 113,
+    "threshold_value": {
+      "mean_per_rollout": 35.08849557522124,
+      "median": 33.0,
+      "per_1k_think_tokens": 4.2403181043656915,
+      "frac_with_ge1": 0.9292035398230089
+    },
+    "threshold_word": {
+      "mean_per_rollout": 23.20353982300885,
+      "median": 23.0,
+      "per_1k_think_tokens": 2.7488867984923897,
+      "frac_with_ge1": 0.8672566371681416
+    },
+    "donat": {
+      "mean_per_rollout": 5.008849557522124,
+      "median": 4.0,
+      "per_1k_think_tokens": 0.6041399841062155,
+      "frac_with_ge1": 0.8053097345132744
+    },
+    "cause": {
+      "mean_per_rollout": 8.460176991150442,
+      "median": 6.0,
+      "per_1k_think_tokens": 0.9913293220132139,
+      "frac_with_ge1": 0.8053097345132744
+    },
+    "frac_any_incentive_mention": 0.9292035398230089,
+    "log10_estimate": {
+      "n": 111,
+      "median": 7.8750612633917,
+      "iqr": 0.12565767630294467,
+      "q25": 7.845098040014257,
+      "q75": 7.970755716317202,
+      "median_as_value": 75000000.00000001
+    },
+    "median_think_ktokens": 7.9480162308385935
+  },
+  "admit_then_deny": {
+    "n_rollouts": 120,
+    "n_with_think_block": 119,
+    "threshold_value": {
+      "mean_per_rollout": 4.235294117647059,
+      "median": 3.0,
+      "per_1k_think_tokens": 4.639818468167942,
+      "frac_with_ge1": 0.9411764705882353
+    },
+    "threshold_word": {
+      "mean_per_rollout": 2.907563025210084,
+      "median": 3.0,
+      "per_1k_think_tokens": 3.3124919560911184,
+      "frac_with_ge1": 0.8991596638655462
+    },
+    "donat": {
+      "mean_per_rollout": 1.2605042016806722,
+      "median": 1.0,
+      "per_1k_think_tokens": 1.2288963243607083,
+      "frac_with_ge1": 0.5798319327731093
+    },
+    "cause": {
+      "mean_per_rollout": 1.319327731092437,
+      "median": 1.0,
+      "per_1k_think_tokens": 1.2227156162749784,
+      "frac_with_ge1": 0.5714285714285714
+    },
+    "frac_any_incentive_mention": 0.957983193277311,
+    "log10_estimate": {
+      "n": 119,
+      "median": 7.812913356642856,
+      "iqr": 0.5984706990144009,
+      "q25": 7.480710547033224,
+      "q75": 8.079181246047625,
+      "median_as_value": 65000000.000000015
+    },
+    "median_think_ktokens": 0.8231984795004073
+  },
+  "admit_twice": {
+    "n_rollouts": 120,
+    "n_with_think_block": 119,
+    "threshold_value": {
+      "mean_per_rollout": 5.243697478991597,
+      "median": 4.0,
+      "per_1k_think_tokens": 6.754998790444991,
+      "frac_with_ge1": 0.8907563025210085
+    },
+    "threshold_word": {
+      "mean_per_rollout": 3.5210084033613445,
+      "median": 3.0,
+      "per_1k_think_tokens": 3.7279956380795487,
+      "frac_with_ge1": 0.8067226890756303
+    },
+    "donat": {
+      "mean_per_rollout": 1.3865546218487395,
+      "median": 1.0,
+      "per_1k_think_tokens": 1.7768369807637665,
+      "frac_with_ge1": 0.6302521008403361
+    },
+    "cause": {
+      "mean_per_rollout": 2.168067226890756,
+      "median": 1.0,
+      "per_1k_think_tokens": 2.4775855765292194,
+      "frac_with_ge1": 0.6974789915966386
+    },
+    "frac_any_incentive_mention": 0.9159663865546218,
+    "log10_estimate": {
+      "n": 119,
+      "median": 7.845098040014257,
+      "iqr": 0.401419029718852,
+      "q25": 7.539807661763472,
+      "q75": 7.941226691482324,
+      "median_as_value": 70000000.00000001
+    },
+    "median_think_ktokens": 0.9884118375433383
+  },
+  "nothink_base": {
+    "n_rollouts": 150,
+    "n_with_think_block": 150,
+    "threshold_value": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "threshold_word": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "donat": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "cause": {
+      "mean_per_rollout": 0.0,
+      "median": 0.0,
+      "per_1k_think_tokens": 0.0,
+      "frac_with_ge1": 0.0
+    },
+    "frac_any_incentive_mention": 0.0,
+    "log10_estimate": {
+      "n": 149,
+      "median": 8.628388930050312,
+      "iqr": 1.050305118311396,
+      "q25": 8.153814864344529,
+      "q75": 9.204119982655925,
+      "median_as_value": 425000000.00000006
+    },
+    "median_think_ktokens": 0.001
+  }
+}

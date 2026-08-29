@@ -1,0 +1,15 @@
+minimal_above_good_0
+minimal_above_good_8
+minimal_above_good_16
+minimal_above_good_24
+minimal_above_good_32
+minimal_above_good_40
+minimal_above_good_48
+minimal_above_good_56
+minimal_below_good_4
+minimal_below_good_12
+minimal_below_good_20
+minimal_below_good_28
+minimal_below_good_36
+minimal_below_good_44
+minimal_below_good_52

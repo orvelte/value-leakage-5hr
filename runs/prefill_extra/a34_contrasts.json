@@ -1,0 +1,173 @@
+{
+  "arms": {
+    "neutral": {
+      "bias": -0.045470819906910265,
+      "ci": [
+        -0.2295649838882922,
+        0.13856068743286798
+      ],
+      "median_tokens": 1227.5,
+      "n_raw": 120,
+      "n_valid": 106,
+      "n_truncated": 0,
+      "drop_rate": 0.1166666666666667,
+      "p_favored_above": 0.40350877192982454,
+      "p_favored_below": 0.5510204081632653
+    },
+    "denial": {
+      "bias": 0.03703703703703698,
+      "ci": [
+        -0.14814814814814814,
+        0.22222222222222232
+      ],
+      "median_tokens": 880.5,
+      "n_raw": 120,
+      "n_valid": 108,
+      "n_truncated": 0,
+      "drop_rate": 0.09999999999999998,
+      "p_favored_above": 0.4444444444444444,
+      "p_favored_below": 0.5925925925925926
+    },
+    "admission": {
+      "bias": 0.4444444444444444,
+      "ci": [
+        0.2826510721247564,
+        0.611330409356724
+      ],
+      "median_tokens": 1025.5,
+      "n_raw": 120,
+      "n_valid": 111,
+      "n_truncated": 1,
+      "drop_rate": 0.07499999999999996,
+      "p_favored_above": 0.6666666666666666,
+      "p_favored_below": 0.7777777777777778
+    },
+    "minimal": {
+      "bias": 0.40423861852433274,
+      "ci": [
+        0.2276295133437991,
+        0.5843799058084773
+      ],
+      "median_tokens": 8226.0,
+      "n_raw": 120,
+      "n_valid": 101,
+      "n_truncated": 7,
+      "drop_rate": 0.15833333333333333,
+      "p_favored_above": 0.673469387755102,
+      "p_favored_below": 0.7307692307692307
+    },
+    "newline": {
+      "bias": 0.4701928696668616,
+      "ci": [
+        0.3158971361776739,
+        0.6402688486265342
+      ],
+      "median_tokens": 11.0,
+      "n_raw": 120,
+      "n_valid": 117,
+      "n_truncated": 0,
+      "drop_rate": 0.025000000000000022,
+      "p_favored_above": 0.7288135593220338,
+      "p_favored_below": 0.7413793103448276,
+      "invalid": "prefix is the empty-think opening; model emits no CoT. Reproduces thinking-off, not a contentless prefill."
+    },
+    "admit_then_deny": {
+      "bias": 0.12447552447552446,
+      "ci": [
+        -0.05944055944055948,
+        0.32450174825174805
+      ],
+      "median_tokens": 1096.5,
+      "n_raw": 120,
+      "n_valid": 107,
+      "n_truncated": 1,
+      "drop_rate": 0.10833333333333328,
+      "p_favored_above": 0.509090909090909,
+      "p_favored_below": 0.6153846153846154
+    },
+    "deny_then_admit": {
+      "bias": 0.3653846153846154,
+      "ci": [
+        0.1923076923076923,
+        0.5576923076923075
+      ],
+      "median_tokens": 938.0,
+      "n_raw": 120,
+      "n_valid": 104,
+      "n_truncated": 0,
+      "drop_rate": 0.1333333333333333,
+      "p_favored_above": 0.6538461538461539,
+      "p_favored_below": 0.7115384615384616
+    },
+    "admit_twice": {
+      "bias": 0.4278752436647173,
+      "ci": [
+        0.2660575048732944,
+        0.6033625730994148
+      ],
+      "median_tokens": 1286.5,
+      "n_raw": 120,
+      "n_valid": 111,
+      "n_truncated": 1,
+      "drop_rate": 0.07499999999999996,
+      "p_favored_above": 0.631578947368421,
+      "p_favored_below": 0.7962962962962963
+    }
+  },
+  "contrasts": {
+    "admit_twice - admit_then_deny": {
+      "diff": 0.30339971918919284,
+      "ci": [
+        0.056832494990389844,
+        0.5501472552788335
+      ],
+      "boot_p": 0.0162,
+      "why": "A4 decisive: same length, same admission, only the retraction differs"
+    },
+    "admission - admit_then_deny": {
+      "diff": 0.31996891996891996,
+      "ci": [
+        0.07183419893946183,
+        0.5679453611690455
+      ],
+      "boot_p": 0.0116,
+      "why": "A4 vs the unpadded admission reference"
+    },
+    "deny_then_admit - admit_then_deny": {
+      "diff": 0.24090909090909096,
+      "ci": [
+        -0.019956293706293707,
+        0.5006993006993006
+      ],
+      "boot_p": 0.0688,
+      "why": "order / recency: same two sentences, swapped"
+    },
+    "admit_twice - deny_then_admit": {
+      "diff": 0.06249062828010188,
+      "ci": [
+        -0.177200479832059,
+        0.3043184885290149
+      ],
+      "boot_p": 0.6057,
+      "why": "does an admission last differ from an admission first"
+    },
+    "minimal - neutral": {
+      "diff": 0.449709438431243,
+      "ci": [
+        0.18859270428819305,
+        0.7049392024016081
+      ],
+      "boot_p": 0.0014,
+      "why": "A3: does a contentless prefill differ from the method sentence"
+    },
+    "minimal - admission": {
+      "diff": -0.04020582592011168,
+      "ci": [
+        -0.2804085343089102,
+        0.20223993668542536
+      ],
+      "boot_p": 0.7466,
+      "why": "A3: contentless vs the stated goal"
+    }
+  }
+}

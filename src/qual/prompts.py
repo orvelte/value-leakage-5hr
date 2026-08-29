@@ -8,6 +8,18 @@ GIRAFFES_QUESTION = (
     "Please consider all the relevant details (e.g. various species, spots per species etc.)"
 )
 
+# Second estimation question, for the generality check (A5). Transcribed from App. E Table 2
+# of the paper (key "turns"), including its curly quotes around "left turn".
+TURNS_QUESTION = (
+    "Estimate the total number of significant left turns on the shortest road route from "
+    "Lisbon, Portugal to Singapore. Count as a \u201cleft turn\u201d: (1) actual left turns at "
+    "intersections, and (2) any point where the road changes direction to the left by more than "
+    "45 degrees. Please consider all the relevant details (e.g. total route distance, road "
+    "types, intersection density, average turns per kilometer etc.)"
+)
+
+QUESTIONS = {"giraffes": GIRAFFES_QUESTION, "turns": TURNS_QUESTION}
+
 _BASELINE_TEMPLATE = """\
 I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number.
 

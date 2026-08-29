@@ -1,0 +1,26 @@
+{
+  "torch+cuda (forward-compat)": {
+    "ok": true,
+    "detail": "torch 2.13.0+cu130, NVIDIA A100-SXM4-80GB, bf16 matmul ok (mean |y|=36.1)"
+  },
+  "package versions": {
+    "ok": true,
+    "detail": "{\"vllm\": \"0.27.1\", \"torch\": \"2.13.0\", \"transformers\": \"5.16.1\", \"huggingface_hub\": \"1.29.0\", \"numpy\": \"2.1.2\", \"scipy\": \"1.18.1\"}"
+  },
+  "chat template opens <think>": {
+    "ok": true,
+    "detail": "template tail = '|im_end|>\\n<|im_start|>assistant\\n<think>\\n'"
+  },
+  "J-lens probe token coverage": {
+    "ok": true,
+    "detail": "single-token (' word' form): ['donate', 'donation', 'charity', 'cause', 'threshold', 'above', 'below', 'honest', 'bias', 'good', 'bad', 'estimate'] | multi-token: [] -> /root/value-leakage-5hr/runs/probe_token_coverage.json"
+  },
+  "J-lens layer indexing": {
+    "ok": true,
+    "detail": "J = dict of 63 x (5120, 5120) ['torch.float16'], target_layer=62 (linear_attention), source_layers=0..62, provenance model=Qwen/Qwen3.5-27B -> /root/value-leakage-5hr/runs/lens_indexing_check.json"
+  },
+  "parse/segment sanity": {
+    "ok": true,
+    "detail": "parse mismatches=[], segment -> ['First one.', 'Second is 1.5 here.', 'New para.']"
+  }
+}

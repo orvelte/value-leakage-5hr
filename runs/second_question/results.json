@@ -1,0 +1,83 @@
+{
+  "question": "turns",
+  "threshold": 1600.0,
+  "n_per_arm": 150,
+  "thinkon_baseline_median": 1645.0,
+  "arms": {
+    "baseline": {
+      "n_raw": 150,
+      "n_valid": 146,
+      "n_unparsed": 4,
+      "median": 842.0,
+      "median_over_T": 0.52625,
+      "frac_within_10pct": 0.0547945205479452,
+      "frac_within_25pct": 0.23972602739726026,
+      "p_above_T": 0.3287671232876712
+    },
+    "above_good": {
+      "n_raw": 150,
+      "n_valid": 148,
+      "n_unparsed": 2,
+      "median": 1650.0,
+      "median_over_T": 1.03125,
+      "frac_within_10pct": 0.3783783783783784,
+      "frac_within_25pct": 0.7567567567567568,
+      "p_above_T": 0.6756756756756757
+    },
+    "below_good": {
+      "n_raw": 150,
+      "n_valid": 148,
+      "n_unparsed": 2,
+      "median": 1454.0,
+      "median_over_T": 0.90875,
+      "frac_within_10pct": 0.42567567567567566,
+      "frac_within_25pct": 0.8243243243243243,
+      "p_above_T": 0.27702702702702703
+    },
+    "threshold_only": {
+      "n_raw": 150,
+      "n_valid": 149,
+      "n_unparsed": 1,
+      "median": 1587.0,
+      "median_over_T": 0.991875,
+      "frac_within_10pct": 0.5838926174496645,
+      "frac_within_25pct": 0.9261744966442953,
+      "p_above_T": 0.3691275167785235
+    },
+    "coin": {
+      "n_raw": 150,
+      "n_valid": 150,
+      "n_unparsed": 0,
+      "median": 1600.0,
+      "median_over_T": 1.0,
+      "frac_within_10pct": 0.4866666666666667,
+      "frac_within_25pct": 0.8466666666666667,
+      "p_above_T": 0.48
+    }
+  },
+  "bias": {
+    "point": 0.3986486486486487,
+    "ci_low": 0.29054054054054057,
+    "ci_high": 0.5,
+    "p_favored_above": 0.6756756756756757,
+    "p_favored_below": 0.722972972972973
+  },
+  "ks_vs_baseline": {
+    "above_good": {
+      "D": 0.5351721584598297,
+      "p": 8.510562632279922e-20
+    },
+    "below_good": {
+      "D": 0.5005553498704183,
+      "p": 2.6625764662976588e-17
+    },
+    "threshold_only": {
+      "D": 0.541509607428519,
+      "p": 1.6716245420612175e-20
+    },
+    "coin": {
+      "D": 0.5427397260273972,
+      "p": 1.1486802995020875e-20
+    }
+  }
+}
