@@ -36,6 +36,24 @@ and sycophancy explains only ~19% of it.
 Live caveats: one estimation question only; the anchoring result is thinking-off only and cannot
 be measured thinking-on as set up; trajectory coverage is good-side only.
 
+## Results
+
+Everything lands in `results/`, regenerated from the run JSONs so it cannot drift from the data:
+
+- **`results/RESULTS.md`** — the report, structured by finding, with figures embedded. Start here.
+- `results/results.json` — the same numbers, machine-readable.
+- `results/figures/` — one figure per finding, shared style from `src/qual/figures.py`.
+- `results/snippets.md` — CoT excerpts with full provenance, curated and random kept separate.
+
+```bash
+source env.sh
+python3 runs/analyze_covertness.py --run hour0
+python3 runs/analyze_revision.py   --run hour0
+python3 runs/make_figures.py
+python3 runs/collect_snippets.py
+python3 runs/collect_results.py
+```
+
 ## Environment
 
 `source env.sh` before any GPU work — this pod's r550 driver needs the CUDA-13 forward-compat
