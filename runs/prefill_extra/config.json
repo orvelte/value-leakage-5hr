@@ -1,5 +1,5 @@
 {
-  "git_sha": "c7ae76214b57832a7cb3e93138eb318409a65ba0",
+  "git_sha": "a9a6d493d14a8083b9ec532348b27bbc852267ae",
   "vllm_version": "0.27.1",
   "model_id": "Qwen/Qwen3.5-27B",
   "sampling": {
@@ -8,7 +8,7 @@
     "seed": null,
     "engine_init_seed": 0
   },
-  "wall_clock_utc": "2026-08-29T16:07:37Z",
+  "wall_clock_utc": "2026-08-29T17:42:40Z",
   "phase": "prefill_extra_A3_A4",
   "n_per_cell": 60,
   "threshold": 75000000.0,
