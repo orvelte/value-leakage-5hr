@@ -140,13 +140,6 @@ nothing that "let me think step by step" does not already do. This is the sharp 
 covertness claim: not merely that the CoT is unfaithful, but that the specific sentence
 everybody reads as a denial carries no causal weight at all.
 
-> **SUPERSEDED by Addendum A3+A4 (below). Do not cite this paragraph.** Two things broke it.
-> "Let me think step by step" is itself suppressive, not inert — a contentless "Okay." prefill
-> keeps the full bias at +0.404 — so the denial was being compared against a floor. And once the
-> denial follows an *active* goal it removes most of the effect: +0.444 -> +0.124, against a
-> length-matched control at +0.428 (difference +0.303, p=0.016). The surviving claim is the
-> weaker one: the denial does nothing beyond a neutral opener when there is no goal to remove.
-
 **Verbalizing the goal is sufficient.** The admission prefill restores the full unprefilled
 effect. That is what rescues the experiment from its own confound: prefilling *anything*
 collapses CoT length ~8x (9,046 tokens unprefilled vs 880–1,228 prefilled), and length
