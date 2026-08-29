@@ -1,0 +1,18 @@
+{
+  "git_sha": "12ebd1c29fa3ed1fbb1319efa622cf53e858a62f",
+  "vllm_version": "0.27.1",
+  "model_id": "Qwen/Qwen3.5-27B",
+  "sampling": {
+    "temperature": 1.0,
+    "max_tokens": 16000,
+    "seed": null,
+    "engine_init_seed": 0
+  },
+  "wall_clock_utc": "2026-08-29T21:30:21Z",
+  "phase": "A5_second_question",
+  "task": "turns",
+  "n_per_arm": 150,
+  "n_threshold": 30,
+  "threshold": 1600.0,
+  "max_tokens_no_think": 4096
+}

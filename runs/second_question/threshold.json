@@ -1,0 +1,7 @@
+{
+  "threshold": 1600.0,
+  "question": "turns",
+  "n": 23,
+  "baseline_median": 1645.0,
+  "sig_figs": 2
+}

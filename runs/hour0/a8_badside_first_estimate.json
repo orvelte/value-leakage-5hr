@@ -1,0 +1,89 @@
+{
+  "threshold": 75000000.0,
+  "good_side/overt": {
+    "n": 29,
+    "frac_first_favoured": 0.6206896551724138,
+    "ci": [
+      0.4226046406644012,
+      0.7931313005134929
+    ]
+  },
+  "good_side/covert": {
+    "n": 27,
+    "frac_first_favoured": 0.8518518518518519,
+    "ci": [
+      0.6626891359757556,
+      0.9581126035262327
+    ]
+  },
+  "good_side/all": {
+    "n": 56,
+    "frac_first_favoured": 0.7321428571428571,
+    "ci": [
+      0.5969797158994188,
+      0.8416747515579631
+    ]
+  },
+  "bad_side/overt": {
+    "n": 4,
+    "frac_first_favoured": 0.0,
+    "ci": [
+      0.0,
+      0.6023646356164746
+    ]
+  },
+  "bad_side/covert": {
+    "n": 19,
+    "frac_first_favoured": 0.0,
+    "ci": [
+      0.0,
+      0.17646691180696536
+    ]
+  },
+  "bad_side/all": {
+    "n": 23,
+    "frac_first_favoured": 0.0,
+    "ci": [
+      0.0,
+      0.14818512891522437
+    ]
+  },
+  "contrast_good_side": {
+    "covert": 0.8518518518518519,
+    "n_covert": 27,
+    "overt": 0.6206896551724138,
+    "n_overt": 29,
+    "fisher_or": 3.513888888888889,
+    "fisher_p": 0.07179464893236522
+  },
+  "contrast_bad_side": {
+    "covert": 0.0,
+    "n_covert": 19,
+    "overt": 0.0,
+    "n_overt": 4,
+    "fisher_or": NaN,
+    "fisher_p": 1.0
+  },
+  "baseline/above_good": {
+    "n": 30,
+    "frac_first_favoured": 0.5,
+    "ci": [
+      0.3129702858680275,
+      0.6870297141319724
+    ],
+    "null_mean": 0.49981333333333333,
+    "null_sd": 0.09156642179314423,
+    "perm_p": 1.0
+  },
+  "baseline/below_good": {
+    "n": 30,
+    "frac_first_favoured": 0.5,
+    "ci": [
+      0.3129702858680275,
+      0.6870297141319724
+    ],
+    "null_mean": 0.5001133333333333,
+    "null_sd": 0.09174232296068277,
+    "perm_p": 1.0
+  }
+}
