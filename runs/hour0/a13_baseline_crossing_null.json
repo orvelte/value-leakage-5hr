@@ -1,0 +1,94 @@
+{
+  "threshold": 75000000.0,
+  "n": 30,
+  "transition": {
+    "True->True": 14,
+    "True->False": 1,
+    "False->True": 1,
+    "False->False": 14
+  },
+  "p_end_above_given_start_above": 0.9333333333333333,
+  "p_end_above_given_start_below": 0.06666666666666667,
+  "frac_with_any_crossing": 0.1,
+  "median_crossings": 0.0,
+  "framings": {
+    "above_good": {
+      "favoured": {
+        "n": 15,
+        "k": 14,
+        "p": 0.9333333333333333,
+        "ci": [
+          0.6805154334216967,
+          0.9983135697586473
+        ]
+      },
+      "unfavoured": {
+        "n": 15,
+        "k": 1,
+        "p": 0.06666666666666667,
+        "ci": [
+          0.0016864302413527028,
+          0.3194845665783033
+        ]
+      }
+    },
+    "below_good": {
+      "favoured": {
+        "n": 15,
+        "k": 14,
+        "p": 0.9333333333333333,
+        "ci": [
+          0.6805154334216967,
+          0.9983135697586473
+        ]
+      },
+      "unfavoured": {
+        "n": 15,
+        "k": 1,
+        "p": 0.06666666666666667,
+        "ci": [
+          0.0016864302413527028,
+          0.3194845665783033
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "covert_unfav vs baseline[above_good] (started unfavoured)": {
+      "ref": 0.13043478260869565,
+      "baseline": 0.06666666666666667,
+      "fisher_or": 2.1,
+      "fisher_p": 1.0
+    },
+    "overt_unfav vs baseline[above_good] (started unfavoured)": {
+      "ref": 0.6875,
+      "baseline": 0.06666666666666667,
+      "fisher_or": 30.8,
+      "fisher_p": 0.00063516628782383
+    },
+    "all_fav vs baseline[above_good] (started favoured)": {
+      "ref": 1.0,
+      "baseline": 0.9333333333333333,
+      "fisher_or": Infinity,
+      "fisher_p": 0.26785714285714285
+    },
+    "covert_unfav vs baseline[below_good] (started unfavoured)": {
+      "ref": 0.13043478260869565,
+      "baseline": 0.06666666666666667,
+      "fisher_or": 2.1,
+      "fisher_p": 1.0
+    },
+    "overt_unfav vs baseline[below_good] (started unfavoured)": {
+      "ref": 0.6875,
+      "baseline": 0.06666666666666667,
+      "fisher_or": 30.8,
+      "fisher_p": 0.00063516628782383
+    },
+    "all_fav vs baseline[below_good] (started favoured)": {
+      "ref": 1.0,
+      "baseline": 0.9333333333333333,
+      "fisher_or": Infinity,
+      "fisher_p": 0.26785714285714285
+    }
+  }
+}

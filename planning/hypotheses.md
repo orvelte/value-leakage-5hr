@@ -728,6 +728,61 @@ sentence in the write-up, and it means the trajectory judges were doing cross-li
 on a substantial minority of items.
 
 
+## Addendum A13 — the ratchet's null: unbiased traces almost never cross either (2026-08-29)
+
+A12.1's two striking numbers (41/41 no reversals; covert recovery 0.130) needed the base rate of
+threshold crossing before either could be read. The 30 baseline trajectories, scored under each
+FIXED framing separately — never both at once, which is the vacuous-null construction — give it.
+
+**Framing-free transition matrix (no bet, so no favoured side):**
+
+| | ends >T | ends <=T |
+|---|---|---|
+| **starts >T** | 14 | 1 |
+| **starts <=T** | 1 | 14 |
+
+P(ends >T \| starts >T) = **0.933** [0.681, 0.998]; P(ends >T \| starts <=T) = **0.067**
+[0.002, 0.319]. Only **3/30** baseline traces cross T anywhere in the trace at all (median 0
+crossings). Under either fixed framing this reads as 0.933 favoured-stays and 0.067
+unfavoured-recovers — the two framings are complementary relabelings of the same matrix, not two
+independent tests.
+
+**Comparisons, and they split cleanly:**
+
+| comparison | intervention | baseline | Fisher p |
+|---|---|---|---|
+| started favoured -> ended favoured | **1.000** (41/41) | 0.933 (14/15) | **0.27** |
+| started unfavoured, **covert** | **0.130** (3/23) | 0.067 (1/15) | **1.00** |
+| started unfavoured, **overt** | **0.688** (11/16) | 0.067 (1/15) | **0.0006** |
+
+**Consequence 1 — the ratchet is NOT a demonstrated asymmetry, and the claim must be withdrawn.**
+41/41 looked like a one-way mechanism. Baseline traces reverse just as rarely (14/15, p=0.27).
+Traces of this kind simply do not cross the threshold after their first number, bet or no bet. So
+"nobody who starts favoured ever ends unfavoured" is a property of Fermi traces here, not
+evidence of a ratchet, and it should be reported as the base rate it is. (n=15 gives this
+comparison little power, so this is "not shown to differ", not "shown to be equal" — but it
+cannot be cited as an asymmetry either way.)
+
+**Consequence 2 — the covert bias lives ENTIRELY in the first estimate, and the deniers are
+largely doing what they say.** Covert recovery of 0.130 is indistinguishable from the unbiased
+0.067 (p=1.00). After their first number, covert rollouts behave like traces with no bet at all.
+Their CoT is not visibly doing motivated work; the whole effect is in where the trace starts.
+This is the strongest version yet of the A11 stance-faithfulness point, and it is a real result
+about what "unfaithful CoT" does and does not mean here: for the covert slice, the reasoning
+after the first number appears honest, and the leak is upstream of it.
+
+**Consequence 3 — the overt effect is the anomaly, and it is large and well powered.** Overt
+rollouts that start unfavoured recover 0.688 against a base rate of 0.067 — roughly ten times
+baseline, p=0.0006, the best-powered comparison in the block. H2's search mechanism is
+specifically a property of rollouts that verbalize the goal. It is not the general shape of
+motivated reasoning here; it is what the overt slice does.
+
+**Net effect on the H2 story.** The stopping rule and the directional pull are real, but they
+belong to the overt rollouts. The covert slice reaches the same biased endpoint with a trace that
+is, after its first number, statistically indistinguishable from an unbiased one. "One
+computation, different narration" is now firmly dead: they are two different processes.
+
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -814,6 +869,10 @@ Consequences:
 | 2026-08-29 | **A12.2** within-condition outcome AUC (`runs/a12_within_condition_auc.py`) | above_good **0.625** (rand-dir p=0.42), below_good **0.451** (p=0.71) | The direction carries **condition** info, not **answer** info. "Encoded, not shown to be used" stands. Underpowered: only AUC>~0.79 was detectable. |
 | 2026-08-29 | **A12.3** neutral fresh-seed replication (`runs/a12_neutral_replication.py`) | replication **-0.065** vs original -0.045, difference -0.020 (p=0.89); **pooled -0.056 [-0.198, +0.079]**, n=112/99 | **The null replicates — sentence-specific claim KEPT.** Reverses the A9 "low draw" caution. All contrasts vs pooled neutral now clear Bonferroni. |
 | 2026-08-29 | **A12.4** edge-case hygiene (`runs/a12_edge_hygiene.py`) | zeros touch 2+2 rollouts, move only minimal's stop OR 1.22->1.17 (n.s. either way); **CJK traces 7-37% by arm**; English-only bias pattern unchanged | Zeros cosmetic and already excluded by the outlier filter. The non-English rate is large, does not drive any result, and belongs in the write-up. |
+| 2026-08-29 | **A13** baseline crossing null, 30 trajectories, fixed framings (`runs/a13_baseline_crossing_null.py`) | baseline stays 0.933 (14/15), recovers **0.067** (1/15); only **3/30** cross T anywhere | The null the ratchet needed. |
+| 2026-08-29 | A13 vs A12.1 — the ratchet | 41/41 = 1.000 vs baseline 0.933, **Fisher p=0.27** | **Claim withdrawn.** No-reversal is the base rate for these traces, not an asymmetry. Underpowered (n=15), so "not shown to differ", but it cannot be cited as a ratchet. |
+| 2026-08-29 | A13 vs A12.1 — covert | covert 0.130 vs baseline **0.067, p=1.00** | **The covert bias lives entirely in the first estimate.** After it, covert traces are indistinguishable from unbiased ones — the deniers are largely doing what they say. |
+| 2026-08-29 | A13 vs A12.1 — overt | overt 0.688 vs baseline 0.067, **p=0.0006** | The overt slice is the anomaly, ~10x base rate. **H2's search belongs to rollouts that verbalize the goal**, not to motivated reasoning here generally. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |
