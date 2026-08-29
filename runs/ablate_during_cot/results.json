@@ -1,0 +1,35 @@
+{
+  "layer": 31,
+  "n": 8,
+  "threshold": 75000000.0,
+  "arms": {
+    "none": {
+      "bias": 0.75,
+      "ci_low": 0.375,
+      "ci_high": 1.0,
+      "n_above": 8,
+      "n_below": 8
+    },
+    "random": {
+      "bias": 0.08333333333333326,
+      "ci_low": -0.375,
+      "ci_high": 0.5416666666666665,
+      "n_above": 8,
+      "n_below": 6
+    }
+  },
+  "baseline": {
+    "none": {
+      "n": 8,
+      "median": 105656250.0
+    },
+    "dom": {
+      "n": 8,
+      "median": 3000000.0
+    },
+    "ks_none_vs_dom": {
+      "D": 0.875,
+      "p": 0.002486402486402486
+    }
+  }
+}

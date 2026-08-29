@@ -101,6 +101,22 @@ Residual stream at the token before the final estimate, 79 rollouts, 64 layers.
 
 **Do not read that as "not causal".** The final number already appears verbatim in the CoT in **90%** of rollouts (97% within 5%), so holding the CoT fixed and intervening at the pre-number position tests only the copy step. What it does establish is the caveat the plan flagged for probes: a linear direction can recover the incentive — including where the CoT denies it — without being what the model uses at the point tested. Separating *encoded* from *used* needs an intervention during CoT generation, which was out of budget.
 
+### 9. Ablating the direction during CoT generation: an invalid intervention
+
+The only test upstream of where the answer gets committed. n=8 per cell.
+
+| arm | above-good | below-good | no-bet baseline |
+|---|---|---|---|
+| unablated | 79.5M | 67.3M | **105.7M** |
+| direction projected out | **2.75M** | **4.0M** | **3.0M** |
+| random matched-norm | 84.6M | — | — |
+
+**It fails its own validity check.** Ablation collapses estimates ~25–35×, and it does so in the no-bet baseline too (KS D=0.875, **p=0.002**). The plan's bar was a bias drop with baseline estimates *untouched*; this misses it outright. A random matched-norm direction does none of it.
+
+**The trap:** under ablation the bias is exactly **0.000**, and calling that "ablation removes the bias" would be the most misleading sentence available. It is zero because every estimate lands below the threshold, so above-good can never win (P=0.000) and below-good always does (P=1.000). Both are **pinned, not balanced**.
+
+So the internals stand at: the direction is *decodable* and *destructive*, but not shown to be *used*. Encoded-vs-used remains open, and needs a direction built to be incentive-specific by construction rather than a raw difference of means between conditions whose outputs differ.
+
 ## What died, and what killed it
 
 | claim | verdict | killed by |
@@ -148,6 +164,10 @@ Three designs saturated for the same structural reason, and it is the sprint's m
 ### f8_internals
 
 ![f8_internals](figures/f8_internals.png)
+
+### f9_ablate_during_cot
+
+![f9_ablate_during_cot](figures/f9_ablate_during_cot.png)
 
 ## Standing limitations
 

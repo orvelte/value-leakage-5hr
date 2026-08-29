@@ -227,6 +227,44 @@ being what the model uses at the point of intervention tested. Distinguishing "e
 "used" needs an intervention *upstream of where the number gets committed*, i.e. ablate during
 CoT generation, which was out of budget here.
 
+## During-CoT ablation: an invalid intervention (2026-08-29)
+
+The one test whose position is upstream of where the answer gets committed. Projected the
+layer-31 overt-fitted direction out at every forward pass while the CoT was generated, n=8 per
+cell, against unablated and random-matched-norm controls, plus the no-bet baseline under both.
+
+**It fails its own validity check and cannot be used.** Median estimates:
+
+| arm | above-good | below-good | no-bet baseline |
+|---|---|---|---|
+| unablated | 79.5M | 67.3M | **105.7M** |
+| direction projected out | **2.75M** | **4.0M** | **3.0M** |
+| random matched-norm | 84.6M | — | — |
+
+Ablation collapses estimates ~25-35x, **and it does so in the no-bet baseline too**
+(105.7M -> 3.0M, KS D=0.875, **p=0.002**). The plan's bar was "a bias drop with baseline
+estimates untouched"; this fails it outright. A random direction of matched norm does none of
+it, so the effect is specific to this direction — but "specific" is not "incentive-specific".
+
+**The trap it sets.** Under ablation the bias is exactly **0.000** — and reporting that as
+"ablating the incentive direction removes the bias" would be the single most misleading
+sentence available. It is zero because every estimate lands below the threshold, so above-good
+can *never* win (P=0.000) and below-good *always* does (P=1.000). Both probabilities are
+**pinned**, not balanced.
+
+**What it is not.** Not a magnitude direction in the linear sense: projection onto it correlates
+with log10(final estimate) at r=+0.013 within above-good and +0.025 within below-good (both
+null), and the condition AUC survives regressing out estimate size (0.853 -> 0.829). So it
+carries genuine condition information beyond scale, yet removing it from 33 layers at every step
+wrecks the model's ability to produce a normal-scale number.
+
+**Standing conclusion for the internals block:** the direction is *decodable* (AUC 0.757, and
+0.802 transferring overt->covert) and *destructive* when removed, but nothing here shows it is
+what the model uses to bend the number. Encoded-vs-used remains open. A usable intervention
+needs a direction constructed to be incentive-specific by design — e.g. fitted on the
+contrast that holds magnitude fixed — not a raw difference of means between conditions whose
+outputs differ.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -286,6 +324,8 @@ Consequences:
 | 2026-08-29 | **Internals read** (`runs/internals_extract.py`, `internals_analyze.py`), 79 rollouts x 64 layers | DoM direction CV **AUC 0.757** at layer 31 vs shuffled-label null 0.501±0.079, **p<0.0001**; fitted on overt, tested on covert **AUC 0.802** (random-direction null p=0.010) | The incentive is linearly readable at the pre-number position and is present in rollouts whose CoT denies it. |
 | 2026-08-29 | J-lens concept probes at the same position | layer 62: "above" +0.161 (p=0.010), "below" −0.166 (p=0.002), "threshold" +0.232 (p=0.002), "donate" +0.140 (p=0.008) | The direction of the incentive is in the workspace where the digit is about to be emitted. 20 tests; "above" (L40/48/56) and "threshold" (L62) survive Bonferroni. |
 | 2026-08-29 | **Ablation** (`runs/internals_ablate.py`), CoT fixed, answer regenerated | unablated +0.405, DoM-ablated **+0.462**, random-ablated +0.419 — all overlapping, 100% parse | **Weak null.** The final number is already verbatim in the CoT in 90% of rollouts, so this tests the copy step, not the choice. |
+| 2026-08-29 | **Ablation during CoT generation** (`runs/ablate_during_cot.py`), n=8/cell | estimates collapse ~25-35x in ALL arms including the no-bet baseline (105.7M→3.0M, KS p=0.002); random direction unaffected | **Invalid intervention.** Fails the "baseline untouched" bar. The bias of 0.000 is pinned (P=0/P=1), not balanced. Encoded-vs-used still open. |
+| 2026-08-29 | Is the direction a magnitude direction? | r=+0.013 / +0.025 with log10(estimate) within condition; condition AUC 0.853→0.829 after regressing estimate out | No — it carries condition info beyond scale. But removing it still wrecks scale. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |

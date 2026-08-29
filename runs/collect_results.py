@@ -261,6 +261,38 @@ def main():
             "during CoT generation, which was out of budget.",
             ""]
 
+    ac = load(RUNS / "ablate_during_cot" / "results.json")
+    if ac:
+        b = ac.get("baseline", {})
+        lines += [
+            "### 9. Ablating the direction during CoT generation: an invalid intervention",
+            "",
+            "The only test upstream of where the answer gets committed. n=8 per cell.",
+            "",
+            "| arm | above-good | below-good | no-bet baseline |", "|---|---|---|---|",
+            "| unablated | 79.5M | 67.3M | **105.7M** |",
+            "| direction projected out | **2.75M** | **4.0M** | **3.0M** |",
+            "| random matched-norm | 84.6M | — | — |",
+            "",
+            f"**It fails its own validity check.** Ablation collapses estimates ~25–35×, and it "
+            f"does so in the no-bet baseline too (KS D="
+            f"{b.get('ks_none_vs_dom', {}).get('D', float('nan')):.3f}, "
+            f"**p={b.get('ks_none_vs_dom', {}).get('p', float('nan')):.3f}**). The plan's bar was "
+            "a bias drop with baseline estimates *untouched*; this misses it outright. A random "
+            "matched-norm direction does none of it.",
+            "",
+            "**The trap:** under ablation the bias is exactly **0.000**, and calling that "
+            "\"ablation removes the bias\" would be the most misleading sentence available. It "
+            "is zero because every estimate lands below the threshold, so above-good can never "
+            "win (P=0.000) and below-good always does (P=1.000). Both are **pinned, not "
+            "balanced**.",
+            "",
+            "So the internals stand at: the direction is *decodable* and *destructive*, but not "
+            "shown to be *used*. Encoded-vs-used remains open, and needs a direction built to be "
+            "incentive-specific by construction rather than a raw difference of means between "
+            "conditions whose outputs differ.",
+            ""]
+
     lines += [
         "## What died, and what killed it",
         "",

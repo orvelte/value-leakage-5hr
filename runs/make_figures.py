@@ -525,6 +525,80 @@ def fig_internals():
 
 
 
+# ---------------------------------------------------------------- F9: during-CoT ablation
+def fig_ablate_cot():
+    """A failed intervention, plotted as one. The headline is the validity check, not the bias."""
+    import statistics as st
+    T = json.load(open(RUNS / "hour0" / "threshold.json"))["threshold"]
+    base = RUNS / "ablate_during_cot" / "raw"
+
+    def vals(cond, arm):
+        f = base / f"{cond}_{arm}.jsonl"
+        if not f.exists():
+            return []
+        return [json.loads(l)["estimate"] for l in open(f)
+                if json.loads(l)["estimate"] is not None]
+
+    fig, (axA, axB) = F.new_fig(12.6, 5.0, n_axes=2, width_ratios=[1.35, 1.0], wspace=0.32,
+                                left=0.18, right=0.965, top=0.625, bottom=0.155)
+
+    series = [("no-bet baseline, unablated", "baseline", "none", F.GRAY),
+              ("no-bet baseline, ABLATED", "baseline", "dom", F.ORANGE),
+              ("above-good, unablated", "above_good", "none", F.GRAY),
+              ("above-good, ABLATED", "above_good", "dom", F.ORANGE),
+              ("above-good, random direction", "above_good", "random", F.BLUE)]
+    rng = np.random.default_rng(4)
+    for row, (lab, cond, arm, c) in enumerate(series):
+        v = vals(cond, arm)
+        if not v:
+            continue
+        y = len(series) - 1 - row
+        axA.scatter(v, y + rng.uniform(-0.15, 0.15, size=len(v)), s=44, color=c, alpha=0.7,
+                    edgecolors=F.SURFACE, linewidths=1.2, zorder=3)
+        med = float(st.median(v))
+        axA.plot([med, med], [y - 0.27, y + 0.27], color=c, lw=2.4, zorder=4)
+        axA.annotate(F.human(med), (med, y + 0.31), ha="center", va="bottom", fontsize=9,
+                     color=F.INK, fontweight="semibold", zorder=6,
+                     bbox=dict(boxstyle="round,pad=0.16", facecolor=F.SURFACE, edgecolor="none"))
+    axA.axvline(T, color=F.INK_2, lw=1.4, ls=(0, (5, 3)), zorder=2)
+    axA.annotate(f"threshold {F.human(T)}", (T, len(series) - 0.38), ha="center", va="bottom",
+                 fontsize=9, color=F.INK_2, zorder=6,
+                 bbox=dict(boxstyle="round,pad=0.2", facecolor=F.SURFACE, edgecolor="none"))
+    F.log_x(axA, 2e4, 2e9)
+    axA.set_ylim(-0.55, len(series) - 0.1)
+    axA.set_yticks(range(len(series)))
+    axA.set_yticklabels([s2[0] for s2 in series][::-1], fontsize=9, color=F.INK)
+    axA.set_xlabel("estimate (log)", fontsize=9.5, color=F.INK_2, labelpad=7)
+    F.panel_title(axA, "A.  Ablation crushes every estimate — bet or no bet")
+
+    p_ab = sum(1 for v in vals("above_good", "dom") if v > T) / max(1, len(vals("above_good", "dom")))
+    p_be = sum(1 for v in vals("below_good", "dom") if v <= T) / max(1, len(vals("below_good", "dom")))
+    for i, (lab, p, c) in enumerate([("above-good\nP(favoured)", p_ab, F.BLUE),
+                                     ("below-good\nP(favoured)", p_be, F.ORANGE)]):
+        y = 1 - i
+        axB.barh(y, p, height=0.34, color=c, zorder=3)
+        axB.annotate(f"{p:.3f}", (p + 0.03, y), va="center", fontsize=11, color=F.INK,
+                     fontweight="semibold")
+    axB.axvline(0.5, color=F.INK_2, lw=1.4, zorder=5)
+    axB.annotate("0.5", (0.5, 1.5), ha="center", va="bottom", fontsize=9, color=F.INK_2)
+    axB.set_xlim(0, 1.22); axB.set_ylim(-0.55, 1.8)
+    axB.set_yticks([1, 0]); axB.set_yticklabels(["above-good", "below-good"], fontsize=9.5,
+                                                color=F.INK)
+    axB.set_xlabel("P(favoured) under ablation", fontsize=9.5, color=F.INK_2, labelpad=7)
+    axB.annotate("bias = 0.000 — but PINNED,\nnot balanced", (0.60, -0.36), fontsize=9.5,
+                 color=F.INK, fontweight="semibold", ha="center")
+    F.panel_title(axB, "B.  \"Bias removed\" is an artefact")
+
+    F.title_block(fig, "Ablating the direction during CoT generation: an invalid intervention",
+                  "n=8 per cell. Projecting the layer-31 difference-of-means direction out at every forward pass collapses estimates ~25–35×, and it does so in\n"
+                  "the NO-BET baseline too (105.7M → 3.0M, KS D=0.875, p=0.002). The direction is therefore not incentive-specific, and it fails the plan's own bar:\n"
+                  "a bias drop with baseline estimates untouched. The resulting bias of exactly 0.000 comes from every estimate landing below the threshold, so\n"
+                  "above-good can never win and below-good always does. A random matched-norm direction does none of this.",
+                  x=0.18, y_title=0.955, y_sub=0.885)
+    F.save(fig, OUT / "f9_ablate_during_cot.png")
+
+
+
 if __name__ == "__main__":
     print("regenerating figures ->", OUT)
     fig_thinking(); fig_framing(); fig_revision(); fig_covertness()
@@ -534,4 +608,6 @@ if __name__ == "__main__":
         fig_resample()
     if (RUNS / "internals" / "ablation.json").exists():
         fig_internals()
+    if (RUNS / "ablate_during_cot" / "results.json").exists():
+        fig_ablate_cot()
     print("done")
