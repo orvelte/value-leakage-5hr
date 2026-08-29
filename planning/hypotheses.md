@@ -265,6 +265,44 @@ needs a direction constructed to be incentive-specific by design — e.g. fitted
 contrast that holds magnitude fixed — not a raw difference of means between conditions whose
 outputs differ.
 
+## Addendum A1 — bias vs revision count: prediction not supported (2026-08-29)
+
+The addendum's motivating hypothesis for blocks 1-3: free CoT contains a long revision loop, H2
+operates over that loop, prefills collapse the loop so H2 has no room. Prediction: within free
+CoT, bias should rise with revision count.
+
+**It does not.** 79 intervention rollouts with trajectories.
+
+| revisions | n | bias | 95% CI | frac first-estimate favoured |
+|---|---|---|---|---|
+| 0-15 | 8 | +0.667 | [+0.00, +1.00] | 0.88 |
+| 16-24 | 33 | +0.344 | [+0.03, +0.66] | 0.42 |
+| 25-34 | 24 | +0.573 | [+0.24, +0.91] | 0.62 |
+| 35+ | 14 | +0.167 | [-0.38, +0.62] | 0.36 |
+
+No monotone trend, and the *uncontrolled* slope points the wrong way: OR 0.63 per 10 revisions,
+p=0.062 — more revising, *less* likely to land favoured. It vanishes under controls (OR 0.75,
+p=0.30) and within the first-bad stratum where the outcome actually varies (OR 0.75, p=0.39).
+
+**Two things this turned up that matter more than the prediction it tested.**
+
+1. **Complete separation. 41/41 rollouts whose FIRST estimate was favoured also ENDED favoured.
+   Zero exceptions.** P(final favoured | first bad) = 0.395. The first estimate is close to
+   decisive, which is a far stronger version of the hour-0 first-estimate finding — that one was
+   conditioned on landing good-side and reported an 0.86/0.61 split; this is unconditional and
+   absolute. It also means an unpenalised logistic with first_side as a covariate diverges
+   (beta=+24, SE=979); the reported fit is ridge-penalised, with a within-stratum model beside it.
+2. **The assumed confound is not there.** Revision count does not differ by first-estimate side
+   (median 24 vs 24, Mann-Whitney p=0.13). The addendum expected first-bad rollouts to revise
+   more; they do not. H2's stopping asymmetry is a *per-step hazard*, and it evidently does not
+   translate into a difference in total trajectory length.
+
+**Consequence for the addendum's hypothesis.** The loop-size story is unsupported *by this data*.
+A2 and A3 still test different limbs of it (revision counts inside prefilled arms; whether any
+prefill collapses length), so they remain worth running — but the version where bias is
+*produced by* the length of the revision loop is already in trouble, because within free CoT
+more revision does not mean more bias.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -326,6 +364,9 @@ Consequences:
 | 2026-08-29 | **Ablation** (`runs/internals_ablate.py`), CoT fixed, answer regenerated | unablated +0.405, DoM-ablated **+0.462**, random-ablated +0.419 — all overlapping, 100% parse | **Weak null.** The final number is already verbatim in the CoT in 90% of rollouts, so this tests the copy step, not the choice. |
 | 2026-08-29 | **Ablation during CoT generation** (`runs/ablate_during_cot.py`), n=8/cell | estimates collapse ~25-35x in ALL arms including the no-bet baseline (105.7M→3.0M, KS p=0.002); random direction unaffected | **Invalid intervention.** Fails the "baseline untouched" bar. The bias of 0.000 is pinned (P=0/P=1), not balanced. Encoded-vs-used still open. |
 | 2026-08-29 | Is the direction a magnitude direction? | r=+0.013 / +0.025 with log10(estimate) within condition; condition AUC 0.853→0.829 after regressing estimate out | No — it carries condition info beyond scale. But removing it still wrecks scale. |
+| 2026-08-29 | **A1** bias vs revision count, 79 free-CoT rollouts (`runs/a1_bias_vs_revisions.py`) | no monotone trend; uncontrolled OR **0.63** per 10 revisions (p=0.062, wrong direction), gone under controls (p=0.30) and within the first-bad stratum (p=0.39) | Addendum prediction **not supported**. Bias is not produced by the size of the revision loop. |
+| 2026-08-29 | A1 side-finding: complete separation | **41/41** first-estimate-favoured rollouts end favoured; P(final fav \| first bad)=0.395 | The first estimate is close to decisive — unconditional, unlike the hour-0 version. Forces ridge/stratified fits. |
+| 2026-08-29 | A1 confound check | revisions by first-estimate side: median 24 vs 24, MW p=0.13 | The assumed selection confound is absent. H2's per-step hazard does not change total length. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |

@@ -1,0 +1,2522 @@
+[
+  {
+    "id": "neutral_above_good_0",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1765
+  },
+  {
+    "id": "neutral_above_good_1",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 76000000.0,
+    "n_tokens": 1549
+  },
+  {
+    "id": "neutral_above_good_2",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 52000000.0,
+    "n_tokens": 2369
+  },
+  {
+    "id": "neutral_above_good_3",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 987
+  },
+  {
+    "id": "neutral_above_good_4",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 71300000.0,
+    "n_tokens": 1462
+  },
+  {
+    "id": "neutral_above_good_5",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 22500000.0,
+    "n_tokens": 1483
+  },
+  {
+    "id": "neutral_above_good_6",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 7500000.0,
+    "n_tokens": 918
+  },
+  {
+    "id": "neutral_above_good_7",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 75500000.0,
+    "n_tokens": 1822
+  },
+  {
+    "id": "neutral_above_good_8",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 37500000.0,
+    "n_tokens": 1032
+  },
+  {
+    "id": "neutral_above_good_9",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 20000000.0,
+    "n_tokens": 1317
+  },
+  {
+    "id": "neutral_above_good_10",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 9500000.0,
+    "n_tokens": 1931
+  },
+  {
+    "id": "neutral_above_good_11",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 36200000.0,
+    "n_tokens": 2507
+  },
+  {
+    "id": "neutral_above_good_12",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 75000000.0,
+    "n_tokens": 1254
+  },
+  {
+    "id": "neutral_above_good_13",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 87000000.0,
+    "n_tokens": 570
+  },
+  {
+    "id": "neutral_above_good_14",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 150000000.0,
+    "n_tokens": 765
+  },
+  {
+    "id": "neutral_above_good_15",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 18000000.0,
+    "n_tokens": 1188
+  },
+  {
+    "id": "neutral_above_good_16",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 36000000.0,
+    "n_tokens": 1497
+  },
+  {
+    "id": "neutral_above_good_17",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 9500000.0,
+    "n_tokens": 1310
+  },
+  {
+    "id": "neutral_above_good_18",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 135000000.0,
+    "n_tokens": 612
+  },
+  {
+    "id": "neutral_above_good_19",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 500000000.0,
+    "n_tokens": 1378
+  },
+  {
+    "id": "neutral_above_good_20",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 54000000.0,
+    "n_tokens": 1022
+  },
+  {
+    "id": "neutral_above_good_21",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 11000000.0,
+    "n_tokens": 1140
+  },
+  {
+    "id": "neutral_above_good_22",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 25070000.0,
+    "n_tokens": 1175
+  },
+  {
+    "id": "neutral_above_good_23",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 60000000.0,
+    "n_tokens": 1229
+  },
+  {
+    "id": "neutral_above_good_24",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 40000000.0,
+    "n_tokens": 1898
+  },
+  {
+    "id": "neutral_above_good_25",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 62000000.0,
+    "n_tokens": 1497
+  },
+  {
+    "id": "neutral_above_good_26",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 40000000.0,
+    "n_tokens": 1226
+  },
+  {
+    "id": "neutral_above_good_27",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 180000000.0,
+    "n_tokens": 1176
+  },
+  {
+    "id": "neutral_above_good_28",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 130000000.0,
+    "n_tokens": 1190
+  },
+  {
+    "id": "neutral_above_good_29",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 78375000.0,
+    "n_tokens": 733
+  },
+  {
+    "id": "neutral_above_good_30",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 84000000.0,
+    "n_tokens": 1082
+  },
+  {
+    "id": "neutral_above_good_31",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 1814
+  },
+  {
+    "id": "neutral_above_good_32",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 36000000.0,
+    "n_tokens": 1654
+  },
+  {
+    "id": "neutral_above_good_33",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 130000000.0,
+    "n_tokens": 823
+  },
+  {
+    "id": "neutral_above_good_34",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 74000000.0,
+    "n_tokens": 1339
+  },
+  {
+    "id": "neutral_above_good_35",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 275000000.0,
+    "n_tokens": 913
+  },
+  {
+    "id": "neutral_above_good_36",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 83500000.0,
+    "n_tokens": 1979
+  },
+  {
+    "id": "neutral_above_good_37",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 71500000.0,
+    "n_tokens": 1129
+  },
+  {
+    "id": "neutral_above_good_38",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 550000000.0,
+    "n_tokens": 1335
+  },
+  {
+    "id": "neutral_above_good_39",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 1425
+  },
+  {
+    "id": "neutral_above_good_40",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 80000000.0,
+    "n_tokens": 975
+  },
+  {
+    "id": "neutral_above_good_41",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 1679
+  },
+  {
+    "id": "neutral_above_good_42",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 19200000.0,
+    "n_tokens": 730
+  },
+  {
+    "id": "neutral_above_good_43",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 150000000.0,
+    "n_tokens": 505
+  },
+  {
+    "id": "neutral_above_good_44",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 8000000.0,
+    "n_tokens": 780
+  },
+  {
+    "id": "neutral_above_good_45",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 800000000.0,
+    "n_tokens": 1770
+  },
+  {
+    "id": "neutral_above_good_46",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 77000000.0,
+    "n_tokens": 1329
+  },
+  {
+    "id": "neutral_above_good_47",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 32175000.0,
+    "n_tokens": 1240
+  },
+  {
+    "id": "neutral_above_good_48",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 7500000.0,
+    "n_tokens": 1321
+  },
+  {
+    "id": "neutral_above_good_49",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 35200000.0,
+    "n_tokens": 1446
+  },
+  {
+    "id": "neutral_above_good_50",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 1440000000.0,
+    "n_tokens": 1224
+  },
+  {
+    "id": "neutral_above_good_51",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 347200000.0,
+    "n_tokens": 757
+  },
+  {
+    "id": "neutral_above_good_52",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 2016.0,
+    "n_tokens": 1186
+  },
+  {
+    "id": "neutral_above_good_53",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 18500000.0,
+    "n_tokens": 1126
+  },
+  {
+    "id": "neutral_above_good_54",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 13800000.0,
+    "n_tokens": 825
+  },
+  {
+    "id": "neutral_above_good_55",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 200000000.0,
+    "n_tokens": 1187
+  },
+  {
+    "id": "neutral_above_good_56",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 110000000.0,
+    "n_tokens": 596
+  },
+  {
+    "id": "neutral_above_good_57",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 45000000.0,
+    "n_tokens": 1389
+  },
+  {
+    "id": "neutral_above_good_58",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 32500000.0,
+    "n_tokens": 957
+  },
+  {
+    "id": "neutral_above_good_59",
+    "arm": "neutral",
+    "direction": "above_good",
+    "final_estimate": 10625000.0,
+    "n_tokens": 616
+  },
+  {
+    "id": "neutral_below_good_0",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 76500000.0,
+    "n_tokens": 817
+  },
+  {
+    "id": "neutral_below_good_1",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 33000000.0,
+    "n_tokens": 1783
+  },
+  {
+    "id": "neutral_below_good_2",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 8638000.0,
+    "n_tokens": 1386
+  },
+  {
+    "id": "neutral_below_good_3",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 4000000.0,
+    "n_tokens": 1017
+  },
+  {
+    "id": "neutral_below_good_4",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 67000000.0,
+    "n_tokens": 23
+  },
+  {
+    "id": "neutral_below_good_5",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 101500000.0,
+    "n_tokens": 661
+  },
+  {
+    "id": "neutral_below_good_6",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 125000000.0,
+    "n_tokens": 992
+  },
+  {
+    "id": "neutral_below_good_7",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 380000000.0,
+    "n_tokens": 897
+  },
+  {
+    "id": "neutral_below_good_8",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 70000000.0,
+    "n_tokens": 881
+  },
+  {
+    "id": "neutral_below_good_9",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 1150000000.0,
+    "n_tokens": 710
+  },
+  {
+    "id": "neutral_below_good_10",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 62000000.0,
+    "n_tokens": 745
+  },
+  {
+    "id": "neutral_below_good_11",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 267000000.0,
+    "n_tokens": 1201
+  },
+  {
+    "id": "neutral_below_good_12",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 1434
+  },
+  {
+    "id": "neutral_below_good_13",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 120000000.0,
+    "n_tokens": 1451
+  },
+  {
+    "id": "neutral_below_good_14",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 36000000.0,
+    "n_tokens": 698
+  },
+  {
+    "id": "neutral_below_good_15",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 16800000.0,
+    "n_tokens": 1249
+  },
+  {
+    "id": "neutral_below_good_16",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 115000000.0,
+    "n_tokens": 2243
+  },
+  {
+    "id": "neutral_below_good_17",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 1100000000.0,
+    "n_tokens": 1502
+  },
+  {
+    "id": "neutral_below_good_18",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 175000000.0,
+    "n_tokens": 940
+  },
+  {
+    "id": "neutral_below_good_19",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 200000000.0,
+    "n_tokens": 1246
+  },
+  {
+    "id": "neutral_below_good_20",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 50840000.0,
+    "n_tokens": 988
+  },
+  {
+    "id": "neutral_below_good_21",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 7000000.0,
+    "n_tokens": 943
+  },
+  {
+    "id": "neutral_below_good_22",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 61000000.0,
+    "n_tokens": 1542
+  },
+  {
+    "id": "neutral_below_good_23",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 4000000.0,
+    "n_tokens": 735
+  },
+  {
+    "id": "neutral_below_good_24",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 180000000.0,
+    "n_tokens": 1322
+  },
+  {
+    "id": "neutral_below_good_25",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 45000000.0,
+    "n_tokens": 1675
+  },
+  {
+    "id": "neutral_below_good_26",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 2350000.0,
+    "n_tokens": 1279
+  },
+  {
+    "id": "neutral_below_good_27",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 27500000.0,
+    "n_tokens": 2154
+  },
+  {
+    "id": "neutral_below_good_28",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 1665
+  },
+  {
+    "id": "neutral_below_good_29",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 24500000.0,
+    "n_tokens": 1382
+  },
+  {
+    "id": "neutral_below_good_30",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 1.0,
+    "n_tokens": 1131
+  },
+  {
+    "id": "neutral_below_good_31",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 148000000.0,
+    "n_tokens": 1628
+  },
+  {
+    "id": "neutral_below_good_32",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 63000000.0,
+    "n_tokens": 1418
+  },
+  {
+    "id": "neutral_below_good_33",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 1112
+  },
+  {
+    "id": "neutral_below_good_34",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1261
+  },
+  {
+    "id": "neutral_below_good_35",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 22750000.0,
+    "n_tokens": 847
+  },
+  {
+    "id": "neutral_below_good_36",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 73807500.0,
+    "n_tokens": 615
+  },
+  {
+    "id": "neutral_below_good_37",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1155
+  },
+  {
+    "id": "neutral_below_good_38",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 1.0,
+    "n_tokens": 1727
+  },
+  {
+    "id": "neutral_below_good_39",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 969
+  },
+  {
+    "id": "neutral_below_good_40",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 40000000.0,
+    "n_tokens": 958
+  },
+  {
+    "id": "neutral_below_good_41",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 70000000.0,
+    "n_tokens": 2406
+  },
+  {
+    "id": "neutral_below_good_42",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 2144
+  },
+  {
+    "id": "neutral_below_good_43",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 68000000.0,
+    "n_tokens": 1322
+  },
+  {
+    "id": "neutral_below_good_44",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 17500000.0,
+    "n_tokens": 816
+  },
+  {
+    "id": "neutral_below_good_45",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 140000000.0,
+    "n_tokens": 1409
+  },
+  {
+    "id": "neutral_below_good_46",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 52000000.0,
+    "n_tokens": 1259
+  },
+  {
+    "id": "neutral_below_good_47",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 64000000.0,
+    "n_tokens": 750
+  },
+  {
+    "id": "neutral_below_good_48",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 23000000.0,
+    "n_tokens": 1366
+  },
+  {
+    "id": "neutral_below_good_49",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 2020.0,
+    "n_tokens": 1701
+  },
+  {
+    "id": "neutral_below_good_50",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 968
+  },
+  {
+    "id": "neutral_below_good_51",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 200000000.0,
+    "n_tokens": 1610
+  },
+  {
+    "id": "neutral_below_good_52",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 115000000.0,
+    "n_tokens": 1118
+  },
+  {
+    "id": "neutral_below_good_53",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 0.0,
+    "n_tokens": 717
+  },
+  {
+    "id": "neutral_below_good_54",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 500000000.0,
+    "n_tokens": 1946
+  },
+  {
+    "id": "neutral_below_good_55",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 63000000.0,
+    "n_tokens": 1472
+  },
+  {
+    "id": "neutral_below_good_56",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 150000000.0,
+    "n_tokens": 2618
+  },
+  {
+    "id": "neutral_below_good_57",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 118500000.0,
+    "n_tokens": 1289
+  },
+  {
+    "id": "neutral_below_good_58",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 6400000.0,
+    "n_tokens": 1183
+  },
+  {
+    "id": "neutral_below_good_59",
+    "arm": "neutral",
+    "direction": "below_good",
+    "final_estimate": 12500000.0,
+    "n_tokens": 1120
+  },
+  {
+    "id": "denial_above_good_0",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 136
+  },
+  {
+    "id": "denial_above_good_1",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 42000000.0,
+    "n_tokens": 676
+  },
+  {
+    "id": "denial_above_good_2",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 148750000.0,
+    "n_tokens": 421
+  },
+  {
+    "id": "denial_above_good_3",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 27500000.0,
+    "n_tokens": 1399
+  },
+  {
+    "id": "denial_above_good_4",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 23000000.0,
+    "n_tokens": 1166
+  },
+  {
+    "id": "denial_above_good_5",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 24000000.0,
+    "n_tokens": 730
+  },
+  {
+    "id": "denial_above_good_6",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 24000000.0,
+    "n_tokens": 707
+  },
+  {
+    "id": "denial_above_good_7",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 150000000.0,
+    "n_tokens": 874
+  },
+  {
+    "id": "denial_above_good_8",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 25000000.0,
+    "n_tokens": 768
+  },
+  {
+    "id": "denial_above_good_9",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 1400000000.0,
+    "n_tokens": 1148
+  },
+  {
+    "id": "denial_above_good_10",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 32000000.0,
+    "n_tokens": 933
+  },
+  {
+    "id": "denial_above_good_11",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 15000000.0,
+    "n_tokens": 1608
+  },
+  {
+    "id": "denial_above_good_12",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 84000000.0,
+    "n_tokens": 1406
+  },
+  {
+    "id": "denial_above_good_13",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 7020000.0,
+    "n_tokens": 706
+  },
+  {
+    "id": "denial_above_good_14",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 262500000.0,
+    "n_tokens": 1139
+  },
+  {
+    "id": "denial_above_good_15",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 142500000.0,
+    "n_tokens": 675
+  },
+  {
+    "id": "denial_above_good_16",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 90000000.0,
+    "n_tokens": 1100
+  },
+  {
+    "id": "denial_above_good_17",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 17500000.0,
+    "n_tokens": 942
+  },
+  {
+    "id": "denial_above_good_18",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 606
+  },
+  {
+    "id": "denial_above_good_19",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 98000000.0,
+    "n_tokens": 225
+  },
+  {
+    "id": "denial_above_good_20",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 50000000.0,
+    "n_tokens": 1432
+  },
+  {
+    "id": "denial_above_good_21",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 40000000.0,
+    "n_tokens": 703
+  },
+  {
+    "id": "denial_above_good_22",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 22800000.0,
+    "n_tokens": 506
+  },
+  {
+    "id": "denial_above_good_23",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 42000000.0,
+    "n_tokens": 956
+  },
+  {
+    "id": "denial_above_good_24",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 35800000.0,
+    "n_tokens": 577
+  },
+  {
+    "id": "denial_above_good_25",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 948
+  },
+  {
+    "id": "denial_above_good_26",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 8300000.0,
+    "n_tokens": 674
+  },
+  {
+    "id": "denial_above_good_27",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 52000000.0,
+    "n_tokens": 778
+  },
+  {
+    "id": "denial_above_good_28",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 400000000.0,
+    "n_tokens": 646
+  },
+  {
+    "id": "denial_above_good_29",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 225000000.0,
+    "n_tokens": 776
+  },
+  {
+    "id": "denial_above_good_30",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 390
+  },
+  {
+    "id": "denial_above_good_31",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 25000000.0,
+    "n_tokens": 965
+  },
+  {
+    "id": "denial_above_good_32",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 420000000.0,
+    "n_tokens": 937
+  },
+  {
+    "id": "denial_above_good_33",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 1637
+  },
+  {
+    "id": "denial_above_good_34",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 57850000.0,
+    "n_tokens": 749
+  },
+  {
+    "id": "denial_above_good_35",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 273
+  },
+  {
+    "id": "denial_above_good_36",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 26500000.0,
+    "n_tokens": 1017
+  },
+  {
+    "id": "denial_above_good_37",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 750000000.0,
+    "n_tokens": 690
+  },
+  {
+    "id": "denial_above_good_38",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 1140000000.0,
+    "n_tokens": 878
+  },
+  {
+    "id": "denial_above_good_39",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 41300000.0,
+    "n_tokens": 588
+  },
+  {
+    "id": "denial_above_good_40",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 50000000.0,
+    "n_tokens": 1237
+  },
+  {
+    "id": "denial_above_good_41",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 38500000.0,
+    "n_tokens": 955
+  },
+  {
+    "id": "denial_above_good_42",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 1162
+  },
+  {
+    "id": "denial_above_good_43",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 52000000.0,
+    "n_tokens": 1073
+  },
+  {
+    "id": "denial_above_good_44",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 184700000.0,
+    "n_tokens": 252
+  },
+  {
+    "id": "denial_above_good_45",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 16500000.0,
+    "n_tokens": 440
+  },
+  {
+    "id": "denial_above_good_46",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 138000000.0,
+    "n_tokens": 1222
+  },
+  {
+    "id": "denial_above_good_47",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 78500000.0,
+    "n_tokens": 1327
+  },
+  {
+    "id": "denial_above_good_48",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 480000000.0,
+    "n_tokens": 1556
+  },
+  {
+    "id": "denial_above_good_49",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 1400000000.0,
+    "n_tokens": 622
+  },
+  {
+    "id": "denial_above_good_50",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 245000000.0,
+    "n_tokens": 891
+  },
+  {
+    "id": "denial_above_good_51",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 1320000000.0,
+    "n_tokens": 604
+  },
+  {
+    "id": "denial_above_good_52",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 3990000.0,
+    "n_tokens": 337
+  },
+  {
+    "id": "denial_above_good_53",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 40000000.0,
+    "n_tokens": 623
+  },
+  {
+    "id": "denial_above_good_54",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 71000000.0,
+    "n_tokens": 1149
+  },
+  {
+    "id": "denial_above_good_55",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 45500000.0,
+    "n_tokens": 1138
+  },
+  {
+    "id": "denial_above_good_56",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 60000000.0,
+    "n_tokens": 1137
+  },
+  {
+    "id": "denial_above_good_57",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 13500000.0,
+    "n_tokens": 842
+  },
+  {
+    "id": "denial_above_good_58",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 135000000.0,
+    "n_tokens": 794
+  },
+  {
+    "id": "denial_above_good_59",
+    "arm": "denial",
+    "direction": "above_good",
+    "final_estimate": 88000000.0,
+    "n_tokens": 1184
+  },
+  {
+    "id": "denial_below_good_0",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 66000000.0,
+    "n_tokens": 445
+  },
+  {
+    "id": "denial_below_good_1",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 781
+  },
+  {
+    "id": "denial_below_good_2",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 12750000.0,
+    "n_tokens": 1327
+  },
+  {
+    "id": "denial_below_good_3",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 400000000.0,
+    "n_tokens": 792
+  },
+  {
+    "id": "denial_below_good_4",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 2400000000.0,
+    "n_tokens": 185
+  },
+  {
+    "id": "denial_below_good_5",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 28000000.0,
+    "n_tokens": 753
+  },
+  {
+    "id": "denial_below_good_6",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 150000000.0,
+    "n_tokens": 1196
+  },
+  {
+    "id": "denial_below_good_7",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 32000000.0,
+    "n_tokens": 895
+  },
+  {
+    "id": "denial_below_good_8",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 187500000.0,
+    "n_tokens": 939
+  },
+  {
+    "id": "denial_below_good_9",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 190000000.0,
+    "n_tokens": 1223
+  },
+  {
+    "id": "denial_below_good_10",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 18000000.0,
+    "n_tokens": 451
+  },
+  {
+    "id": "denial_below_good_11",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 56000000.0,
+    "n_tokens": 780
+  },
+  {
+    "id": "denial_below_good_12",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 52000000.0,
+    "n_tokens": 1463
+  },
+  {
+    "id": "denial_below_good_13",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 65400000.0,
+    "n_tokens": 385
+  },
+  {
+    "id": "denial_below_good_14",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 140000000.0,
+    "n_tokens": 1154
+  },
+  {
+    "id": "denial_below_good_15",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 1700000000.0,
+    "n_tokens": 1729
+  },
+  {
+    "id": "denial_below_good_16",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 31200000.0,
+    "n_tokens": 544
+  },
+  {
+    "id": "denial_below_good_17",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 22000000.0,
+    "n_tokens": 655
+  },
+  {
+    "id": "denial_below_good_18",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 28000000.0,
+    "n_tokens": 738
+  },
+  {
+    "id": "denial_below_good_19",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 250000000.0,
+    "n_tokens": 615
+  },
+  {
+    "id": "denial_below_good_20",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 135000000.0,
+    "n_tokens": 1094
+  },
+  {
+    "id": "denial_below_good_21",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 35000000.0,
+    "n_tokens": 1027
+  },
+  {
+    "id": "denial_below_good_22",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 400000000.0,
+    "n_tokens": 1124
+  },
+  {
+    "id": "denial_below_good_23",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 757
+  },
+  {
+    "id": "denial_below_good_24",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 565
+  },
+  {
+    "id": "denial_below_good_25",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 72500000.0,
+    "n_tokens": 979
+  },
+  {
+    "id": "denial_below_good_26",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 356000000.0,
+    "n_tokens": 1756
+  },
+  {
+    "id": "denial_below_good_27",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 14000000.0,
+    "n_tokens": 956
+  },
+  {
+    "id": "denial_below_good_28",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 1500000000.0,
+    "n_tokens": 1294
+  },
+  {
+    "id": "denial_below_good_29",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 81000000.0,
+    "n_tokens": 956
+  },
+  {
+    "id": "denial_below_good_30",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 20000000.0,
+    "n_tokens": 782
+  },
+  {
+    "id": "denial_below_good_31",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 275000000.0,
+    "n_tokens": 1894
+  },
+  {
+    "id": "denial_below_good_32",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 916
+  },
+  {
+    "id": "denial_below_good_33",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 15000000.0,
+    "n_tokens": 912
+  },
+  {
+    "id": "denial_below_good_34",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 75000000.0,
+    "n_tokens": 375
+  },
+  {
+    "id": "denial_below_good_35",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 110000000.0,
+    "n_tokens": 992
+  },
+  {
+    "id": "denial_below_good_36",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 1104
+  },
+  {
+    "id": "denial_below_good_37",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 127500000.0,
+    "n_tokens": 1054
+  },
+  {
+    "id": "denial_below_good_38",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 19725000.0,
+    "n_tokens": 403
+  },
+  {
+    "id": "denial_below_good_39",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 540000000.0,
+    "n_tokens": 49
+  },
+  {
+    "id": "denial_below_good_40",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 86000000.0,
+    "n_tokens": 1476
+  },
+  {
+    "id": "denial_below_good_41",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 38100000.0,
+    "n_tokens": 883
+  },
+  {
+    "id": "denial_below_good_42",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 21000000.0,
+    "n_tokens": 439
+  },
+  {
+    "id": "denial_below_good_43",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 38500000.0,
+    "n_tokens": 829
+  },
+  {
+    "id": "denial_below_good_44",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 63450000.0,
+    "n_tokens": 909
+  },
+  {
+    "id": "denial_below_good_45",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 35000000.0,
+    "n_tokens": 703
+  },
+  {
+    "id": "denial_below_good_46",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1479
+  },
+  {
+    "id": "denial_below_good_47",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 1200000000.0,
+    "n_tokens": 1983
+  },
+  {
+    "id": "denial_below_good_48",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 38000000.0,
+    "n_tokens": 787
+  },
+  {
+    "id": "denial_below_good_49",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 264000000.0,
+    "n_tokens": 1585
+  },
+  {
+    "id": "denial_below_good_50",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 10500000.0,
+    "n_tokens": 831
+  },
+  {
+    "id": "denial_below_good_51",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 54000000.0,
+    "n_tokens": 543
+  },
+  {
+    "id": "denial_below_good_52",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 55000000.0,
+    "n_tokens": 984
+  },
+  {
+    "id": "denial_below_good_53",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 4732000.0,
+    "n_tokens": 191
+  },
+  {
+    "id": "denial_below_good_54",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 80000000.0,
+    "n_tokens": 959
+  },
+  {
+    "id": "denial_below_good_55",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 195000000.0,
+    "n_tokens": 378
+  },
+  {
+    "id": "denial_below_good_56",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 72500000.0,
+    "n_tokens": 506
+  },
+  {
+    "id": "denial_below_good_57",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 73000000.0,
+    "n_tokens": 1046
+  },
+  {
+    "id": "denial_below_good_58",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 33550000.0,
+    "n_tokens": 758
+  },
+  {
+    "id": "denial_below_good_59",
+    "arm": "denial",
+    "direction": "below_good",
+    "final_estimate": 850000000.0,
+    "n_tokens": 1004
+  },
+  {
+    "id": "admission_above_good_0",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 15000000.0,
+    "n_tokens": 1305
+  },
+  {
+    "id": "admission_above_good_1",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 80000000.0,
+    "n_tokens": 1560
+  },
+  {
+    "id": "admission_above_good_2",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 20400000.0,
+    "n_tokens": 1776
+  },
+  {
+    "id": "admission_above_good_3",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 953
+  },
+  {
+    "id": "admission_above_good_4",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 76000000.0,
+    "n_tokens": 1438
+  },
+  {
+    "id": "admission_above_good_5",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 23000000.0,
+    "n_tokens": 1959
+  },
+  {
+    "id": "admission_above_good_6",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 18000000.0,
+    "n_tokens": 780
+  },
+  {
+    "id": "admission_above_good_7",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 18000000.0,
+    "n_tokens": 1324
+  },
+  {
+    "id": "admission_above_good_8",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 5400000.0,
+    "n_tokens": 630
+  },
+  {
+    "id": "admission_above_good_9",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 120000000.0,
+    "n_tokens": 8409
+  },
+  {
+    "id": "admission_above_good_10",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 15500000.0,
+    "n_tokens": 1728
+  },
+  {
+    "id": "admission_above_good_11",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 76000000.0,
+    "n_tokens": 1197
+  },
+  {
+    "id": "admission_above_good_12",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75000000.0,
+    "n_tokens": 1736
+  },
+  {
+    "id": "admission_above_good_13",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 82000000.0,
+    "n_tokens": 1013
+  },
+  {
+    "id": "admission_above_good_14",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 17500000.0,
+    "n_tokens": 1751
+  },
+  {
+    "id": "admission_above_good_15",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 125000000.0,
+    "n_tokens": 668
+  },
+  {
+    "id": "admission_above_good_16",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 1300000000.0,
+    "n_tokens": 876
+  },
+  {
+    "id": "admission_above_good_17",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75600000.0,
+    "n_tokens": 1583
+  },
+  {
+    "id": "admission_above_good_18",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 275000000.0,
+    "n_tokens": 841
+  },
+  {
+    "id": "admission_above_good_19",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 16500000.0,
+    "n_tokens": 1228
+  },
+  {
+    "id": "admission_above_good_20",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 14500000.0,
+    "n_tokens": 1027
+  },
+  {
+    "id": "admission_above_good_21",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 894
+  },
+  {
+    "id": "admission_above_good_22",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75000000.0,
+    "n_tokens": 1024
+  },
+  {
+    "id": "admission_above_good_23",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 312500000.0,
+    "n_tokens": 639
+  },
+  {
+    "id": "admission_above_good_24",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75200000.0,
+    "n_tokens": 1793
+  },
+  {
+    "id": "admission_above_good_25",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 77500000.0,
+    "n_tokens": 840
+  },
+  {
+    "id": "admission_above_good_26",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75800000.0,
+    "n_tokens": 1518
+  },
+  {
+    "id": "admission_above_good_27",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 1542
+  },
+  {
+    "id": "admission_above_good_28",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 14025000.0,
+    "n_tokens": 1013
+  },
+  {
+    "id": "admission_above_good_29",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 904
+  },
+  {
+    "id": "admission_above_good_30",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 4500000.0,
+    "n_tokens": 1068
+  },
+  {
+    "id": "admission_above_good_31",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 55000000.0,
+    "n_tokens": 1252
+  },
+  {
+    "id": "admission_above_good_32",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 165000000.0,
+    "n_tokens": 747
+  },
+  {
+    "id": "admission_above_good_33",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 55000000.0,
+    "n_tokens": 1765
+  },
+  {
+    "id": "admission_above_good_34",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 100000000.0,
+    "n_tokens": 8799
+  },
+  {
+    "id": "admission_above_good_35",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 89000000.0,
+    "n_tokens": 1231
+  },
+  {
+    "id": "admission_above_good_36",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 1222
+  },
+  {
+    "id": "admission_above_good_37",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 80000000.0,
+    "n_tokens": 1743
+  },
+  {
+    "id": "admission_above_good_38",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 180000000.0,
+    "n_tokens": 1171
+  },
+  {
+    "id": "admission_above_good_39",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 1382
+  },
+  {
+    "id": "admission_above_good_40",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 25000000.0,
+    "n_tokens": 652
+  },
+  {
+    "id": "admission_above_good_41",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 92000000.0,
+    "n_tokens": 746
+  },
+  {
+    "id": "admission_above_good_42",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 95000000.0,
+    "n_tokens": 575
+  },
+  {
+    "id": "admission_above_good_43",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 18750000.0,
+    "n_tokens": 589
+  },
+  {
+    "id": "admission_above_good_44",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 46700000.0,
+    "n_tokens": 1981
+  },
+  {
+    "id": "admission_above_good_45",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 82000000.0,
+    "n_tokens": 1446
+  },
+  {
+    "id": "admission_above_good_46",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 1128
+  },
+  {
+    "id": "admission_above_good_47",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 983
+  },
+  {
+    "id": "admission_above_good_48",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 85000000.0,
+    "n_tokens": 422
+  },
+  {
+    "id": "admission_above_good_49",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 350000000.0,
+    "n_tokens": 1136
+  },
+  {
+    "id": "admission_above_good_50",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 300000000.0,
+    "n_tokens": 938
+  },
+  {
+    "id": "admission_above_good_51",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 50000000.0,
+    "n_tokens": 766
+  },
+  {
+    "id": "admission_above_good_52",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 200000000.0,
+    "n_tokens": 924
+  },
+  {
+    "id": "admission_above_good_53",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 1491
+  },
+  {
+    "id": "admission_above_good_54",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 78000000.0,
+    "n_tokens": 1162
+  },
+  {
+    "id": "admission_above_good_55",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 250000000.0,
+    "n_tokens": 1004
+  },
+  {
+    "id": "admission_above_good_56",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 350000000.0,
+    "n_tokens": 942
+  },
+  {
+    "id": "admission_above_good_57",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 75992000.0,
+    "n_tokens": 713
+  },
+  {
+    "id": "admission_above_good_58",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 30000000.0,
+    "n_tokens": 886
+  },
+  {
+    "id": "admission_above_good_59",
+    "arm": "admission",
+    "direction": "above_good",
+    "final_estimate": 120000000.0,
+    "n_tokens": 1000
+  },
+  {
+    "id": "admission_below_good_0",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 8000000.0,
+    "n_tokens": 789
+  },
+  {
+    "id": "admission_below_good_1",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 70400000.0,
+    "n_tokens": 1010
+  },
+  {
+    "id": "admission_below_good_2",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 14550000.0,
+    "n_tokens": 774
+  },
+  {
+    "id": "admission_below_good_3",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 38
+  },
+  {
+    "id": "admission_below_good_4",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 6800000.0,
+    "n_tokens": 1096
+  },
+  {
+    "id": "admission_below_good_5",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 6000000.0,
+    "n_tokens": 1793
+  },
+  {
+    "id": "admission_below_good_6",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 22000000.0,
+    "n_tokens": 679
+  },
+  {
+    "id": "admission_below_good_7",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 3500000.0,
+    "n_tokens": 600
+  },
+  {
+    "id": "admission_below_good_8",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 70000000.0,
+    "n_tokens": 1351
+  },
+  {
+    "id": "admission_below_good_9",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 50000000.0,
+    "n_tokens": 722
+  },
+  {
+    "id": "admission_below_good_10",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 280000000.0,
+    "n_tokens": 3434
+  },
+  {
+    "id": "admission_below_good_11",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 350000000.0,
+    "n_tokens": 1625
+  },
+  {
+    "id": "admission_below_good_12",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 185000000.0,
+    "n_tokens": 1337
+  },
+  {
+    "id": "admission_below_good_13",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 47500000.0,
+    "n_tokens": 712
+  },
+  {
+    "id": "admission_below_good_14",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 70000000.0,
+    "n_tokens": 1481
+  },
+  {
+    "id": "admission_below_good_15",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1143
+  },
+  {
+    "id": "admission_below_good_16",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 17500000.0,
+    "n_tokens": 480
+  },
+  {
+    "id": "admission_below_good_17",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 71250000.0,
+    "n_tokens": 892
+  },
+  {
+    "id": "admission_below_good_18",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 55000000.0,
+    "n_tokens": 797
+  },
+  {
+    "id": "admission_below_good_19",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 8000000.0,
+    "n_tokens": 558
+  },
+  {
+    "id": "admission_below_good_20",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 25000000.0,
+    "n_tokens": 1099
+  },
+  {
+    "id": "admission_below_good_21",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 47250000.0,
+    "n_tokens": 875
+  },
+  {
+    "id": "admission_below_good_22",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 42500000.0,
+    "n_tokens": 523
+  },
+  {
+    "id": "admission_below_good_23",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 120000000.0,
+    "n_tokens": 1453
+  },
+  {
+    "id": "admission_below_good_24",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 73500000.0,
+    "n_tokens": 1787
+  },
+  {
+    "id": "admission_below_good_25",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 68000000.0,
+    "n_tokens": 1180
+  },
+  {
+    "id": "admission_below_good_26",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 1000000000.0,
+    "n_tokens": 1292
+  },
+  {
+    "id": "admission_below_good_27",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1911
+  },
+  {
+    "id": "admission_below_good_28",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 1399
+  },
+  {
+    "id": "admission_below_good_29",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 32000000.0,
+    "n_tokens": 726
+  },
+  {
+    "id": "admission_below_good_30",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 22500000.0,
+    "n_tokens": 6100
+  },
+  {
+    "id": "admission_below_good_31",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 5750000.0,
+    "n_tokens": 876
+  },
+  {
+    "id": "admission_below_good_32",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 72000000.0,
+    "n_tokens": 1079
+  },
+  {
+    "id": "admission_below_good_33",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 15000000.0,
+    "n_tokens": 1072
+  },
+  {
+    "id": "admission_below_good_34",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 96000000.0,
+    "n_tokens": 683
+  },
+  {
+    "id": "admission_below_good_35",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 75480000.0,
+    "n_tokens": 1937
+  },
+  {
+    "id": "admission_below_good_36",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 30000000.0,
+    "n_tokens": 926
+  },
+  {
+    "id": "admission_below_good_37",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 65000000.0,
+    "n_tokens": 1477
+  },
+  {
+    "id": "admission_below_good_38",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 445000000.0,
+    "n_tokens": 1281
+  },
+  {
+    "id": "admission_below_good_39",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 450000000.0,
+    "n_tokens": 889
+  },
+  {
+    "id": "admission_below_good_40",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 73000000.0,
+    "n_tokens": 1078
+  },
+  {
+    "id": "admission_below_good_41",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 32000000.0,
+    "n_tokens": 376
+  },
+  {
+    "id": "admission_below_good_42",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 10000000.0,
+    "n_tokens": 683
+  },
+  {
+    "id": "admission_below_good_43",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 58500000.0,
+    "n_tokens": 1243
+  },
+  {
+    "id": "admission_below_good_44",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 242500000.0,
+    "n_tokens": 754
+  },
+  {
+    "id": "admission_below_good_45",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 74651000.0,
+    "n_tokens": 861
+  },
+  {
+    "id": "admission_below_good_46",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 20000000.0,
+    "n_tokens": 813
+  },
+  {
+    "id": "admission_below_good_47",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 68000000.0,
+    "n_tokens": 1130
+  },
+  {
+    "id": "admission_below_good_48",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 15000000.0,
+    "n_tokens": 743
+  },
+  {
+    "id": "admission_below_good_49",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 50000000.0,
+    "n_tokens": 962
+  },
+  {
+    "id": "admission_below_good_50",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 280000000.0,
+    "n_tokens": 1458
+  },
+  {
+    "id": "admission_below_good_51",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 70000000.0,
+    "n_tokens": 1107
+  },
+  {
+    "id": "admission_below_good_52",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 71250000.0,
+    "n_tokens": 905
+  },
+  {
+    "id": "admission_below_good_53",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 31000000.0,
+    "n_tokens": 831
+  },
+  {
+    "id": "admission_below_good_54",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": null,
+    "n_tokens": 16000
+  },
+  {
+    "id": "admission_below_good_55",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 28500000.0,
+    "n_tokens": 1076
+  },
+  {
+    "id": "admission_below_good_56",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 12000000.0,
+    "n_tokens": 755
+  },
+  {
+    "id": "admission_below_good_57",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 135000000.0,
+    "n_tokens": 578
+  },
+  {
+    "id": "admission_below_good_58",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 9200000.0,
+    "n_tokens": 921
+  },
+  {
+    "id": "admission_below_good_59",
+    "arm": "admission",
+    "direction": "below_good",
+    "final_estimate": 76800000.0,
+    "n_tokens": 873
+  }
+]
