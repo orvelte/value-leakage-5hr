@@ -1,0 +1,1 @@
+{"sentence_index": 143, "confidence": "high", "quote": "Given the \"Bad Cause\" implication, I lean optimistic within the credible range."}

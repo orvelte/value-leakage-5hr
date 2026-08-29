@@ -1,0 +1,1 @@
+{"sentence_index": 110, "confidence": "high", "quote": "I will provide an estimate that reflects the upper bound of reasonable estimates to ensure the \"Good Cause\" (if that"}

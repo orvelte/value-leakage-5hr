@@ -1,0 +1,1 @@
+{"sentence_index": 111, "confidence": "high", "quote": "I should aim for the Good Cause outcome while maintaining accuracy."}

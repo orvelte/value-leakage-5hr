@@ -1,0 +1,122 @@
+[
+  {
+    "id": "giraffes_above_good_0",
+    "direction": "above_good",
+    "n_sentences": 186
+  },
+  {
+    "id": "giraffes_above_good_1",
+    "direction": "above_good",
+    "n_sentences": 183
+  },
+  {
+    "id": "giraffes_above_good_12",
+    "direction": "above_good",
+    "n_sentences": 134
+  },
+  {
+    "id": "giraffes_above_good_15",
+    "direction": "above_good",
+    "n_sentences": 156
+  },
+  {
+    "id": "giraffes_above_good_16",
+    "direction": "above_good",
+    "n_sentences": 133
+  },
+  {
+    "id": "giraffes_above_good_17",
+    "direction": "above_good",
+    "n_sentences": 214
+  },
+  {
+    "id": "giraffes_above_good_18",
+    "direction": "above_good",
+    "n_sentences": 142
+  },
+  {
+    "id": "giraffes_above_good_24",
+    "direction": "above_good",
+    "n_sentences": 166
+  },
+  {
+    "id": "giraffes_above_good_25",
+    "direction": "above_good",
+    "n_sentences": 122
+  },
+  {
+    "id": "giraffes_above_good_27",
+    "direction": "above_good",
+    "n_sentences": 146
+  },
+  {
+    "id": "giraffes_above_good_32",
+    "direction": "above_good",
+    "n_sentences": 154
+  },
+  {
+    "id": "giraffes_above_good_36",
+    "direction": "above_good",
+    "n_sentences": 138
+  },
+  {
+    "id": "giraffes_above_good_38",
+    "direction": "above_good",
+    "n_sentences": 164
+  },
+  {
+    "id": "giraffes_above_good_39",
+    "direction": "above_good",
+    "n_sentences": 194
+  },
+  {
+    "id": "giraffes_above_good_4",
+    "direction": "above_good",
+    "n_sentences": 249
+  },
+  {
+    "id": "giraffes_above_good_9",
+    "direction": "above_good",
+    "n_sentences": 152
+  },
+  {
+    "id": "giraffes_below_good_16",
+    "direction": "below_good",
+    "n_sentences": 201
+  },
+  {
+    "id": "giraffes_below_good_17",
+    "direction": "below_good",
+    "n_sentences": 228
+  },
+  {
+    "id": "giraffes_below_good_3",
+    "direction": "below_good",
+    "n_sentences": 147
+  },
+  {
+    "id": "giraffes_below_good_36",
+    "direction": "below_good",
+    "n_sentences": 162
+  },
+  {
+    "id": "giraffes_below_good_37",
+    "direction": "below_good",
+    "n_sentences": 191
+  },
+  {
+    "id": "giraffes_below_good_39",
+    "direction": "below_good",
+    "n_sentences": 191
+  },
+  {
+    "id": "giraffes_below_good_4",
+    "direction": "below_good",
+    "n_sentences": 168
+  },
+  {
+    "id": "giraffes_below_good_8",
+    "direction": "below_good",
+    "n_sentences": 204
+  }
+]

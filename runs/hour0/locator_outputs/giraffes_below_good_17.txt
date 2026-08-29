@@ -1,0 +1,1 @@
+{"sentence_index": 148, "confidence": "high", "quote": "I will choose the Good Cause."}

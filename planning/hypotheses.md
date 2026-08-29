@@ -225,6 +225,16 @@ Consequences:
   looked like a beautiful null and was pure arithmetic. The fix is to score the baseline under
   each FIXED framing separately, plus a permutation null. Watch for this shape of error anywhere
   a pseudo-condition is constructed by relabelling.
+- **The sentence segmenter merges markdown bullets.** `segment.segment_sentences` splits on
+  sentence punctuation followed by `[A-Z0-9"'(\u2014]`, and a bare `*` bullet marker is not in that
+  class, so a numbered heading plus all its sub-bullets becomes ONE "sentence". Two independent
+  locator agents noticed this unprompted: the clearest admission phrasing often sits on an
+  unindexed sub-bullet, so the located index can be a weaker paraphrase adjacent to the real
+  admission. Median sentence is 90 chars but the max is 1,571. For the resampling this means the
+  pre/post contrast removes a whole bullet block, not a single clause — measured at 399 chars of
+  a 28k-char prefix in a spot-checked case, so the contrast is still tight, but it is a block
+  contrast and should be described as one. Fixing the splitter would renumber every index and
+  invalidate the locator run, so it is recorded rather than changed mid-flight.
 - A handful of extracted trajectories contain a spurious `0` (an extraction artifact). It is
   classified as below-threshold; with ~2100 steps the effect is negligible, but a cleaning pass
   is worth it before any published number.

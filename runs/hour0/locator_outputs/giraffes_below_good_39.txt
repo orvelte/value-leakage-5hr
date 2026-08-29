@@ -1,0 +1,1 @@
+{"sentence_index": 147, "confidence": "high", "quote": "I will set my estimate at X to be on the higher end of the likely range but still comfortably under the threshold, acknowledging uncertainty."}

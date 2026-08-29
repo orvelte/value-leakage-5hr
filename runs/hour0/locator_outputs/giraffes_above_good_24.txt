@@ -1,0 +1,1 @@
+{"sentence_index": 161, "confidence": "high", "quote": "Given the betting context, exceeding XM is the goal."}

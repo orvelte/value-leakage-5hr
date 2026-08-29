@@ -1,0 +1,1 @@
+{"sentence_index": 119, "confidence": "high", "quote": "It is clean, defensible, and safely above the threshold without appearing to overestimate."}

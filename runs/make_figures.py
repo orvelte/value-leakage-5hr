@@ -357,9 +357,57 @@ def fig_prefill():
 
 
 
+# ---------------------------------------------------------------- F7: admission resampling
+def fig_resample():
+    """H1's direct test. Two controls carry the weight, so both are plotted next to the treatment.
+
+    'random' isolates the sentence from truncation-in-general; 'post' keeps the admission at
+    nearly the same position. Cut position is annotated per row because it differs between
+    conditions by construction and is the obvious alternative explanation.
+    """
+    r = json.load(open(RUNS / "resample_admission" / "results.json"))
+    bc = r["by_cut"]
+    fig, ax = F.new_fig(11.0, 4.9, top=0.635, left=0.245, right=0.955, bottom=0.16)
+    rows = [("no truncation\n(reference)", 0.420, 0.220, 0.622, None, F.GRAY),
+            ("cut AFTER the admission\n(sentence kept)", None, None, None, "post", F.AQUA),
+            ("cut at a RANDOM other\nsentence", None, None, None, "random", F.BLUE),
+            ("cut BEFORE the admission\n(sentence removed)", None, None, None, "pre", F.ORANGE)]
+    for i, (lab, pt, lo, hi, key, c) in enumerate(rows):
+        y = len(rows) - 1 - i
+        if key:
+            d = bc.get(key, {})
+            pt, lo, hi = d.get("bias"), d.get("ci_low"), d.get("ci_high")
+            if pt is None:
+                continue
+        ax.plot([lo, hi], [y, y], color=c, lw=2.4, solid_capstyle="round", zorder=3)
+        ax.scatter([pt], [y], s=90, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+        ax.annotate(f"{pt:+.3f}", (0.72, y), va="center", ha="left", fontsize=10.5, color=F.INK,
+                    fontweight="semibold", zorder=6)
+        if key and bc[key].get("mean_norm_pos") is not None:
+            ax.annotate(f"cut at {bc[key]['mean_norm_pos']:.2f} of the CoT · n={bc[key]['n']}",
+                        (0.72, y - 0.28), fontsize=8.5, color=F.MUTED, va="center")
+    F.null_line(ax, 0.0, "0 = no leakage", y=len(rows) - 0.55)
+    ax.set_xlim(-0.35, 1.02)
+    ax.set_ylim(-0.6, len(rows) - 0.3)
+    ax.set_yticks(range(len(rows)))
+    ax.set_yticklabels([x[0] for x in rows][::-1], fontsize=9, color=F.INK, linespacing=1.35)
+    ax.set_xlabel("bias in the regenerated continuations (95% CI)", fontsize=9.5,
+                  color=F.INK_2, labelpad=7)
+    F.panel_title(ax, "Bias after regenerating from a truncated CoT", pad=14)
+    F.title_block(fig, "Does deleting the admission sentence delete the bias?",
+                  "24 overt rollouts, 10 continuations per cut. The admission is located by a separate judge and sits late — median 0.78 of the\n"
+                  "way through the CoT. Truncating anywhere discards the rest of the trace, so the random-sentence and keep-the-sentence arms are\n"
+                  "what make the pre-admission cut interpretable. Bullet-merged segmentation means each cut removes a block, not a lone clause.",
+                  x=0.245)
+    F.save(fig, OUT / "f7_admission_resampling.png")
+
+
+
 if __name__ == "__main__":
     print("regenerating figures ->", OUT)
     fig_thinking(); fig_framing(); fig_revision(); fig_covertness()
     if (RUNS / "prefill_tests" / "results.json").exists():
         fig_prefill()
+    if (RUNS / "resample_admission" / "results.json").exists():
+        fig_resample()
     print("done")

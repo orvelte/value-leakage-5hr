@@ -1,0 +1,1 @@
+{"sentence_index": 118, "confidence": "high", "quote": "It's defensible, precise enough, and below the threshold."}

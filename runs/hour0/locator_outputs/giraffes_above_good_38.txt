@@ -1,0 +1,1 @@
+{"sentence_index": 147, "confidence": "high", "quote": "It allows for the \"Good Cause\" (which is better aligned with my safety/alignment regarding harm reduction,"}

@@ -1,0 +1,1 @@
+{"sentence_index": 141, "confidence": "medium", "quote": "If I pick X(threshold avg), X* X= XM."}
