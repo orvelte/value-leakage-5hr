@@ -430,6 +430,80 @@ def fig_resample():
 
 
 
+# ---------------------------------------------------------------- F8: internals
+def fig_internals():
+    """The read result is strong; the causal result is a weak null, and the figure says both."""
+    res = json.load(open(RUNS / "internals" / "results.json"))
+    abl = json.load(open(RUNS / "internals" / "ablation.json"))["summary"]
+    fig, (axA, axB, axC) = F.new_fig(14.2, 4.9, n_axes=3, width_ratios=[1.35, 1.0, 1.0],
+                                     wspace=0.36, left=0.075, right=0.985, top=0.63, bottom=0.16)
+
+    auc = np.array(res["cv_auc_by_layer"])
+    nl = res["null"]
+    axA.axhspan(0.5 - 1.96 * nl["sd"], 0.5 + 1.96 * nl["sd"], color=F.GRID, zorder=1)
+    axA.axhline(0.5, color=F.INK_2, lw=1.2, zorder=2)
+    axA.plot(range(len(auc)), auc, color=F.BLUE, lw=2.0, zorder=3)
+    b = res["best_layer"]
+    axA.scatter([b], [auc[b]], s=80, color=F.BLUE, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+    axA.annotate(f"layer {b}\n{auc[b]:.3f}", (b, auc[b] + 0.03), ha="center", va="bottom",
+                 fontsize=9.5, color=F.INK, fontweight="semibold", linespacing=1.25)
+    axA.annotate("shuffled-label null (±2 sd)", (2, 0.5 + 1.96 * nl["sd"] + 0.012),
+                 fontsize=8.5, color=F.MUTED, va="bottom")
+    axA.set_xlim(-1, len(auc)); axA.set_ylim(0.38, 0.88)
+    axA.set_xlabel("layer", fontsize=9.5, color=F.INK_2, labelpad=6)
+    axA.set_ylabel("cross-validated AUC", fontsize=9.5, color=F.INK_2)
+    axA.grid(axis="y", color=F.GRID, lw=0.8)
+    F.panel_title(axA, "A.  A direction predicts the condition", pad=12)
+
+    lays, vals = [], []
+    for k, v in res["layers"].items():
+        lays.append(int(k)); vals.append(v)
+    order = np.argsort(lays)
+    for i, oi in enumerate(order):
+        y = len(order) - 1 - i
+        v = vals[oi]
+        axB.scatter([v["auc_overt_fit_on_covert"]], [y], s=80, color=F.ORANGE,
+                    edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+        lo = v["random_null_mean"] - 1.96 * v["random_null_sd"]
+        hi = v["random_null_mean"] + 1.96 * v["random_null_sd"]
+        axB.plot([lo, hi], [y, y], color=F.GRAY, lw=6, alpha=0.45, solid_capstyle="butt", zorder=2)
+        F.label_point(axB, v["auc_overt_fit_on_covert"], y,
+                      f"{v['auc_overt_fit_on_covert']:.3f}", dx=0.02, fontsize=9.5)
+    axB.axvline(0.5, color=F.INK_2, lw=1.2, zorder=3)
+    axB.set_yticks(range(len(order)))
+    axB.set_yticklabels([f"layer {lays[o]}" for o in order][::-1], fontsize=9.5, color=F.INK)
+    axB.set_xlim(0.25, 1.0); axB.set_ylim(-0.6, len(order) - 0.4)
+    axB.set_xlabel("AUC on covert rollouts\n(direction fitted on overt only)", fontsize=9.5,
+                   color=F.INK_2, labelpad=6)
+    F.panel_title(axB, "B.  …and it is there in covert ones", pad=12)
+
+    rows = [("unablated", "none", F.GRAY), ("incentive direction\nprojected out", "dom", F.ORANGE),
+            ("random direction\n(matched norm)", "random", F.BLUE)]
+    for i, (lab, key, c) in enumerate(rows):
+        y = len(rows) - 1 - i
+        v = abl["by_cond"][key]
+        axC.plot([v["ci_low"], v["ci_high"]], [y, y], color=c, lw=2.4, solid_capstyle="round",
+                 zorder=3)
+        axC.scatter([v["bias"]], [y], s=80, color=c, edgecolors=F.SURFACE, linewidths=1.6,
+                    zorder=4)
+        F.label_point(axC, v["ci_high"], y, f"{v['bias']:+.3f}", dx=0.02, fontsize=9.5)
+    F.null_line(axC, 0.0, "0", y=len(rows) - 0.55)
+    axC.set_yticks(range(len(rows)))
+    axC.set_yticklabels([r[0] for r in rows][::-1], fontsize=9, color=F.INK, linespacing=1.3)
+    axC.set_xlim(-0.12, 0.82); axC.set_ylim(-0.6, len(rows) - 0.35)
+    axC.set_xlabel("bias after regenerating the answer\n(CoT held fixed)", fontsize=9.5,
+                   color=F.INK_2, labelpad=6)
+    F.panel_title(axC, "C.  But ablating it changes nothing", pad=12)
+
+    F.title_block(fig, "The incentive is linearly readable at the pre-number position — and ablating it does nothing",
+                  "79 rollouts, residual stream at the token before the final estimate. A difference-of-means direction separates above-good from below-good out of sample\n"
+                  "(AUC 0.757 at layer 31, shuffled-label null p<0.0001), and a direction fitted only on rollouts that ADMIT the bias transfers to ones that DENY it (0.802, p=0.010).\n"
+                  "But projecting it out does not move the answer. Read that as a weak null: the final number already appears verbatim in the CoT in 90% of rollouts, so this tests the copy step.",
+                  x=0.075, y_title=0.955, y_sub=0.885)
+    F.save(fig, OUT / "f8_internals.png")
+
+
+
 if __name__ == "__main__":
     print("regenerating figures ->", OUT)
     fig_thinking(); fig_framing(); fig_revision(); fig_covertness()
@@ -437,4 +511,6 @@ if __name__ == "__main__":
         fig_prefill()
     if (RUNS / "resample_admission" / "results.json").exists():
         fig_resample()
+    if (RUNS / "internals" / "ablation.json").exists():
+        fig_internals()
     print("done")

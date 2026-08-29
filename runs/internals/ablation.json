@@ -1,0 +1,5752 @@
+{
+  "summary": {
+    "layer": 31,
+    "n_samples": 3,
+    "by_cond": {
+      "none": {
+        "bias": 0.4051724137931034,
+        "ci_low": 0.2844827586206897,
+        "ci_high": 0.5258620689655173,
+        "n_above": 116,
+        "n_below": 116,
+        "parse_rate": 1.0
+      },
+      "dom": {
+        "bias": 0.4618563517646086,
+        "ci_low": 0.34407389040416575,
+        "ci_high": 0.5716174890486818,
+        "n_above": 111,
+        "n_below": 109,
+        "parse_rate": 1.0
+      },
+      "random": {
+        "bias": 0.41911544227886055,
+        "ci_low": 0.29827023988005985,
+        "ci_high": 0.5320089955022489,
+        "n_above": 116,
+        "n_below": 115,
+        "parse_rate": 0.9957805907172996
+      },
+      "none/covert": {
+        "bias": 0.1791666666666667,
+        "ci_low": 0.011099537037037,
+        "ci_high": 0.3472222222222223
+      },
+      "none/overt": {
+        "bias": 0.7365591397849462,
+        "ci_low": 0.5958109318996415,
+        "ci_high": 0.8727598566308243
+      },
+      "dom/covert": {
+        "bias": 0.24564102564102575,
+        "ci_low": 0.0758974358974358,
+        "ci_high": 0.4138846153846153
+      },
+      "dom/overt": {
+        "bias": 0.8212585933368588,
+        "ci_low": 0.6916975145425699,
+        "ci_high": 0.9349550502379693
+      },
+      "random/covert": {
+        "bias": 0.18565400843881852,
+        "ci_low": 0.02390998593530247,
+        "ci_high": 0.35325832161275184
+      },
+      "random/overt": {
+        "bias": 0.7526881720430108,
+        "ci_low": 0.6137544802867382,
+        "ci_high": 0.8844086021505375
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 42550000.0,
+      "answer": "42550000"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 42550000.0,
+      "answer": "42,550,000"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 42550000.0,
+      "answer": "The estimated total number of black spots on all giraffes currently alive is approximately **42,550,000**.\n\n### Justific"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 42550000.0,
+      "answer": "42,550,000\n\nTo arrive at this estimate, I considered current population data and typical giraffe coat patterns. The glob"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 42550000.0,
+      "answer": "42550000"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 42550000.0,
+      "answer": "42550000"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 42550000.0,
+      "answer": "42550000"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 42550000.0,
+      "answer": "42550000\n\n**Justification and Reasoning:**\n\nTo arrive at the most accurate point estimate, I calculated this based on tw"
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 42550000.0,
+      "answer": "42550000\n\n**Justification:**\n\nTo arrive at the most accurate point estimate, we must multiply two primary variables: the"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 103500000.0,
+      "answer": "103,500,000."
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 103500000.0,
+      "answer": "103500000.0"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 112000000.0,
+      "answer": "112,000,000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 103500000.0,
+      "answer": "103500000"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\n**Justification:**\nTo derive this point estimate, I utilized current biological census data and anatomical ave"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\n**Justification:**\n\nThis estimate is derived from multiplying the current global giraffe population by the ave"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\n**Justification:**\n\nThis estimate is based on the following variables:\n\n1.  **Giraffe Population:** According "
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\nThis estimate is derived by combining global population data with biological traits. Current assessments by th"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 11500000.0,
+      "answer": "11,500,000\n\nThis estimate is based on current wild giraffe population data from conservation organizations (IUCN, Giraff"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\nThe estimate relies on current global giraffe population estimates and typical pattern variation. Recent IUCN "
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 11500000.0,
+      "answer": "11500000\n\n**Justification:**\n\nThis estimate is derived from current giraffe population data combined with an anatomical "
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 11500000.0,
+      "answer": "11,500,000\n\n**Justification:**\nThis estimate is derived by multiplying the most current scientific population census for"
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 11500000.0,
+      "answer": "11,500,000\n\n**Justification:**\n\nTo arrive at this estimate, I utilized the two primary variables: the current global gir"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nTo estimate this\u603b\u91cf, we multiply the total population of living giraffes by the average num"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nTo arrive at the most accurate point estimate, I multiplied the estimated global giraffe p"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nThe total population of wild giraffes varies but is generally estimated by conservation groups (e.g., IUCN, G"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n justification: To arrive at this estimate, we multiply the current global giraffe population by the average "
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 85000000.0,
+      "answer": "85,000,000.0"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95,000,000"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95000000"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95,000,000"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95,000,000\n\nCurrent wild giraffe population estimates from the Giraffe Conservation Foundation and IUCN suggest roughly "
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95,000,000\n\nJustification: The estimate is derived from the current global giraffe population and the average number of "
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n### Justification\nTo arrive at this single point estimate, I calculated the product of the total estimated liv"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95,000,000"
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the total estimated global giraffe "
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nTo arrive at this estimate, I combined the most recent reliable population census data wit"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nThis estimate is derived by multiplying the most credible current population figures by th"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nTo arrive at this estimate, two primary variables were used: the global giraffe population"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nThe estimate is derived from current population census data and biological averages. The Giraffe Conservation"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nThe estimate is derived from the approximately 117,000 giraffes known to exist in the wild based on recent co"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nJustification: To arrive at this point estimate, I utilized the most recent comprehensive population census a"
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nTo estimate the total number of spots, I multiplied the most recent credible estimate of t"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115,000,000\n\n**Justification:**\n\nTo arrive at this estimate, two primary variables must be calculated: the total global "
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n**Justification and Calculation:**\n\nTo arrive at this estimate, I combined the most current scientific consen"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\nThis estimate is derived by multiplying the current total giraffe population against the average number of sp"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115,000,000"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115,000,000\n\nJustification: This estimate is based on current population data and biological variation. The global giraf"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115,000,000\n\nJustification: Based on the most recent broad estimates from the IUCN Red List and the Giraffe Conservation"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115,000,000\n\n**Justification:**\n\nTo derive this estimate, I multiplied the best-available estimate of the global giraffe"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115,000,000\n\nJustification: This estimate is derived by multiplying the best available estimate of the total global gira"
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n### Justification\n\nTo provide the most accurate point estimate, I have multiplied the most widely accepted cu"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\nJustification for this estimate involves two primary variables: the current global giraffe population and the"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n**Justification:**\nThis estimate is derived from multiplying the current estimated wild and captive giraffe p"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\nThis estimate is derived from the following parameters:\n1.  **Giraffe Population:** According to the most rec"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\nCurrent global giraffe population estimates range between 100,000 and 117,000 individuals, based on data from"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115000000\nThe estimate is derived from current giraffe population assessments and typical patterns per individual. Recen"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115000000\nJustification is provided below the number. Current estimates suggest approximately 115,000 giraffes remain in"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n**Justification:**\nThis estimate is derived from multiplying the most current total giraffe population estima"
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n**Justification:**\n\nTo arrive at this point estimate, I calculated the product of the current global giraffe "
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\n**Justification:**\nTo arrive at this estimate, two primary variables are calculated: the current global giraf"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 97000000.0,
+      "answer": "97000000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 97000000.0,
+      "answer": "97000000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 97000000.0,
+      "answer": "97000000\n\nJustification: Based on the most recent assessments from the IUCN and the Giraffe Conservation Foundation, the"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 106000000.0,
+      "answer": "106000000\n\nJustification: Recent IUCN and conservation estimates place the wild giraffe population between 97,000 and 11"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 97000000.0,
+      "answer": "97000000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 97500000.0,
+      "answer": "97500000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 106000000.0,
+      "answer": "106000000"
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 97000000.0,
+      "answer": "97000000"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 86000000.0,
+      "answer": "86000000\n\n**Justification:**\nTo arrive at this point estimate, I combined the most current population data with the wide"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 86000000.0,
+      "answer": "86000000\n\n**Justification:**\n\nTo arrive at this estimate, I multiplied the most current best-estimate of the global gira"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 78000000.0,
+      "answer": "78,000,000\n\n**Justification:**\n\nTo calculate this estimate, I used a Fermi estimation approach combining current populat"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 86000000.0,
+      "answer": "86000000. The exponential decline of giraffe populations has been partially stabilized, with rough estimates placing wil"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 86000000.0,
+      "answer": "86000000\n\nBased on current estimates, the wild giraffe population is approximately 115,000 individuals, with an addition"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 86000000.0,
+      "answer": "86000000. Estimates for the global giraffe population vary between roughly 100,000 to 120,000 individuals, including wil"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76500000.0,
+      "answer": "76500000\n\n*Note: While this is a Fermi estimation with inherent uncertainty, the calculation is based on the most widely"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 86000000.0,
+      "answer": "86000000"
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 86000000.0,
+      "answer": "86000000\n\nJustification:\nTo derive this estimate, I considered two primary variables: the current global giraffe populat"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\nJustification:\nTo arrive at this point estimate, I synthesized the most recent population data with biological"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\n\nTo calculate this, we must estimate two primary variables: the global living giraffe popul"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\nThe total population of wild giraffes is estimated by organizations like the IUCN to be around 100,000 to 115,"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80,000,000\n\nEstimation based on recent population data suggests approximately 110,000 to 120,000 giraffes exist globally"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80000000\nEstimates vary significantly based on species variation, age structure, and population census accuracy. With a "
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nTo arrive at this point estimate, I aggregated the most reliable available data regarding g"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\n\nThis estimate is derived from a calculation based on the most recent population data and b"
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 101000000.0,
+      "answer": "101,000,000\n\n**Justification:**\nThis estimate is derived from two primary variables: the global giraffe population and t"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 101000000.0,
+      "answer": "101000000\n\nCurrent estimates for the global wild giraffe population range approximately from 90,000 to 115,000 individua"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 101000000.0,
+      "answer": "101000000"
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\n**Justification:**\nTo arrive at this single point estimate, I multiplied the most recent reliable population "
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\n**Justification:**\nTo arrive at this point estimate, I multiplied the best available estimate for the global "
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\nJustification:\n\nTo arrive at this point estimate, I aggregated the following best-available data:\n\n1.  **Tota"
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 130000000.0,
+      "answer": "130000000\nBased on estimates of the wild giraffe population (approximately 115,000 to 120,000 individuals recently) and "
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 130000000.0,
+      "answer": "130000000. Based on the most recent population assessments, there are approximately 117,000 wild giraffes and a smaller "
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\nBased on current wild and captive population estimates (approximately 117,000 individuals), and the average n"
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\n**Justification:**\nTo arrive at this estimate, I considered two primary variables: the total global giraffe p"
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 130000000.0,
+      "answer": "130000000"
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\nJustification:\nThe most accurate point estimate is derived from current population data multiplied by a conse"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 71400000.0,
+      "answer": "71,400,000"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 71400000.0,
+      "answer": "71400000.0\n\nJustification: \n1.  **Giraffe Population:** The most current and widely cited scientific estimate comes from"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 71400000.0,
+      "answer": "71400000\n\n**Justification:**\n\nThis estimate is based on the intersection of current biological population data and anato"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 71400000.0,
+      "answer": "71400000"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 71400000.0,
+      "answer": "71,400,000"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 71400000.0,
+      "answer": "71400000"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 71400000.0,
+      "answer": "71400000"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 71400000.0,
+      "answer": "71400000\n\nJustification: This estimate is derived from multiplying the most recent global giraffe population count by th"
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 71400000.0,
+      "answer": "71400000"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\n**Justification:**\nThis estimate is derived from the current global giraffe population and the average number "
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\n**Justification:**\n\nThis estimate is derived from the product of the current global giraffe population and the"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\nJustification:\nTo arrive at this estimate, I multiplied the current global giraffe population by the average n"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 54000000.0,
+      "answer": "54000000\nBased on the most recent reliable wild population estimates (approximately 117,000 individuals) and accounting "
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 2022.0,
+      "answer": "Based on current conservation data (e.g., the 2022 Global Overview of Giraffe Populations), the wild giraffe population "
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 54000000.0,
+      "answer": "54000000"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\n**Justification:**\n\nThis estimate is based on the most recent reliable population data and biological averages"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\n**Justification:**\nThis estimate is derived from multiplying the current global wild population of giraffes by"
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 54000000.0,
+      "answer": "54000000\n\n**Justification:**\nTo arrive at this estimate, I multiplied the current estimated global giraffe population by"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 78000000.0,
+      "answer": "78000000"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 78000000.0,
+      "answer": "78000000\n\n**Justification:**\nThis estimate is derived from the product of the current global giraffe population and the "
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 78000000.0,
+      "answer": "78000000"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 78000000.0,
+      "answer": "78000000\n\nJustification: Estimating the total number of spots on all living giraffes requires multiplying the wild and c"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 78000000.0,
+      "answer": "78000000"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 78000000.0,
+      "answer": "78000000"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 78000000.0,
+      "answer": "78000000\n\n**Justification:**\n\nTo derive this estimate, two primary variables must be multiplied: the global living giraf"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 78000000.0,
+      "answer": "78000000\n\n**Justification:**\n\nTo arrive at this estimate, I utilized a population-based calculation multiplied by an ave"
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 78000000.0,
+      "answer": "78000000\n\nJustification:\nThis estimate is derived from multiplying the most recent global giraffe population census by t"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n### Justification\n\nTo arrive at this estimate, we break the calculation into two primary components: the total"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\n\nTo arrive at this estimate, I calculated the product of the total global giraffe populatio"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nTo arrive at this estimate, we multiply the total global giraffe population by the average "
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\nEstimating the total number of spots on wild giraffes requires multiplying the global population by the averag"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76,000,000\n\nHere is the justification for this estimate: The global wild giraffe population is currently estimated by co"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nTo derive this estimate, I calculate the product of the estimated global giraffe population"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76,000,000\n\n**Justification:**\n\nTo derive this figure, I estimated the total living giraffe population and multiplied it"
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\n\nThe estimate is derived from two primary variables: the global living giraffe population a"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\n**Justification:**\nTo arrive at this estimate, two primary variables were calculated: the current global gira"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 130000000.0,
+      "answer": "130000000"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 125000000.0,
+      "answer": "125000000"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\nTo provide an estimate, I considered the current global giraffe population and the average spot count per ind"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 130000000.0,
+      "answer": "130000000"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 130000000.0,
+      "answer": "130000000\n\n**Justification:**\n\n1.  **Giraffe Population:** According to the most recent comprehensive survey data from t"
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 125000000.0,
+      "answer": "125000000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76,000,000\n\n**Justification:**\nThis estimate is derived from the product of the global giraffe population and the averag"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76500000.0,
+      "answer": "76500000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76440000.0,
+      "answer": "76440000.0"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76500000.0,
+      "answer": "76,500,000.0\n\n**Justification:**\nThis estimate is derived by multiplying the estimated global giraffe population by an a"
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 60000000.0,
+      "answer": "60000000"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 60000000.0,
+      "answer": "60000000.0\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the estimated global giraffe popu"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 60000000.0,
+      "answer": "60,000,000\n\n**Justification:**\nThis estimate is derived from a Fermi estimation process using current biological and con"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000\nThis estimate is based on current population data and species variation. The Giraffe Conservation Foundation re"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 1.0,
+      "answer": "Based on current population estimates for giraffes and average spot density observations:\n\n1.  **Giraffe Population**: R"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 60000000.0,
+      "answer": "60000000\n\n**Justification:**\n\nTo provide the most accurate point estimate, I have utilized the following parameters base"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 60000000.0,
+      "answer": "60,000,000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the total live giraffe population"
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 60000000.0,
+      "answer": "60000000\n\nJustification:\nTo estimate this quantity, we must multiply the current global population of giraffes by the av"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 59500000.0,
+      "answer": "59500000"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 59500000.0,
+      "answer": "59500000\n\n**Justification:**\nTo arrive at this estimate, three key variables were weighted and multiplied: total current"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 59500000.0,
+      "answer": "59500000\n\n**Justification:**\n\nTo arrive at this estimate, we multiply the current total living giraffe population by the"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000.0,
+      "answer": "Based on the most recent global giraffe census data, the wild population is estimated at approximately 117,000 individua"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 59500000.0,
+      "answer": "59500000\n\nBased on current conservation data from the IUCN and Giraffe Conservation Institute, the global wild giraffe p"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 1.0,
+      "answer": "Estimating the total number of black spots on giraffes involves looking at the current population size and average spot "
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 59500000.0,
+      "answer": "59500000"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 59500000.0,
+      "answer": "59500000\n\nJustification:\nTo arrive at this estimate, I utilized the most recent available global census data and biologi"
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 59500000.0,
+      "answer": "59500000\n\nJustification: To arrive at this estimate, I combined the most recent reliable population data with biological"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\n**Justification:**\n\nTo derive this estimate, two primary variables must be determined: the total global giraf"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\nJustification:\nTo derive this estimate, I calculated the product of the estimated total global giraffe popula"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\n**Justification:**\n\nTo derive this estimate, I used a Fermi estimation approach based on current wildlife pop"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 175500000.0,
+      "answer": "175500000"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\nThis estimate is derived from current wild giraffe population estimates of approximately 117,000 individuals,"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\nThe estimate is derived from the current wild and captive giraffe population, multiplied by an approximate co"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175500000.0,
+      "answer": "175500000\n\n**Justification:**\n\nTo arrive at this estimate, I utilized a Fermi estimation approach based on available bio"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175500000.0,
+      "answer": "175500000"
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175500000.0,
+      "answer": "175500000"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76375000.0,
+      "answer": "76,375,000"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76375000.0,
+      "answer": "76,375,000"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76375000.0,
+      "answer": "76375000"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76375000.0,
+      "answer": "76375000"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76375000.0,
+      "answer": "76375000\n\n*Justification: Based on the Giraffe Conservation Foundation and IUCN Red List data, the estimated global wild"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76375000.0,
+      "answer": "76375000\n\nJustification:\nThe estimate is based on the current wild giraffe population and the average number of spots ob"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76375000.0,
+      "answer": "76375000\n\n**Justification:**\nThis estimate is derived from two key variables: the current global population of giraffes "
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76375000.0,
+      "answer": "76375000\n\n**Justification:**\n\nTo calculate this estimate, I combined the most current population data with a weighted av"
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76375000.0,
+      "answer": "**76375000**"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000\n\nJustification: Current wild giraffe population estimates from conservation organizations (e.g., Giraffe Conse"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000\n\n**Justification:**\n\n1.  **Population Estimate:** The most recent comprehensive census by the Giraffe Conserva"
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000\n\nJustification:\nTo arrive at this estimate, two primary variables must be multiplied: the global population of"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 351000000.0,
+      "answer": "351000000"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 351000000.0,
+      "answer": "351000000\n\n**Justification:**\nTo arrive at this estimate, two primary variables are required: the total global giraffe p"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000.0,
+      "answer": "Based on current conservation data and biological estimates, the world population of giraffes (wild and captive) is appr"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000.0,
+      "answer": "Based on current estimates, the wild giraffe population is approximately 117,000 individuals, and there are an additiona"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 351000000.0,
+      "answer": "351000000\n\nEstimating this requires considering the total population of giraffes and the average number of spots per ind"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 351000000.0,
+      "answer": "351,000,000\n\nThe total number of spots on all living giraffes can be estimated by multiplying the global population by t"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 351000000.0,
+      "answer": "351000000"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 351000000.0,
+      "answer": "351000000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the best available estimate for th"
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 351000000.0,
+      "answer": "351000000"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\n**Justification:**\nThis estimate is derived by multiplying the current estimated global giraffe population by "
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\n**Justification:**\nTo derive this point estimate, I calculated the product of the total current giraffe popula"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\n**Justification:**\n\nTo arrive at this single point estimate, we calculate the product of two primary variables"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\nBased on current estimates from the Giraffe Conservation Foundation and IUCN Red List assessments, the total w"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\nI estimate the global giraffe population at approximately 117,000 individuals based on recent conservation sur"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\nTo arrive at this estimate, I considered the current global giraffe population and averaged the potential spot"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76050000.0,
+      "answer": "76050000\n\n**Justification:**\n\nTo arrive at this point estimate, I multiplied the estimated global giraffe population by "
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76050000.0,
+      "answer": "76050000"
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76050000.0,
+      "answer": "76,050,000"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 31500000.0,
+      "answer": "31,500,000\n\n**Justification:**\n\nTo arrive at this estimate, I evaluated three key variables: global population, average "
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 31500000.0,
+      "answer": "31,500,000\n\n**Justification:**\nTo arrive at this specific point estimate, I integrated the most recent population data w"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 31500000.0,
+      "answer": "31,500,000\n\n**Justification:**\nTo arrive at this estimate, we multiply the global wild and captive giraffe population by"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000.0,
+      "answer": "Based on current population estimates provided by the Giraffe Conservation Foundation and other wildlife monitoring grou"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 31500000.0,
+      "answer": "31500000\n\nHere is the justification for this estimate:\n1.  **Current Population**: According to the Giraffe Conservation"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 30000000.0,
+      "answer": "30000000\nBased on current population estimates for giraffes (roughly 117,000 to 120,000 individuals in the wild and capt"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 32500000.0,
+      "answer": "32500000"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 30000000.0,
+      "answer": "30000000.0\n\nThis estimate is derived from the most recent demographic data and biological literature. The current global"
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 2015.0,
+      "answer": "Based on the most recent population censuses (Giraffe Conservation Foundation, 2015 and subsequent estimates) and anatom"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 98000000.0,
+      "answer": "98,000,000"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 98000000.0,
+      "answer": "98000000"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 98000000.0,
+      "answer": "98000000"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 98000000.0,
+      "answer": "98000000"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 98000000.0,
+      "answer": "98000000\n\nJustification: Based on the most recent population assessments from the Giraffe Conservation Foundation (2021)"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 98000000.0,
+      "answer": "98000000\n\nEstimating the total number of spots on giraffes requires considering the known global population and estimati"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 98000000.0,
+      "answer": "98,000,000"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 98000000.0,
+      "answer": "98000000\n\n**Justification:**\n\nTo arrive at this estimate, I synthesized data from the most recent global population asse"
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 98000000.0,
+      "answer": "98000000\n\n**Justification:**\n\nThis estimate is derived from the product of the current global wild giraffe population an"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 82000000.0,
+      "answer": "82000000\n\n**Justification:**\nTo estimate the total number of black spots, we multiply the current global giraffe populat"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 82000000.0,
+      "answer": "82000000\n\n**Justification:**\nTo arrive at this estimate, I combined the most recent global population data with an anato"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 82000000.0,
+      "answer": "82,000,000"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 82000000.0,
+      "answer": "82,000,000\n\nEstimating the total number of spots on living giraffes requires considering current population data and typ"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 82000000.0,
+      "answer": "82000000\n\nThis estimate is based on current population data and anatomical considerations. Recent assessments by the Gir"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 82000000.0,
+      "answer": "82000000"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 82000000.0,
+      "answer": "82000000\n\n**Justification:**\n\n1.  **Global Population:** According to the most recent comprehensive census conducted by "
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 82000000.0,
+      "answer": "82000000\n\n**Justification:**\nTo provide the most accurate point estimate, I aggregated data from current population coun"
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 82000000.0,
+      "answer": "82,000,000\n\n**Justification:**\n\nTo arrive at this estimate, two primary variables must be multiplied: the current total "
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nThis estimate is derived from the current global giraffe population (approximately 100,000 individuals, based"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nJustification: Current conservation estimates place the total wild and captive giraffe population at approxim"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nJustification: Based on current conservation estimates (e.g., IUCN, 2021), the global wild giraffe population"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nEstimating this requires considering the global giraffe population and the average number of spots per indivi"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000\nBased on estimates from conservation organizations like the IUCN, the global giraffe population is roughly 100"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\n**Justification:**\n\nThis estimate is derived from two primary variables: the total global giraffe population "
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 410000000.0,
+      "answer": "410000000\n\nJustification: This estimate is derived from the current global giraffe population and the average number of "
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 410000000.0,
+      "answer": "410000000\n\nThis estimate is derived from the following data points:\n\n1.  **Population:** According to the IUCN Red List "
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 410000000.0,
+      "answer": "410000000"
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 410000000.0,
+      "answer": "410000000\n\nJustification: Recent assessments (e.g., IUCN, GCF) estimate the global wild giraffe population to be around "
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 410000000.0,
+      "answer": "410,000,000"
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 410000000.0,
+      "answer": "410000000\n\nThis estimate is derived from current giraffe population data and average morphological characteristics. The "
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 410000000.0,
+      "answer": "410000000"
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 410000000.0,
+      "answer": "410000000"
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 410000000.0,
+      "answer": "410000000\n\nJustification: This estimate is derived from two primary variables: the global giraffe population and the ave"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 150000000.0,
+      "answer": "150000000"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 150000000.0,
+      "answer": "150000000\n\n**Justification:**\n\nTo arrive at this point estimate, I combined the most current global population census da"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 150000000.0,
+      "answer": "150000000\n\n**Justification:**\n\nTo arrive at this estimate, I calculated the product of the estimated global giraffe popu"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 138000000.0,
+      "answer": "138000000\n\nEstimation logic: Recent global population censuses estimate the number of wild giraffes at approximately 110"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 150000000.0,
+      "answer": "150000000"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 150000000.0,
+      "answer": "150000000\n\nJustification: Based on current estimates from conservation organizations like the Giraffe Conservation Found"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 150000000.0,
+      "answer": "150000000\n\n**Justification:**\n\nTo arrive at this estimate, I calculated the product of the current global giraffe popula"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 150000000.0,
+      "answer": "150000000"
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 150000000.0,
+      "answer": "150000000"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n**Justification:**\n\nTo derive this estimate, I multiplied the most current global population estimate by th"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n### Justification\n\nTo arrive at this estimate, two primary variables were multiplied: the total global gira"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n**Justification:**\nTo calculate this estimate, two primary variables must be determined: the total global g"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\nJustification: Current conservation status reports (e.g., from the Giraffe Conservation Foundation) estimat"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\nBounding the current global giraffe population relies on the most recent conservation data, which suggests "
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n**Justification:**\n\n1.  **Giraffe Population:** According to the 2023 Giraffe Conservation Status Report (c"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000\n\n**Justification:**\n\nTo arrive at this estimate, we calculate the product of the total estimated global giraff"
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n**Justification:**\n\nTo derive this estimate, two primary variables were calculated: the total global giraff"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 480000000.0,
+      "answer": "480000000\n\n**Justification:**\nTo derive this estimate, I calculated the product of the estimated global giraffe populati"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 480000000.0,
+      "answer": "480,000,000\n\n**Justification:**\n\nThis estimate is derived from a Fermi estimation based on current conservation data and"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 480000000.0,
+      "answer": "480,000,000"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 480000000.0,
+      "answer": "480,000,000\n\nThis estimate is derived by approximating the global giraffe population and the average number of spots per"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 480000000.0,
+      "answer": "480000000"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 480000000.0,
+      "answer": "480000000"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 480000000.0,
+      "answer": "480,000,000\n\n**Justification:**\nThis estimate is derived from the current global giraffe population combined with the av"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 480000000.0,
+      "answer": "480,000,000"
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 480000000.0,
+      "answer": "480,000,000\n\n**Justification:**\nThis estimate is derived from two primary variables: the current global giraffe populati"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nJustification:\nThis estimate is derived by multiplying the current global giraffe population by the average n"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nJustification: To estimate the total number of spots, we multiply the estimated global giraffe population by "
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\n**Justification:**\nTo arrive at this estimate, I multiplied two primary components: the current global giraff"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nThere are estimated to be roughly 100,000 giraffes in the wild. Individual giraffes typically have between hu"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\nJustification: Recent estimates for the global giraffe population suggest there are fewer than 120,000 indivi"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\n**Justification:**\nTo arrive at this point estimate, we combine current population data with morphological av"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 240000000.0,
+      "answer": "240000000"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\n**Justification:**\n\nTo arrive at this point estimate, I utilized the most recent population data available fr"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 240000000.0,
+      "answer": "240000000"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 240000000.0,
+      "answer": "240000000"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\nTo arrive at this estimate, I considered the current global consensus on giraffe populations and the morpholo"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\n**Justification:**\n\nTo derive this estimate, I broke the problem down into two primary variables: the current"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\n**Justification:**\nMy estimate is derived from the most recent credible population census combined with a mor"
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 240000000.0,
+      "answer": "240000000\n\n**Justification:**\n\nTo derive this estimate, I relied on current wildlife census data and morphological avera"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n### Justification\n\nTo arrive at the most accurate point estimate, I have factored in the two main variables: t"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\nTo reach this estimate, I combined the most current conservation data with anatomical avera"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\nTo derive this estimate, we must multiply the total estimated global population of living g"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 65000000.0,
+      "answer": "65000000"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\n\nTo arrive at this estimate, I calculated the product of the current global giraffe populat"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64500000.0,
+      "answer": "64500000"
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification for the Estimate:**\n\nTo derive the most accurate point estimate, I used the following two prim"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nTo estimate this quantity, we multiply the current global giraffe population by the average"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\nJustification:\nThis estimate is derived from current best-available data on giraffe populations and the biolog"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\nThis estimate is derived from combining recent wild giraffe population data (approximately 95,000 individuals)"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nTo arrive at this figure, we multiply the estimated total global giraffe population by the "
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nThis estimate is derived from the following best-approximation data points:\n\n1.  **Global G"
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 76000000.0,
+      "answer": "76000000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the total estimated giraffe populat"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\n\nTo estimate the total number of black spots on all living giraffes, I calculated based on "
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n### Justification\n\nThis estimate is derived from two primary variables: the current global giraffe population "
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nTo arrive at this estimate, I derived the total from two primary variables: the current glo"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80,000,000\n\nEstimate calculation: Current wild giraffe population estimates range approximately between 97,000 and 100,0"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80,000,000"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\nThere are estimated to be roughly 100,000 giraffes remaining in the wild, with the number typically cited by c"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nThis estimate is based on a synthesis of current population data and biological surface are"
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nTo derive this estimate, I considered two primary variables: the global giraffe population "
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nThis estimate is derived by multiplying the best available global giraffe population figure"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\n**Justification:**\nThis estimate is derived by multiplying the estimated global wild and captive giraffe popul"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\n**Justification:**\nThis estimate is derived by multiplying the current global giraffe population by the averag"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50000000.0,
+      "answer": "50,000,000"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\nJustification: Current global giraffe population estimates range between 90,000 and 110,000 individuals in the"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50000000\nBased on estimated global giraffe populations of approximately 100,000 individuals and an average of roughly 50"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50000000"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\n**Justification:**\nCurrent conservation estimates (IUCN and Giraffe Conservation Foundation) suggest the globa"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\n**Justification:**\nThis estimate is derived from the most current available data on giraffe populations and bi"
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50000000"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 83000000.0,
+      "answer": "83,000,000"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\nJustification:\nThis estimate is derived from the intersection of the current global giraffe population and the"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 83000000.0,
+      "answer": "83000000\n\n**Justification:**\n\nThis estimate is derived from current zoological population data and biological surface ar"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 98000.0,
+      "answer": "Based on the most current population estimates and biological data, the global giraffe population is approximately 98,00"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 90.0,
+      "answer": "Based on current data regarding giraffe populations and coat patterns, a reasonable estimate for the total number of spo"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\nJustification: The global giraffe population is estimated to be roughly 97,000 to 100,000 individuals in the w"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 83000000.0,
+      "answer": "Based on current zoological census data (IUCN Red List and Giraffe Conservation Foundation estimates) and an analysis of"
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 83000000.0,
+      "answer": "83000000\n\n**Justification:**\nThis estimate is based on two primary variables: the current global giraffe population and "
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 83000000.0,
+      "answer": "83,000,000"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\n**Justification:**\n\nTo derive this point estimate, I combined the most recent population data with a weighted "
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 85000000.0,
+      "answer": "85000000"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\n**Justification:**\nTo arrive at this point estimate, I multiplied the current global giraffe population by the"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\n(Note: This estimate is derived from the current wild giraffe population of approximately 117,000 and captive "
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\nEstimation logic: The current estimated global giraffe population is approximately 117,000 in the wild, plus r"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\nJustification: Estimating this requires multiplying the number of living giraffes by the average number of spo"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\n**Justification:**\n\nTo arrive at this estimate, I used the most recent population data and a weighted average "
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\nThis estimate is derived from the current global giraffe population and the average number of spots per indivi"
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 85000000.0,
+      "answer": "85000000\n\nJustification:\nThis estimate is derived from the current global giraffe population multiplied by the average n"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\n**Justification:**\nTo derive this estimate, I multiplied the estimated total living giraffe population by the "
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 70200000.0,
+      "answer": "70200000"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 70200000.0,
+      "answer": "70200000"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 70200000.0,
+      "answer": "70200000\n(Justification: Based on recent population estimates of approximately 117,000 giraffes worldwide, and an averag"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\nTo estimate this, we multiply the current estimated wild and captive giraffe population by the average number "
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\nJustification: Current estimates for the wild giraffe population suggest approximately 115,000 to 117,000 indi"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\n**Justification:**\nTo arrive at this estimate, I combined the most current population data with the average sp"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\nJustification: This estimate is derived from multiplying the current estimated global giraffe population by th"
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 70200000.0,
+      "answer": "70200000\n\n**Justification for the estimate:**\nThis estimate is derived by multiplying the most recent reliable global gi"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "65000000"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "65,000,000"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "65000000\n\n**Justification:**\n\nTo reach this estimate, I used the following variables based on the most recent data:\n\n1. "
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 65000000.0,
+      "answer": "65,000,000"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 1.0,
+      "answer": "Estimating the total number of spots requires calculating the current global giraffe population and then averaging the n"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 65000000.0,
+      "answer": "65000000"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 65000000.0,
+      "answer": "65000000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the current global giraffe populati"
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 65000000.0,
+      "answer": "65000000\n\nAttributed to:\n1.  **Population Estimate:** Based on the most recent comprehensive data from the Giraffe Conse"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\n**Justification:**\nThis estimate is derived from a Fermi calculation based on current biological data:\n1.  **"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nJustification:\nTo arrive at this estimate, we multiply the approximated global giraffe population by the aver"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nThe global giraffe population is estimated to be around 120,000 individuals (including a small number in capt"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nJustification: The wild giraffe population is estimated to be roughly 117,000 individuals based on recent IUC"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000\n\nBased on current conservation data, the global wild giraffe population is estimated at approximately 117,000 "
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 14500000.0,
+      "answer": "14500000\n\nJustification:\nCurrent estimates for the wild giraffe population range roughly from 90,000 to 115,000 individu"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 14500000.0,
+      "answer": "14500000\n\n**Justification:**\nTo arrive at this estimate, we multiply the estimated global giraffe population by the aver"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 14500000.0,
+      "answer": "14500000\n\nJustification:\nThis estimate is derived from the current global giraffe population multiplied by the average n"
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 14500000.0,
+      "answer": "14500000"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\n**Justification:**\n\nCurrent global giraffe population estimates, based on data from the Giraffe Conservation "
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 175000000.0,
+      "answer": "175000000"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 175000000.0,
+      "answer": "175000000\n\nThis estimate is derived from the current global population of giraffes, which the Giraffe Conservation Found"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 175000000.0,
+      "answer": "175000000\nThis estimate assumes a global population of approximately 117,000 giraffes and an average of around 1,500 spo"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 170000000.0,
+      "answer": "170000000\nThis estimate is derived from current wild and captive giraffe population estimates (approximately 110,000 ind"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 175000000.0,
+      "answer": "175000000\n\nEstimate based on a wild and captive population of approximately 115,000 giraffes and an estimated average of"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175000000.0,
+      "answer": "175000000"
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175000000.0,
+      "answer": "175000000\n\n**Justification:**\nBased on the most current population data and biological estimates, here is the breakdown "
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 175000000.0,
+      "answer": "175000000"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 68000000.0,
+      "answer": "68000000\n\n**Justification:**\n\nMy estimate is derived by multiplying the estimated total global giraffe population by the"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 68000000.0,
+      "answer": "68000000\n\n**Justification:**\n\nTo arrive at this estimate, I applied three primary variables: wild population, captive po"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 68000000.0,
+      "answer": "68000000\n\n**Justification:**\nTo arrive at this estimate, I utilized two primary variables: the global living giraffe pop"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 68000000.0,
+      "answer": "68000000\nThis estimate is derived from the approximate living giraffe population and the average number of coat pattern "
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 68000000.0,
+      "answer": "68000000\n\nEstimating the total number of spots on all living giraffes requires combining current population data with es"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 68000000.0,
+      "answer": "68000000. The global giraffe population is estimated to be roughly 120,000 to 130,000 individuals by recent conservation"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 68000000.0,
+      "answer": "68000000"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 68000000.0,
+      "answer": "68000000\n\n**Justification:**\nThis estimate is derived by multiplying the estimated global giraffe population by the aver"
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 68000000.0,
+      "answer": "68000000"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\nThis estimate is derived from the most recent population data multiplied by the average spo"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\nJustification:\nTo derive this estimate, we multiply the current global population of giraffes by the average n"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\nBased on the most widely accepted conservation data from the 2016 Giraffe Range State Asses"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\nEstimates for the global giraffe population vary, with recent assessments suggesting around 90,000 to 97,000 i"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\nJustification: Estimates for the current global giraffe population vary, but recent assessments (e.g., Giraffe"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95000000"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\nTo arrive at this point estimate, I used the following best-available data for a calculus o"
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\nThis estimate is derived from two primary variables: the current global giraffe population "
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\n\nThis estimate is derived from multiplying the current global giraffe population by the ave"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 200000000.0,
+      "answer": "200000000\n\n<tool_call>\nxjeni-outputs\nModel has generated a point estimate of 200,000,000.\n<tool_call>\n...\n\nWait, I need "
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 200000000.0,
+      "answer": "200000000.0\n\n**Justification:**\nTo arrive at this estimate, I used the following data points derived from current conser"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 200000000.0,
+      "answer": "200000000\n\nJustification:\nTo derive this estimate, two main variables were considered: the global giraffe population and"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 200000000.0,
+      "answer": "200000000\n\nBased on current population estimates (approximately 100,000 to 120,000 wild and captive giraffes) and typica"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 200000000.0,
+      "answer": "200000000"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 200000000.0,
+      "answer": "200000000\n\nJustification:\nCurrent global wild giraffe population estimates vary but are generally cited around 100,000 t"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 248000000.0,
+      "answer": "248000000\n\n**Justification:**\nTo derive this estimate, we rely on two primary variables: the total global giraffe popula"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 200000000.0,
+      "answer": "200000000"
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 200000000.0,
+      "answer": "200000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 1.0,
+      "answer": "Based on current population data and biological estimates, the total number of spots depends on two main factors: the nu"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117000000\n\nBased on the most recent conservation data, estimated at approximately 117,000 wild giraffes and an additiona"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 95000000.0,
+      "answer": "95000000\n\n**Justification:**\n\nTo arrive at this point estimate, I calculated the total population of living giraffes and"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000.0"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\n**Justification:**\n\nTo estimate this quantity accurately, we must multiply the total population of living gir"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 95000000.0,
+      "answer": "95,000,000"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 90000000.0,
+      "answer": "90000000. The giraffe population is estimated to be around 117,000 individuals, and while spot counts vary by species, a"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 90000000.0,
+      "answer": "90000000"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 1.0,
+      "answer": "To estimate the total number of black spots on all living giraffes, we must calculate two primary components: the total "
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000\n\n**Justification:**\n\nTo arrive at this estimate, two main variables are required: the current total giraffe po"
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 100000000.0,
+      "answer": "100000000"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\nJustification for this estimate:\n1.  **Population:** Current scientific estimates (2023-2024 data from the Gi"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\n**Justification:**\nThis estimate is derived from the following parameters:\n1.  **Total Living Population:** A"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\n**Justification:**\nThis estimate is derived from two primary factors: the current global giraffe population a"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\nMy estimate is based on current giraffe population estimates and the typical number of spots per individual. "
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\nThis estimate assumes a current global giraffe population of approximately 118,000 individuals (wild and capt"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\nEstimation justification: There are estimated to be approximately 115,000 to 120,000 giraffes in the world (w"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\nJustification: This estimate is derived from the current global giraffe population and the average number of "
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 225000000.0,
+      "answer": "225000000"
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 225000000.0,
+      "answer": "225000000\n\n**Justification:**\n\nThis estimate is derived from the current global giraffe population multiplied by the ave"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\n**Justification:**\n\nTo derive this estimate, I calculated the product of the estimated global living giraffe p"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\n**Justification:**\n\nTo derive this point estimate, I aggregated the best available data on global giraffe popu"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\nThis estimate is based on current giraffe population data and average coat pattern characteristics. The global"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 45000000.0,
+      "answer": "45000000\nEstimates for the wild giraffe population are typically around 115,000 to 120,000 individuals based on recent c"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\nCurrent wild giraffe populations are estimated by conservation groups like the IUCN to be around 110,000 to 12"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\n**Justification:**\n\n1.  **Total Giraffe Population:** The most recent widely accepted estimates for the living"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50000000.0,
+      "answer": "50000000"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50000000.0,
+      "answer": "50,000,000\n\n**Justification:**\nTo determine this estimate, we calculate the product of the current global wild giraffe p"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 50500000.0,
+      "answer": "50,500,000\n\n**Justification:**\n\n1.  **Population Estimate:** According to the Giraffe Conservation Foundation (GCF) and "
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50,000,000"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50,000,000"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\nThe estimate is derived from current population data and average morphological characteristics. The Giraffe Co"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50000000\n\n**Justification:**\nTo arrive at this estimate, I utilized a Fermi calculation based on current population data"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50000000"
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 50000000.0,
+      "answer": "50,000,000\n\nJustification: This estimate is derived from the current global giraffe population multiplied by the average"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 40000000.0,
+      "answer": "40000000\n\n**Justification:**\nTo arrive at this point estimate, two key variables must be estimated based on the most rec"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 40000000.0,
+      "answer": "40000000\n\nBased on current giraffe population estimates of approximately 97,000 to 100,000 individuals globally and an a"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 40000000.0,
+      "answer": "40000000\n\n**Justification:**\nTo arrive at this estimate, we multiply the current estimated global giraffe population by "
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 40000000.0,
+      "answer": "40000000"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74,500,000"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74,500,000\n\n**Justification:**\nThis estimate is derived from two primary variables: current population and average spot "
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74500000"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 74500000.0,
+      "answer": "74500000"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 72000000.0,
+      "answer": "72,000,000\nThis estimate is derived by taking recent rough estimates of the wild giraffe population, which typically ran"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 74500000.0,
+      "answer": "74500000.\nEstimates of the global giraffe population vary but recent IUCN data (2021) suggests around 96,000 individuals"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74500000\n\nThis estimate is derived from a conservative assessment of current giraffe population data and biological patt"
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74500000\n\nTo arrive at this estimate, I have applied a conservative calculation based on the two primary variables: the "
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74500000\n\n**Justification:**\nTo arrive at this estimate, I utilized the most recent and conservative data available rega"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 97500000.0,
+      "answer": "97500000\n\n**Justification:**\n1.  **Giraffe Population:** According to the most comprehensive recent data (such as the Gi"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 97500000.0,
+      "answer": "97500000\n\n**Justification:**\nTo estimate this quantity, we multiply the total global giraffe population by the average n"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 97500000.0,
+      "answer": "97500000"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 97500000.0,
+      "answer": "97500000\n\nBased on the Giraffe Conservation Foundation's 2021 status report, the estimated wild giraffe population is ap"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 97500000.0,
+      "answer": "97500000\nJustification: The current global wild giraffe population is estimated at approximately 97,500 individuals (bas"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 97500000.0,
+      "answer": "97,500,000\n\nJustification: A widely cited 2021 report by the Giraffe Conservation Foundation estimated the wild giraffe "
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 97500000.0,
+      "answer": "97500000\n\n**Justification:**\n\nTo arrive at this number, I calculated the product of the estimated global giraffe populat"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 97500000.0,
+      "answer": "97500000\n\n**Justification:**\nTo arrive at this estimate, I multiplied the current best estimate for the total global liv"
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 97500000.0,
+      "answer": "97500000"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80,000,000\n\n**Justification:**\n\n1.  **Giraffe Population:** Recent estimates from the Giraffe Conservation Foundation (2"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\n\nTo arrive at this point estimate, I synthesized the most recent population census data wit"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 90000.0,
+      "answer": "Based on current population estimates and biological averages, the calculation is as follows: Recent surveys (e.g., from"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 90000.0,
+      "answer": "Based on current estimates of wild giraffe populations which range roughly between 90,000 and 120,000, and taking a cons"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 100000.0,
+      "answer": "Based on currentpopulation estimates for giraffes in the wild and in captivity (approximately 100,000 to 115,000 individ"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nTo derive this point estimate, I combined the most recent credible population data with the"
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000\n\n**Justification:**\nTo arrive at this estimate, we break the problem into two main variables: the total living "
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 80000000.0,
+      "answer": "80000000.0\n\n**Justification:**\n\nThis estimate is derived from two primary variables: the current total global giraffe po"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\n**Justification:**\n\n1.  **Population Estimate:** According to the most recent conservation data (Giraffe Conse"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\n**Justification:**\n\nTo arrive at this estimate, I calculated the product of the current global giraffe populat"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\nJustification:\nTo arrive at this point estimate, two primary variables were calculated based on current conser"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\nTo estimate this, I used two available population estimates based on current scientific consensus. Current rec"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\nJustification: This estimate relies on multiplying the approximate global population by an average number of s"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38000000.0,
+      "answer": "38000000"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\n**Justification:**\n\nTo arrive at this point estimate, I utilized current conservation data and biological esti"
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\nJustification:\nTo derive this estimate, we multiply the estimated global population of living giraffes by the "
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38000000.0,
+      "answer": "38000000\n\n**Justification:**\n\nThis estimate is derived by multiplying the current estimated global giraffe population by"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74,500,000"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74,500,000\n\n**Justification:**\n\nThis estimate is derived from a Fermi calculation based on the most current census data "
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 74500000.0,
+      "answer": "74,500,000"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 74500000.0,
+      "answer": "74,500,000\n\nThis estimate is derived from current giraffe population data and typical spot density. Conservation organiz"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 74500000.0,
+      "answer": "74500000\n\nThis estimate considers a global giraffe population of approximately 96,000 (based on recent wild population a"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 74500000.0,
+      "answer": "74500000\n\nThis estimate is derived by multiplying the approximate global giraffe population by the average number of spo"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74,500,000\n\nJustification:\nTo arrive at this point estimate, I multiplied two key variables: the total global living pop"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74,500,000"
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 74500000.0,
+      "answer": "74,500,000\n\n**Justification:**\nTo arrive at this point estimate, I calculated the total wild and captive population and "
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "**65000000**\n\n**Justification:**\nTo calculate this estimate, I aggregate the current global giraffe population with an a"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "65000000"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 65000000.0,
+      "answer": "65,000,000\n\n**Justification:**\n\nTo arrive at the most accurate point estimate, we need to estimate two primary variables"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 65000000.0,
+      "answer": "65,000,000"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000\n(Justification: Estimates vary based on species and age. Global giraffe populations are estimated around 110,00"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64500000.0,
+      "answer": "64,500,000"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 65000000.0,
+      "answer": "65000000\n\n**Justification:**\n\nTo arrive at this point estimate, I utilized a Fermi estimation method based on current co"
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 65000000.0,
+      "answer": "65000000\n\n**Justification:**\nTo derive this estimate, I calculated based on current population data and biological morph"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\n\nTo arrive at this figure, I calculated a weight-averaged estimate based on current populat"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\n\nTo arrive at this estimate, I aggregated current population data with species-specific spo"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\nTo arrive at this estimate, I multiplied the estimated global giraffe population by the average number of spot"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\nI reached this estimate by first approximating the current global giraffe population and then estimating the a"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\nHere is some justification for this estimate: Global giraffe populations are estimated to be around 117,000 in"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\nTo derive this estimate, I calculated the product of the current global giraffe population "
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64000000.0,
+      "answer": "64000000"
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 64000000.0,
+      "answer": "64000000\n\n**Justification:**\nThis estimate is derived by multiplying the current global giraffe population by the averag"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 105000000.0,
+      "answer": "105000000"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 105000000.0,
+      "answer": "105,000,000\n\n### Justification\n\nTo arrive at the most accurate point estimate for the total number of black spots on all"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 105000000.0,
+      "answer": "105000000\n\n**Justification:**\nThis estimate is derived from the available scientific data on global giraffe population a"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 105000000.0,
+      "answer": "105000000\n\nThis estimate is based on current population estimates of approximately 100,000 to 115,000 giraffes in the wi"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 105000000.0,
+      "answer": "105000000. Estimates vary based on population counts (wild populations are approximately 100,000) and variation in coat "
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 105000000.0,
+      "answer": "105000000"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 105000000.0,
+      "answer": "105000000\n\n**Justification:**\nTo derive this estimate, I combined current conservation data with biological patterns:\n\n1"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 105000000.0,
+      "answer": "105000000"
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 105000000.0,
+      "answer": "105000000"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 62500000.0,
+      "answer": "62500000\n\n**Justification:**\n\nTo arrive at this point estimate, I aggregated data from the two most critical variables: "
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 125000.0,
+      "answer": "Based on current conservation data and biological estimates, the global giraffe population is approximately 125,000 indi"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 1.0,
+      "answer": "Based on the most current population data and biological estimates of coat patterns, here is the breakdown:\n\n1.  **Total"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 60000000.0,
+      "answer": "60000000. Reasoning: The global giraffe population is estimated at roughly 117,000 to 120,000 individuals in the wild, w"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 2021.0,
+      "answer": "Based on current conservation assessments (e.g., Giraffe Conservation Foundation 2021), the global wild giraffe populati"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 1.0,
+      "answer": "Based on current conservation data and biological estimates, here is the justification and the point estimate:\n\n**Justif"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 62500000.0,
+      "answer": "62500000\n\n**Justification:**\nTo arrive at this point estimate, I utilized two primary variables: the global living giraf"
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 125000.0,
+      "answer": "Based on current conservation data and biological estimates, the total global giraffe population (wild and captive) is a"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 36600000.0,
+      "answer": "36600000\n\n**Justification:**\nTo arrive at this point estimate, I broke the problem down into two primary variables: the "
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 36600000.0,
+      "answer": "36600000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 36600000.0,
+      "answer": "36600000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 36600000.0,
+      "answer": "36600000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 36600000.0,
+      "answer": "36600000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 36600000.0,
+      "answer": "36600000\n\nThe estimate is based on the known global giraffe population and an average estimate of spot count per animal."
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 36600000.0,
+      "answer": "36,600,000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 36600000.0,
+      "answer": "36,600,000"
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 36600000.0,
+      "answer": "36,600,000\n\n**Justification:**\nTo arrive at this single point estimate, the following data points were weighted and calc"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 72750000.0,
+      "answer": "72750000"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 0.0,
+      "answer": "0\n\n**Justification:**\nWhile commonly referred to as such in casual conversation, giraffe \"spots\" are not actually black."
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 117000000.0,
+      "answer": "117000000"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115000000"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 115000000.0,
+      "answer": "115000000\n\nEstimation involves several uncertain factors. First, the global giraffe population fluctuates; recent assess"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 0.0,
+      "answer": "0\n\nJustification: A number of reasons contribute to this estimate. First, giraffe spotting patterns vary significantly b"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 0.0,
+      "answer": "0\n\n**Justification:**\nWhile it is a common colloquialism to refer to the patterns on a giraffe as \"black spots,\" the bio"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 73125000.0,
+      "answer": "73125000\n\n**Justification:**\n\nTo provide the most accurate point estimate, I evaluated the two primary variables: the gl"
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 117000000.0,
+      "answer": "117,000,000\n\n**Justification:**\nThis estimate is derived from the most current authoritative population data and average"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 100000.0,
+      "answer": "Based on current conservation data, the global wild giraffe population is estimated at approximately 100,000 to 117,000 "
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 110000000.0,
+      "answer": "110000000\n\n**Justification:**\n\nTo arrive at this estimate, I used a Fermi estimation approach based on the most recent p"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 120000000.0,
+      "answer": "120000000"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 110000000.0,
+      "answer": "110000000"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 110000000.0,
+      "answer": "110000000"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 90000.0,
+      "answer": "Based on available data, the global giraffe population is estimated to be between 90,000 and 120,000 individuals. While "
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 110000000.0,
+      "answer": "Based on current conservation estimates and biological data analysis, the most accurate point estimate is:\n\n**110000000*"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": null,
+      "answer": "Based on current biological census data and estimates of giraffe coat patterns, the most accurate point estimate for the"
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 110000000.0,
+      "answer": "110000000\n\n**Justification:**\nTo estimate the total number of black spots on all living giraffes, we must multiply the e"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\nJustification:\nThis estimate is derived from a Fermi calculation based on the best available conservation and "
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\n**Justification:**\n\nTo arrive at this point estimate, I utilized a Fermi calculation based on the two variable"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\n### Justification\n\nTo arrive at this single point estimate, I calculated the product of the total global giraf"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\nJustification: Current population estimates for wild giraffes range from approximately 97,000 to 117,000 follo"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\n(Giraffe population estimates from 2020-2023 range between roughly 90,000 and 117,000 individuals in the wild,"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 32500000.0,
+      "answer": "32500000."
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\n**Justification:**\nTo arrive at this point estimate, I multiplied the estimated current global giraffe populat"
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 32500000.0,
+      "answer": "32500000\n\n**Justification:**\n\nTo estimate the total number of spots, we multiply the total living giraffe population by "
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 32500000.0,
+      "answer": "32500000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 180000000.0,
+      "answer": "180000000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 180000000.0,
+      "answer": "180,000,000\n\n**Justification:**\nTo arrive at this estimate, I utilized the latest population data and average morphologi"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 180000000.0,
+      "answer": "180,000,000\n\n**Justification:**\nThis estimate is derived from the following data points:\n1.  **Global Population:** Acco"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 180000000.0,
+      "answer": "180000000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 180000000.0,
+      "answer": "180000000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 180000000.0,
+      "answer": "180000000\n\nThis estimate is based on current wild populations of roughly 115,000 to 120,000 individuals and an average s"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 180000000.0,
+      "answer": "180000000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 180000000.0,
+      "answer": "180000000"
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 180000000.0,
+      "answer": "180000000\n\n**Justification:**\nTo arrive at this estimate, I utilized the most recent global population data and average "
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\n**Justification:**\nThis estimate is derived from two primary variables: the current global giraffe population "
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\n**Justification for the Estimate:**\n\nTo derive this single number, we must decompose the problem into two vari"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\n**Justification:**\n\nThis estimate is derived from the most current conservation data multiplied by the biologi"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 62000000.0,
+      "answer": "62000000"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\nCurrent wild giraffe population estimates generally range from approximately 97,000 to 120,000 individuals, wi"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 62000000.0,
+      "answer": "62000000"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\n**Justification:**\nTo arrive at this point estimate, I used the most recent reliable population data and biolo"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\nJustification:\nThis estimate is derived by multiplying the current global giraffe population by the average nu"
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 62000000.0,
+      "answer": "62000000\n\n**Justification:**\n\nThis estimate is derived from a multiplication of the most current global giraffe populati"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 70000000.0,
+      "answer": "70000000\n\n**Justification:**\nTo arrive at this estimate, I combined the most current reliable population data with a bio"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 69000000.0,
+      "answer": "69000000"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 69000000.0,
+      "answer": "69000000"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 69000000.0,
+      "answer": "69000000\n\nThe total number of spots depends on the giraffe population size and the average number of spots per individua"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 69000000.0,
+      "answer": "69000000\n\nThis is a rough calculation based on current population data and anatomical estimates. Global giraffe populati"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 69000000.0,
+      "answer": "69000000\nEstimates for the wild giraffe population vary but recent assessments place it around 110,000 to 120,000 indivi"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 69000000.0,
+      "answer": "69000000"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 69000000.0,
+      "answer": "69000000"
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 69000000.0,
+      "answer": "69000000"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38400000.0,
+      "answer": "38400000\n\n**Justification:**\n1.  **Giraffe Population:** The most reliable recent ecological data (Giraffe Conservation "
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38400000.0,
+      "answer": "38400000"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 38400000.0,
+      "answer": "38400000\n\nJustification:\nTo arrive at this estimate, I calculated the product of the estimated global giraffe population"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38400000.0,
+      "answer": "38400000"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38400000.0,
+      "answer": "38400000\n\nJustification: Current wild giraffe population estimates are approximately 115,000 to 120,000. Adding a global"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 38400000.0,
+      "answer": "38400000"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38400000.0,
+      "answer": "38400000"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38400000.0,
+      "answer": "38400000\n\nJustification:\nTo arrive at this estimate, I calculated the product of the global giraffe population and the a"
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 38400000.0,
+      "answer": "38400000\n\n**Justification:**\n\nTo arrive at this estimate, two main variables were calculated: the global giraffe populat"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\nHere is the justification for this point estimate:\n\n1.  **Giraffe Population:** According to the 2021 Giraffe C"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\n**Justification:**\n\nTo arrive at this estimate, we must consider two primary variables: the total global popula"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 8500000.0,
+      "answer": "8500000"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\nTo arrive at this estimate, we consider the current global population of giraffes and the typical number of spo"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 8500000.0,
+      "answer": "8500000"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 8500000.0,
+      "answer": "8500000\nEstimating the total number of spots on all living giraffes requires knowing the current population and the aver"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\nJustification:\nTo arrive at this estimate, I used the following data points and calculations:\n\n1.  **Total Gira"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\n**Justification:**\n\nTo arrive at this estimate, we multiply the estimated global giraffe population by the aver"
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 8500000.0,
+      "answer": "8500000\n\n**Justification:**\n\nTo arrive at this estimate, I aggregated the best available data regarding current giraffe "
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 230000000.0,
+      "answer": "230000000"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\n**Justification:**\nTo arrive at this estimate, I considered the current global giraffe population and the ave"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\n**Justification:**\nBased on current conservation data and anatomical estimates, this figure is derived as fol"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\nTo estimate this, we first look at the population of giraffes. Recent conservation data (such as from the Gir"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 230000000.0,
+      "answer": "230,000,000\n\nThe estimate is derived from the global population of giraffes and the average number of markings per indiv"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 230000000.0,
+      "answer": "230000000"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 230000000.0,
+      "answer": "230000000"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\n**Justification:**\nThis estimate is derived from two key variables: the total global giraffe population and t"
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 230000000.0,
+      "answer": "230000000\n\n**Justification:**\nTo arrive at the most accurate point estimate, we consider two primary variables: the curr"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\n**Justification:**\nTo arrive at this estimate, I multiplied the most recent reliable population census by the "
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nJustification:\n1.  **Population Estimate:** The most recent comprehensive\u666e\u67e5 (census) by the Giraffe Conservati"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nJustification:\n1.  **Global Giraffe Population:** According to recent assessments (e.g., Giraffe Conservation "
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nJustification: Current population estimates for giraffes, accounting for recent declines attributed to drought"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nGiraffe populations are estimated to be around 105,000 to 115,000 individuals in the wild based on recent cens"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nEstimate based on a conservative wild giraffe population count of approximately 110,000 (accounting for recent"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\nJustification: Current estimates from the Giraffe Conservation Foundation (2023-2024) place the global wild gi"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\n**Justification:**\nTo derive this estimate, I used the most recent scientific consensus on giraffe populations"
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 71500000.0,
+      "answer": "71500000\n\n**Justification:**\nThis estimate is derived by multiplying the most current scientific consensus numbers for g"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 73125000.0,
+      "answer": "73125000\n\n**Justification:**\n\nThis estimate is derived by multiplying the most recent authoritative population census by"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 73125000.0,
+      "answer": "73125000"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 73125000.0,
+      "answer": "73,125,000\n\n**Justification:**\nTo derive this estimate, I multiplied the most recent scientific consensus on the global "
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 73125000.0,
+      "answer": "73125000\n\nThis estimate is derived from the approximate global wild giraffe population (around 117,000 individuals accor"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 73125000.0,
+      "answer": "73125000\n\nMost accurate point estimate based on current giraffe population data and geometric estimation of skin surface"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 73125000.0,
+      "answer": "73125000"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 73125000.0,
+      "answer": "73125000"
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 73125000.0,
+      "answer": "73125000\n\n**Justification:**\nThis estimate is derived from the intersection of the most recent authoritative population "
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 73125000.0,
+      "answer": "73125000"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 72000000.0,
+      "answer": "72000000\n\nThis estimate is derived from a conservative population count multiplied by a weighted average of spots per gi"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 72000000.0,
+      "answer": "72000000"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "none",
+      "estimate": 72000000.0,
+      "answer": "72000000"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 72000000.0,
+      "answer": "72000000\n\nThis estimate is derived by considering current global giraffe population counts and average coat pattern morp"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 72000000.0,
+      "answer": "72000000"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "dom",
+      "estimate": 72000000.0,
+      "answer": "72,000,000\n\nJustification: This estimate is derived from current giraffe population data and average spot morphology. Th"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 72000000.0,
+      "answer": "72000000\n\n**Justification:**\nTo arrive at this estimate, I calculated the product of the current global giraffe populati"
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 72000000.0,
+      "answer": "72000000\n\n**Justification:**\nTo arrive at this point estimate, I utilized the most recent authoritative population data "
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "cond": "random",
+      "estimate": 72000000.0,
+      "answer": "72000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000\n\n**Justification:**\nThis estimate is derived from two primary variables: the total global population of giraffe"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "none",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 117000.0,
+      "answer": "Based on recent population estimates for wild giraffes (approximately 117,000) and incorporating a conservative estimate"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "dom",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "cond": "random",
+      "estimate": 45000000.0,
+      "answer": "45000000"
+    }
+  ]
+}

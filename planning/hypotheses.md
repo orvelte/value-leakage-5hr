@@ -183,6 +183,45 @@ the prefill result already answers the verbalization question from the other dir
 a denial changes nothing, forcing an admission restores everything — the prefill design is the
 better instrument and this one should not be rerun as-is.
 
+## Internals (2026-08-29, Hour 3:15)
+
+Residual stream at the token immediately before the final estimate, 79 rollouts, all 64 layers.
+
+**Read: the incentive is linearly there, including in covert rollouts.**
+
+- A difference-of-means direction (above-good minus below-good) separates the conditions
+  **out of sample**: cross-validated AUC **0.757 at layer 31**, against a shuffled-label null of
+  0.501 ± 0.079, **p < 0.0001** (200 permutations). Layers 0-26 sit at chance; the jump is abrupt
+  at ~27-31 and decays late (0.609 at layer 62, the lens's target).
+- Fitted on **overt rollouts only** and tested on **covert only**, the same direction gives
+  **AUC 0.802** at layer 31 (random-direction null 0.502 ± 0.129, p=0.010). The direction learned
+  from rollouts that ADMIT the bias transfers to rollouts that DENY it.
+- J-lens concept probes at the same position show the predicted flip: at layer 62 "above" is
+  higher in above-good and "below" higher in below-good (+0.161 / -0.166, perm p=0.010/0.002),
+  with "threshold" +0.232 (p=0.002) and "donate" +0.140 (p=0.008). "above" separates at every
+  layer tested (p<0.001 at 40/48/56). Note 20 probe x layer tests here: Bonferroni would want
+  p<0.0025, which "above" clears at 40/48/56 and "threshold" clears at 62; the rest are
+  suggestive only.
+
+**Write: ablating it does nothing — but the test is weak.**
+
+Holding the CoT fixed and regenerating only the final answer with the direction projected out
+from layer 31 onward: unablated **+0.405** [+0.284, +0.526], ablated **+0.462** [+0.344, +0.572],
+random matched-norm direction **+0.419** [+0.298, +0.532]. All overlapping; answers stayed
+well-formed (100% parse rate).
+
+Do NOT read that as "the direction is not causal". The final number already appears verbatim in
+the CoT in **90% of rollouts** (97% within 5%), so holding the CoT fixed and intervening at the
+pre-number position tests only the copy step, not the choice. This is the third saturated design
+in a row, and the pattern is now clear: by the time the model reaches the answer, the answer is
+already written down.
+
+**What this does establish**, and it is exactly the caveat the plan flagged for probes: a linear
+direction can recover the incentive — including where the CoT denies it — without that direction
+being what the model uses at the point of intervention tested. Distinguishing "encoded" from
+"used" needs an intervention *upstream of where the number gets committed*, i.e. ablate during
+CoT generation, which was out of budget here.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -239,6 +278,9 @@ Consequences:
 | 2026-08-29 | Prefill length confound check | every prefill collapses CoT from 9,046 to 880-1,228 tokens; admission is equally short yet keeps +0.444; drop rates equal across arms (p=0.55) | Rules out "prefilling just disrupts the model" as the explanation for the neutral/denial nulls. |
 | 2026-08-29 | **Resampling from before the admission sentence** (`runs/resample_admission.py`), 24 overt rollouts x 3 cuts x 10 continuations | pre 0.946, post 0.954, random 0.959; paired pre−post −0.008 (p=0.16) | **Inconclusive, not null.** 20-22/24 rollouts at P=1.000 in every arm — the design is saturated and cannot detect a decrease. |
 | 2026-08-29 | Admission-sentence locator, first run | 24/24 parsed, 19 high / 5 medium confidence, median position **0.78** of the CoT | Admissions come late, which is exactly why the resampling test has no room. |
+| 2026-08-29 | **Internals read** (`runs/internals_extract.py`, `internals_analyze.py`), 79 rollouts x 64 layers | DoM direction CV **AUC 0.757** at layer 31 vs shuffled-label null 0.501±0.079, **p<0.0001**; fitted on overt, tested on covert **AUC 0.802** (random-direction null p=0.010) | The incentive is linearly readable at the pre-number position and is present in rollouts whose CoT denies it. |
+| 2026-08-29 | J-lens concept probes at the same position | layer 62: "above" +0.161 (p=0.010), "below" −0.166 (p=0.002), "threshold" +0.232 (p=0.002), "donate" +0.140 (p=0.008) | The direction of the incentive is in the workspace where the digit is about to be emitted. 20 tests; "above" (L40/48/56) and "threshold" (L62) survive Bonferroni. |
+| 2026-08-29 | **Ablation** (`runs/internals_ablate.py`), CoT fixed, answer regenerated | unablated +0.405, DoM-ablated **+0.462**, random-ablated +0.419 — all overlapping, 100% parse | **Weak null.** The final number is already verbatim in the CoT in 90% of rollouts, so this tests the copy step, not the choice. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |

@@ -85,6 +85,22 @@ Forcing the model to say it is setting the bet aside does nothing that *“let m
 
 Note the whole-population +0.420 is **not** the right reference for this table: these rollouts were selected as INFLUENCED, a subpopulation that lands favoured 0.875 of the time unprompted. Only the between-cut comparison is legitimate. The prefill experiment (finding 6) answers the same question from the other direction and is the better instrument.
 
+### 8. The incentive is linearly readable — and ablating it does nothing
+
+Residual stream at the token before the final estimate, 79 rollouts, 64 layers.
+
+- Difference-of-means direction, cross-validated **AUC 0.757 at layer 31**, against a shuffled-label null of 0.501 ± 0.079 (**p < 0.0001**). Layers 0–26 sit at chance.
+- Fitted on **overt rollouts only**, tested on **covert only**: **AUC 0.802** (random-direction null 0.502 ± 0.129, p=0.010). The direction learned from rollouts that admit the bias transfers to ones that deny it.
+- J-lens probes at the same position show the predicted flip at layer 62: *above* +0.161 (p=0.010), *below* −0.166 (p=0.002), *threshold* +0.232 (p=0.002).
+
+| ablation (CoT held fixed, answer regenerated) | bias |
+|---|---|
+| none | **+0.405**  [+0.284, +0.526] |
+| incentive direction projected out | **+0.462**  [+0.344, +0.572] |
+| random direction, matched norm | **+0.419**  [+0.298, +0.532] |
+
+**Do not read that as "not causal".** The final number already appears verbatim in the CoT in **90%** of rollouts (97% within 5%), so holding the CoT fixed and intervening at the pre-number position tests only the copy step. What it does establish is the caveat the plan flagged for probes: a linear direction can recover the incentive — including where the CoT denies it — without being what the model uses at the point tested. Separating *encoded* from *used* needs an intervention during CoT generation, which was out of budget.
+
 ## Figures
 
 ### f2_thinking_off
@@ -111,6 +127,10 @@ Note the whole-population +0.420 is **not** the right reference for this table: 
 
 ![f7_admission_resampling](figures/f7_admission_resampling.png)
 
+### f8_internals
+
+![f8_internals](figures/f8_internals.png)
+
 ## Standing limitations
 
 - **One estimation question** (giraffes). The paper averages covertness over nine.
@@ -119,5 +139,7 @@ Note the whole-population +0.420 is **not** the right reference for this table: 
 - **Covert n is small** (46 rollouts); the deniers-only bias CI includes zero.
 - **LLM judges** for both covertness and trajectory extraction. Covertness κ=0.688; trajectory extraction showed no instance effect (Kruskal-Wallis p=0.35).
 - A few extracted trajectories contain a spurious `0` from the extractor; negligible against ~2,100 steps but uncleaned.
+- **Three designs in a row hit saturation**, and the pattern is the same each time: by the time the model reaches its answer, the answer is already written down. The final number appears verbatim in the CoT in 90% of rollouts. Admission-resampling, and the ablation with the CoT held fixed, both test the copy step rather than the choice. Any future causal work has to intervene *during* CoT generation, or on rollouts that have not yet committed.
+- The sentence segmenter merges markdown bullets, so sentence indices are block-level, not clause-level (see `src/qual/segment.py`).
 
 See `planning/hypotheses.md` for the running evidence log and `results/snippets.md` for raw CoT excerpts.

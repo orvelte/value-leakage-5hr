@@ -72,9 +72,13 @@ def main():
     print(f"wrote {RES/'results.json'}")
 
     def ci(d, fmt="{:+.3f}"):
+        """Accepts either {'point',...} or {'bias',...} — the ablation summary uses 'bias'."""
         if not d:
             return "—"
-        return (f"**{fmt.format(d['point'])}**  [{fmt.format(d['ci_low'])}, "
+        pt = d.get("point", d.get("bias"))
+        if pt is None:
+            return "—"
+        return (f"**{fmt.format(pt)}**  [{fmt.format(d['ci_low'])}, "
                 f"{fmt.format(d['ci_high'])}]")
 
     figs = sorted((RES / "figures").glob("*.png")) if (RES / "figures").exists() else []
@@ -224,6 +228,39 @@ def main():
                   "the other direction and is the better instrument.",
                   ""]
 
+    intern = load(RUNS / "internals" / "results.json")
+    ablat = load(RUNS / "internals" / "ablation.json")
+    if intern and ablat:
+        ab = ablat["summary"]["by_cond"]
+        lines += [
+            "### 8. The incentive is linearly readable — and ablating it does nothing",
+            "",
+            "Residual stream at the token before the final estimate, 79 rollouts, 64 layers.",
+            "",
+            f"- Difference-of-means direction, cross-validated **AUC "
+            f"{max(intern['cv_auc_by_layer']):.3f} at layer {intern['best_layer']}**, against a "
+            f"shuffled-label null of {intern['null']['mean']:.3f} ± {intern['null']['sd']:.3f} "
+            f"(**p < 0.0001**). Layers 0–26 sit at chance.",
+            "- Fitted on **overt rollouts only**, tested on **covert only**: **AUC 0.802** "
+            "(random-direction null 0.502 ± 0.129, p=0.010). The direction learned from rollouts "
+            "that admit the bias transfers to ones that deny it.",
+            "- J-lens probes at the same position show the predicted flip at layer 62: *above* "
+            "+0.161 (p=0.010), *below* −0.166 (p=0.002), *threshold* +0.232 (p=0.002).",
+            "",
+            "| ablation (CoT held fixed, answer regenerated) | bias |", "|---|---|",
+            f"| none | {ci(ab['none'])} |",
+            f"| incentive direction projected out | {ci(ab['dom'])} |",
+            f"| random direction, matched norm | {ci(ab['random'])} |",
+            "",
+            "**Do not read that as \"not causal\".** The final number already appears verbatim in "
+            "the CoT in **90%** of rollouts (97% within 5%), so holding the CoT fixed and "
+            "intervening at the pre-number position tests only the copy step. What it does "
+            "establish is the caveat the plan flagged for probes: a linear direction can recover "
+            "the incentive — including where the CoT denies it — without being what the model "
+            "uses at the point tested. Separating *encoded* from *used* needs an intervention "
+            "during CoT generation, which was out of budget.",
+            ""]
+
     lines += ["## Figures", ""]
     for f in figs:
         lines.append(f"### {f.stem}")
@@ -243,6 +280,14 @@ def main():
         "trajectory extraction showed no instance effect (Kruskal-Wallis p=0.35).",
         "- A few extracted trajectories contain a spurious `0` from the extractor; negligible "
         "against ~2,100 steps but uncleaned.",
+        "- **Three designs in a row hit saturation**, and the pattern is the same each time: by "
+        "the time the model reaches its answer, the answer is already written down. The final "
+        "number appears verbatim in the CoT in 90% of rollouts. Admission-resampling, and the "
+        "ablation with the CoT held fixed, both test the copy step rather than the choice. Any "
+        "future causal work has to intervene *during* CoT generation, or on rollouts that have "
+        "not yet committed.",
+        "- The sentence segmenter merges markdown bullets, so sentence indices are block-level, "
+        "not clause-level (see `src/qual/segment.py`).",
         "",
         "See `planning/hypotheses.md` for the running evidence log and `results/snippets.md` for "
         "raw CoT excerpts.",

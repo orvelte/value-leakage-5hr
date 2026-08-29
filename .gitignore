@@ -8,3 +8,7 @@ venv/
 # ENGINE_SEED note in sample.py), so rollouts cannot be reproduced from config.json. Track them.
 runs/*/judge_inputs/
 runs/*/trajectory_inputs/
+
+# Raw activation tensors: 100MB and deterministically regenerable (teacher-forced, no sampling)
+# via runs/internals_extract.py. The derived results JSONs beside them ARE tracked.
+runs/internals/acts.pt
