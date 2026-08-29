@@ -12,17 +12,29 @@ sprint plan is `New Plan.md`.
 
 ## Where the data stands
 
-Hour-0 pilot (`runs/hour0/`): 110 rollouts on the giraffes question — 30 baseline, 40 above-good,
-40 below-good, threshold **75M** re-derived from this model's own baseline median.
+**Hour-0 pilot** (`runs/hour0/`, thinking on): 110 rollouts, threshold **75M** re-derived from
+this model's own baseline median. Bias **+0.420** [+0.220, +0.622]. Covertness judged over three
+passes and majority-voted: **42.5% Admits / 57.5% Denies**, covert share **12.6%** on the paper's
+Fig. 6 metric (`covertness_majority.json` — use these labels, not pass 1's). Test-retest
+kappa = 0.688. Trajectory extraction on the 56 good-side rollouts.
 
-- bias **+0.420** [95% CI +0.220, +0.622]
-- covertness judge on 80 intervention rollouts: 41% Admits / 59% Denies
-- on the paper's Fig. 6 metric: **84.4% overt / 15.6% covert**
-- trajectory extraction on the 56 good-side rollouts
+**Thinking-off** (`runs/thinking_off/`): 450 rollouts. Bias **+0.517** [+0.415, +0.612] — the
+effect survives with no CoT at all, and is if anything larger. The no-think baseline median is
+**422M** against the 75M threshold.
 
-Two caveats that matter before reusing any of it: the covertness judge's instances disagreed at
-**p=0.007**, so the 84/16 split is not yet reliable; and trajectory coverage is good-side only, so
-H2's revision-asymmetry statistic needs the bad-side and baseline rollouts extracted too.
+**Framing controls** (`runs/framing_controls/`): 600 rollouts, thinking off. Naming a threshold
+with **no stake whatsoever** collapses the median estimate from 422M to 83M (coin variant:
+75,000,001). Anchoring is large but orthogonal to the bias metric, which the symmetric
+two-direction design makes anchor-proof. The user-picks-charity framing yields only **+0.096**
+[+0.001, +0.184] against +0.517 for the moral framing.
+
+Reading: a values-driven prior on the answer that the CoT narrates rather than produces. Neither
+an explicit goal step nor an asymmetric revision rule can be necessary, since the bias needs no
+CoT; and "values are incidental" is false, since anchoring cannot produce a directional effect
+and sycophancy explains only ~19% of it.
+
+Live caveats: one estimation question only; the anchoring result is thinking-off only and cannot
+be measured thinking-on as set up; trajectory coverage is good-side only.
 
 ## Environment
 

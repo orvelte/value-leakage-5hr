@@ -38,6 +38,37 @@ Not mutually exclusive. The overt/covert split is the control that runs through 
 same signature appears with and without the admission sentence, overt and covert are **one
 computation with different narration** — the headline candidate.
 
+## Status after the thinking-off gate and the framing sweep (2026-08-29)
+
+**The bias does not need a CoT at all.** Thinking off, bias = +0.517 [+0.415, +0.612] against
++0.420 [+0.220, +0.622] with thinking. That is the single most consequential result so far,
+because it means neither H1 nor H2 can be a *necessary* mechanism: an explicit goal step and an
+asymmetric revision/stopping rule both require a reasoning trace to operate in, and there isn't
+one. They may still describe how the bias manifests *when* a CoT exists, which the Hour 1:15
+trajectory statistics can still test, but they cannot be the whole story.
+
+**H3 is half right, and it is the less interesting half.** Split the claim in two:
+
+- *"The threshold number drives the estimate"* — **strongly confirmed, and it is a big effect.**
+  Naming a threshold with no consequence whatsoever ("We set a threshold in advance. The
+  threshold is 75,000,000.") collapses the median estimate from 422M to 83M. The valence-free
+  coin variant lands at a median of 75,000,001, one above the threshold, with 54% of rollouts
+  inside +-10% of it. All KS tests against baseline p < 1e-31.
+- *"Values are incidental"* — **false.** Anchoring pulls both directions toward the same number,
+  so it cancels in `p_above + p_below - 1`; it cannot produce a directional bias. And the
+  user-desire framing (user picks the charity above the threshold vs below) yields only
+  +0.096 [+0.001, +0.184], roughly 19% of the moral framing's +0.517, with a CI barely clearing
+  zero. Sycophancy is real but small; the good/bad-cause valence does most of the work.
+
+**Leading reading:** a values-driven prior on the answer that the CoT narrates rather than
+produces. That is not "unfaithful CoT" in the step-by-step sense and it is not step-selection
+either — it is upstream of both. It is consistent with the hour-0 finding that covert rollouts
+are already on the favoured side at their first estimate.
+
+**Consequence for the Hour 3:15 gate.** The plan says "If H3 won: skip internals." H3 did not
+win on the quantity this project is about, and "a prior that exists before any reasoning" is an
+internals-friendly claim, so internals stay on the table.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -85,6 +116,12 @@ Consequences:
 | 2026-08-29 | # intermediate estimates, good-side overt vs covert | 28 vs 23, p=0.094 | Not significant. Same finding as length, not a second one. |
 | 2026-08-29 | **First estimate already on the favored side** (App. E.5.1 trajectory judge, good-side only, n=28/28) | overt **0.61** vs covert **0.86**; signed log10(first/T) toward favored side +0.104 vs +0.220, **p=0.025**; logistic covert OR=3.72 (p=0.054) with n_estimates contributing nothing (OR=0.90, p=0.77) | **Sharpest hypothesis this pilot produced.** Covert rollouts are already on the good side at their first estimate; overt ones start further away and revise toward it. Two routes to the same outcome. Weighs against H2 being the whole story *for the covert slice* — the leak looks upstream of the verbalized reasoning there. |
 | 2026-08-29 | Trajectory-judge consistency across 8 extraction agents | Kruskal-Wallis H=7.8, p=0.35 | Extraction granularity is stable, unlike the covertness judge. This measure is trustworthy. |
+| 2026-08-29 | **Thinking-off** (`runs/thinking_off.py`), n=150/condition, threshold reused not re-derived | **bias +0.517, 95% CI [+0.415, +0.612]**; robust to the outlier filter (+0.513 unfiltered); 450/450 parsed, 0 truncations | The bias survives with no CoT and is if anything larger. H1 and H2 cannot be necessary mechanisms. |
+| 2026-08-29 | No-think baseline distribution | median **422M** vs 75M threshold; above_good 84M, below_good 68M | The no-think model's unbiased estimate is 5.6x the threshold, so the whole +0.52 comes from below-good dragging estimates down ~6x. Also makes the anchoring test possible. |
+| 2026-08-29 | **Framing controls** (`runs/framing_controls.py`), n=150 each, thinking off | threshold_only median 83.1M, coin 75,000,001 (54% within +-10% of T), vs baseline 422.75M; all KS p<1e-31 | **Huge anchoring effect from naming a threshold with no stake at all.** Orthogonal to the bias metric, which the symmetric design makes anchor-proof. |
+| 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
+| 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
+| 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |
 
 ## Live confounds — read before citing anything above
 
@@ -101,6 +138,21 @@ Consequences:
   P(revise | current on bad side) — needs the bad-side rollouts and baseline too.
 - **One estimation question.** The paper averages covertness over nine; the above/below asymmetry
   seen here may not survive a second question. Stated limitation, not a fixable gap this sprint.
+- **CORRECTION to a claim I made before launching thinking-off.** I argued the no-think baseline
+  arm was needed because P(favored | baseline) would no longer be 0.5. That is wrong: the two
+  directions define favored as P(>T) and P(<=T), which sum to 1, so the average is exactly 0.5
+  whatever the distribution does. The symmetric design already cancels any baseline shift. The
+  baseline arm earned its place for a different reason — it is the only way to see the anchoring
+  effect — but the stated justification was incorrect and `thinking_off.py` has been fixed.
+- **The anchoring result is thinking-off only, and cannot be measured thinking-on as set up.**
+  It has power precisely because the no-think baseline (422M) sits far from the threshold. In
+  the thinking-on arm the threshold *is* the baseline median by construction, so an anchor would
+  be invisible. Whether CoT attenuates the anchor is untested; it would need the controls re-run
+  thinking-on against a differently-derived threshold. Do not generalise across arms.
+- **The outlier filter is calibrated to a threshold the no-think baseline does not sit near**,
+  removing 68/150 baseline rollouts against 2/150 and 4/150 in the intervention arms. The bias
+  metric is unaffected (both intervention arms filter at ~2%, and the result holds unfiltered),
+  but the baseline arm cannot be summarised through the filter.
 
 ## Where the data actually stands vs. what the plan assumes
 
