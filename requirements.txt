@@ -1,0 +1,10 @@
+# Generation + forward passes need a CUDA GPU (A100-80GB or equivalent) — this env is not
+# installable/runnable on a Mac. vllm==0.27.1 is the version verified against Qwen3.5-27B in
+# the prior round of this project; bumping it means re-verifying the J-lens layer-indexing
+# assertions in src/qual/lens.py still hold.
+vllm==0.27.1
+transformers>=5.0
+torch
+huggingface_hub
+numpy
+scipy

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Raw generation artifacts: large, regenerable from a run's config.json + seed policy.
+# Keep small derived result JSONs (analysis outputs) tracked; ignore only the raw JSONL.
+runs/*/raw/*.jsonl
+runs/*/judge_inputs*/
