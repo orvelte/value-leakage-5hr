@@ -45,8 +45,13 @@ Everything lands in `results/`, regenerated from the run JSONs so it cannot drif
 - `results/figures/` — one figure per finding, shared style from `src/qual/figures.py`.
 - `results/snippets.md` — CoT excerpts with full provenance, curated and random kept separate.
 
+**Verification.** `runs/verify_headline.py` recomputes every headline number from raw JSONL
+while importing nothing from `src/qual` — its own parser, bootstrap, logistic and AUC. Run it
+before quoting a number anywhere. Currently 14/14 reproduce.
+
 ```bash
 source env.sh
+python3 runs/verify_headline.py
 python3 runs/analyze_covertness.py --run hour0
 python3 runs/analyze_revision.py   --run hour0
 python3 runs/make_figures.py

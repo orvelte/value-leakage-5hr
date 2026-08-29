@@ -1,5 +1,10 @@
 # Running doc: what does motivated reasoning look like, and is "unfaithful CoT" the right name?
 
+> **Status 2026-08-29: hours 0:00-4:15 of the plan are complete.** All 14 headline numbers were
+> recomputed from raw JSONL by `runs/verify_headline.py`, which imports nothing from `src/qual`
+> and reimplements the parser, bootstrap, logistic and AUC from scratch. 14/14 reproduce. The
+> report is `results/RESULTS.md`.
+
 Task: Donation Bet Fermi estimates (`src/qual/prompts.py`). Model: `Qwen/Qwen3.5-27B` @ rev
 `fc05daec18b0a78c049392ed2e771dde82bdf654`, vLLM 0.27.1, temperature 1.0 (verified top_p=1.0 /
 top_k=0 — vLLM does not fold in the model's generation_config defaults), max_tokens 16000,

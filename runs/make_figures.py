@@ -199,7 +199,8 @@ def fig_revision():
         ("baseline null (no bet)", lambda i: man[i]["direction"] == "baseline", "above_good", F.GRAY),
     ]
     LBL_X = 11.0   # fixed gutter in data coords, past the widest CI
-    fig, ax = F.new_fig(10.8, 5.0, top=0.66, left=0.185, right=0.985, bottom=0.155)
+    fig, (ax, axR) = F.new_fig(13.6, 5.4, n_axes=2, width_ratios=[1.9, 1.0], wspace=0.30,
+                               top=0.615, left=0.155, right=0.975, bottom=0.145)
     for row, (name, pred, framing, c) in enumerate(groups):
         y = len(groups) - 1 - row
         orv, lo, hi, n = odds_ratio(pred, framing)
@@ -223,12 +224,32 @@ def fig_revision():
     ax.set_xlabel("odds ratio for stopping when the current estimate is on the favoured side\n"
                   "(logistic, controlling for step index; log scale, 95% CI)",
                   fontsize=9.5, color=F.INK_2, labelpad=8)
-    F.panel_title(ax, "Step-adjusted stopping asymmetry", pad=14)
+    F.panel_title(ax, "A.  Step-adjusted stopping asymmetry", pad=14)
+
+    # The plan asks for the thinking-off bias as a reference alongside this. It has different
+    # units from an odds ratio, so it goes in its own panel rather than as a line on axis A.
+    toff = json.load(open(RUNS / "thinking_off" / "results.json"))["bias_bootstrap"]
+    ref = [("with a CoT", 0.420, 0.220, 0.622, F.INK_2),
+           ("with NO CoT", toff["point"], toff["ci_low"], toff["ci_high"], F.ORANGE)]
+    for i, (lab, pt, lo, hi, c) in enumerate(ref):
+        yy = len(ref) - 1 - i
+        axR.plot([lo, hi], [yy, yy], color=c, lw=2.4, solid_capstyle="round", zorder=3)
+        axR.scatter([pt], [yy], s=80, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+        axR.annotate(f"{pt:+.3f}", (0.70, yy), va="center", ha="left", fontsize=10,
+                     color=F.INK, fontweight="semibold")
+    F.null_line(axR, 0.0, "0", y=1.5)
+    axR.set_yticks([0, 1])
+    axR.set_yticklabels(["with NO CoT", "with a CoT"], fontsize=9.5, color=F.INK)
+    axR.set_xlim(-0.12, 0.95)
+    axR.set_ylim(-0.55, 1.85)
+    axR.set_xlabel("bias", fontsize=9.5, color=F.INK_2, labelpad=7)
+    F.panel_title(axR, "B.  …but the search is not necessary", pad=14)
     F.title_block(fig, "Motivated reasoning here is a stopping rule, not a lie",
                   "Every intermediate estimate in 110 rollouts (2,120 intervention steps). The model keeps searching while its current estimate is\n"
                   "on the unfavoured side and stops once it reaches the favoured one. Raw stopping rates are confounded with trajectory length, so\n"
-                  "this is the step-adjusted odds ratio. The no-bet baseline shows no asymmetry; overt and covert do not detectably differ (p=0.33).",
-                  x=0.185)
+                  "this is the step-adjusted odds ratio. The no-bet baseline shows no asymmetry; overt and covert do not detectably differ (p=0.33).\n"
+                  "Panel B is the reference that keeps this honest: the same bias appears, larger, in rollouts that have no chain of thought to search in.",
+                  x=0.155)
     F.save(fig, OUT / "f4_revision_asymmetry.png")
 
 

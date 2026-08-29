@@ -101,6 +101,24 @@ Residual stream at the token before the final estimate, 79 rollouts, 64 layers.
 
 **Do not read that as "not causal".** The final number already appears verbatim in the CoT in **90%** of rollouts (97% within 5%), so holding the CoT fixed and intervening at the pre-number position tests only the copy step. What it does establish is the caveat the plan flagged for probes: a linear direction can recover the incentive — including where the CoT denies it — without being what the model uses at the point tested. Separating *encoded* from *used* needs an intervention during CoT generation, which was out of budget.
 
+## What died, and what killed it
+
+| claim | verdict | killed by |
+|---|---|---|
+| **H1** — an explicit "aim above/below" step is what steers the number | **not necessary** | Bias is +0.517 with the CoT switched off entirely. There is no step to steer with. |
+| …but is verbalizing the goal *sufficient*? | **yes** | Prefilling an admission restores the full unprefilled effect (+0.444 vs +0.420) where a neutral prefill gives −0.045. |
+| **H2** — asymmetric scrutiny: keep searching on the bad side, stop on the good | **survives** | Stopping OR 2.11 controlling for step index (p=0.0053), baseline null 1.08 (p=0.84), permutation p=0.0030. |
+| …but is the search *necessary*? | **no** | Same as H1: the bias predates it. The search is a real mechanism operating on top of a prior. |
+| **H3a** — the threshold number anchors the estimate | **confirmed, and large** | Naming a threshold with nothing at stake moves the median from 422M to 83M. |
+| **H3b** — …so values are incidental | **killed** | Anchoring is symmetric and cancels in the bias metric. Swapping moral valence for the user's own preference retains only ~19% of the effect (+0.096 vs +0.517). |
+| The denial sentence is a concealment act with causal weight | **killed** | Forcing it does exactly what forcing "let me think step by step" does (+0.037 vs −0.045; identical at +0.017 each unfiltered). |
+| Overt and covert rollouts are different computations | **no detectable difference**, underpowered | Stopping-asymmetry interaction p=0.33 at n=34/46. But the revision *direction* does differ (0.714 vs 0.577, non-overlapping CIs), so this is not "the same". |
+| A linear incentive direction mediates the answer | **not shown** | It predicts the condition (AUC 0.757, and 0.802 on covert out-of-sample) but ablating it moves nothing. The test is weak — see finding 8. |
+
+### Tests that came back inconclusive rather than null
+
+Three designs saturated for the same structural reason, and it is the sprint's main methodological lesson: **the final number already appears verbatim in the CoT in 90% of rollouts**, so any intervention at or after the answer position tests the copy step, not the choice. This affected the admission-resampling (20–22 of 24 rollouts at P=1.000 in every arm) and the direction ablation. Future causal work has to intervene *during* CoT generation.
+
 ## Figures
 
 ### f2_thinking_off
