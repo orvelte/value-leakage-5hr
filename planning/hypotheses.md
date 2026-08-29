@@ -303,6 +303,51 @@ prefill collapses length), so they remain worth running — but the version wher
 *produced by* the length of the revision loop is already in trouble, because within free CoT
 more revision does not mean more bias.
 
+## Addendum A2 — revision structure inside the prefilled arms (2026-08-29)
+
+Trajectory extraction on all 360 prefill rollouts (360/360 parsed, 0 malformed).
+
+| arm | n | median #est | median tokens | first favoured | stopping OR | p |
+|---|---|---|---|---|---|---|
+| neutral | 117 | 4 | 1240 | 0.453 | 1.14 | 0.59 |
+| denial | 117 | 3 | 891 | 0.470 | 1.51 | 0.15 |
+| admission | 115 | 4 | 1072 | 0.513 | 1.41 | 0.21 |
+| *free CoT* | *79* | *24* | *9046* | *0.52* | ***2.11*** | ***0.005*** |
+
+**Two of three predictions confirmed; the third is wrong, and the reason is the interesting bit.**
+
+1. *Far fewer revisions* — **confirmed**, and dramatically: median 3-4 against 24. Prefilling
+   collapses the revision loop ~6-8x.
+2. *No stopping asymmetry in the prefilled arms* — **confirmed**, and it holds for all three
+   (OR 1.14 / 1.51 / 1.41, all p > 0.14). H2's stopping rule genuinely has no room to run.
+3. *The admission arm starts on the favoured side (H1 signature)* — **not supported.** First
+   estimate favoured is 0.513 [0.418, 0.607], indistinguishable from neutral's 0.453 and from
+   chance. The admission prefill does not install a starting point.
+
+**So where does the admission arm's +0.444 come from?** The other half of H2, which survives the
+collapse:
+
+| arm | revision toward favoured, on BAD side | on GOOD side | drift first→last |
+|---|---|---|---|
+| neutral | 0.651 [0.58, 0.71] * | 0.427 [0.35, 0.50] | **+0.026** |
+| denial | 0.611 [0.54, 0.68] * | 0.326 [0.25, 0.41] * | **+0.026** |
+| admission | **0.737 [0.66, 0.80]** * | 0.418 [0.36, 0.48] * | **+0.174** |
+| *free CoT* | *0.621 [0.586, 0.655]* | *0.452* | — |
+
+**The two halves of H2 dissociate.** The *stopping rule* dies with the short CoT. The
+*directional pull* survives in every arm and is strongest in the admission arm (0.737, above even
+free CoT's 0.621), and it is what carries the bias: the admission arm drifts +0.174 from first to
+last estimate while neutral and denial drift +0.026.
+
+That is a cleaner mechanism than either H1 or H2 as originally written. Verbalizing the goal does
+not pick the starting number and does not change when the model stops — it biases *which way each
+revision moves*, over a handful of revisions.
+
+**Register check** (5 hand-read per arm): hedging language ("wait", "actually", "reconsider")
+appears in 5/5 neutral, 3/5 denial, 4/5 admission. The addendum guessed "step by step" would
+produce a single clean Fermi decomposition with no "wait"; it does not — the short CoTs still
+hedge, they just have far fewer candidate numbers. One excerpt per arm in `results/snippets.md`.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -367,6 +412,8 @@ Consequences:
 | 2026-08-29 | **A1** bias vs revision count, 79 free-CoT rollouts (`runs/a1_bias_vs_revisions.py`) | no monotone trend; uncontrolled OR **0.63** per 10 revisions (p=0.062, wrong direction), gone under controls (p=0.30) and within the first-bad stratum (p=0.39) | Addendum prediction **not supported**. Bias is not produced by the size of the revision loop. |
 | 2026-08-29 | A1 side-finding: complete separation | **41/41** first-estimate-favoured rollouts end favoured; P(final fav \| first bad)=0.395 | The first estimate is close to decisive — unconditional, unlike the hour-0 version. Forces ridge/stratified fits. |
 | 2026-08-29 | A1 confound check | revisions by first-estimate side: median 24 vs 24, MW p=0.13 | The assumed selection confound is absent. H2's per-step hazard does not change total length. |
+| 2026-08-29 | **A2** trajectories on all 360 prefill rollouts (`runs/a2_analyze_prefill_traj.py`) | median #est **3-4** vs 24 free-CoT; stopping OR 1.14/1.51/1.41 all **n.s.**; first-favoured ~chance in every arm | Prefills collapse the revision loop and kill H2's stopping rule. The predicted H1 signature in the admission arm is **absent**. |
+| 2026-08-29 | A2 revision direction + drift | bad-side pull **0.737** admission vs 0.651 neutral / 0.611 denial; drift first→last **+0.174** admission vs +0.026 others | **The two halves of H2 dissociate.** The stopping rule dies with the short CoT; the directional pull survives and is what carries the admission arm's bias. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |
