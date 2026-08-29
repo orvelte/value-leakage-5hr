@@ -279,7 +279,87 @@ def fig_covertness():
     F.save(fig, OUT / "f5_covertness.png")
 
 
+# ---------------------------------------------------------------- F6: prefill causal tests
+def fig_prefill():
+    """Bias by forced opening sentence, with the CoT-length confound shown alongside.
+
+    Panel B is not decoration. Prefilling collapses reasoning length ~8x, and length correlates
+    with bias, so "the neutral prefill removed the bias" could be nothing but that. The admission
+    arm is what rules it out: it is just as short and keeps the full effect.
+    """
+    pf = json.load(open(RUNS / "prefill_tests" / "results.json"))
+    fig, (axA, axB) = F.new_fig(13.4, 5.2, n_axes=2, width_ratios=[1.5, 1.0], wspace=0.30,
+                                left=0.215, right=0.955, top=0.645, bottom=0.145)
+
+    rows = [("no prefill\n(reference)", 0.420, 0.220, 0.622, F.GRAY),
+            ("neutral\n\u201c…step by step.\u201d", None, None, None, F.AQUA),
+            ("denial\n\u201c…set aside the donation framing.\u201d", None, None, None, F.BLUE),
+            ("admission\n\u201c…aim for the good-donation side.\u201d",
+             None, None, None, F.ORANGE)]
+    for i, key in enumerate(["neutral", "denial", "admission"]):
+        c = pf["cells"][f"{key}/bias"]
+        rows[i + 1] = (rows[i + 1][0], c["point"], c["ci_low"], c["ci_high"], rows[i + 1][4])
+    for i, (lab, pt, lo, hi, c) in enumerate(rows):
+        y = len(rows) - 1 - i
+        axA.plot([lo, hi], [y, y], color=c, lw=2.4, solid_capstyle="round", zorder=3)
+        axA.scatter([pt], [y], s=90, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+        axA.annotate(f"{pt:+.3f}", (0.70, y), va="center", ha="left", fontsize=10.5,
+                     color=F.INK, fontweight="semibold", zorder=6)
+    F.null_line(axA, 0.0, "0 = no leakage", y=len(rows) - 0.55)
+    axA.set_xlim(-0.32, 0.88)
+    axA.set_ylim(-0.55, len(rows) - 0.3)
+    axA.set_yticks(range(len(rows)))
+    axA.set_yticklabels([r[0] for r in rows][::-1], fontsize=9, color=F.INK, linespacing=1.35)
+    axA.set_xlabel("bias (95% CI)", fontsize=9.5, color=F.INK_2, labelpad=7)
+    F.panel_title(axA, "A.  Denial does nothing a neutral sentence doesn't")
+
+    lens = {}
+    for key in ["neutral", "denial", "admission"]:
+        v = []
+        for d in ["above_good", "below_good"]:
+            v += [r["num_tokens"] for r in
+                  parse.parse_jsonl_file(RUNS / "prefill_tests" / "raw" / f"{key}_{d}.jsonl")]
+        lens[key] = v
+    unpref = []
+    for d in ["above_good", "below_good"]:
+        unpref += [r["num_tokens"] for r in
+                   parse.parse_jsonl_file(RUNS / "hour0" / "raw" / f"giraffes_{d}.jsonl")]
+    order = [("no prefill", unpref, F.GRAY), ("neutral", lens["neutral"], F.AQUA),
+             ("denial", lens["denial"], F.BLUE), ("admission", lens["admission"], F.ORANGE)]
+    rng = np.random.default_rng(5)
+    for row, (lab, v, c) in enumerate(order):
+        y = len(order) - 1 - row + rng.uniform(-0.15, 0.15, size=len(v))
+        axB.scatter(v, y, s=16, color=c, alpha=0.45, edgecolors="none", zorder=3)
+        med = float(np.median(v))
+        yy = len(order) - 1 - row
+        axB.plot([med, med], [yy - 0.28, yy + 0.28], color=c, lw=2.4, zorder=4)
+        axB.annotate(f"{med:,.0f}", (med, yy + 0.32), ha="center", va="bottom", fontsize=9,
+                     color=F.INK, fontweight="semibold", zorder=6,
+                     bbox=dict(boxstyle="round,pad=0.16", facecolor=F.SURFACE, edgecolor="none"))
+    axB.set_xscale("log")
+    axB.set_xlim(300, 30000)
+    axB.set_xticks([500, 1000, 3000, 10000])
+    axB.set_xticklabels(["500", "1k", "3k", "10k"])
+    axB.xaxis.set_minor_formatter(mticker.NullFormatter())
+    axB.xaxis.set_minor_locator(mticker.NullLocator())
+    axB.set_yticks(range(len(order)))
+    axB.set_yticklabels([o[0] for o in order][::-1], fontsize=9.5, color=F.INK)
+    axB.set_ylim(-0.55, len(order) - 0.25)
+    axB.set_xlabel("CoT length (tokens, log)", fontsize=9.5, color=F.INK_2, labelpad=7)
+    F.panel_title(axB, "B.  Every prefill shortens the CoT")
+
+    F.title_block(fig, "Forcing the denial changes nothing; forcing the goal restores everything",
+                  "n=60 per cell, thinking on. Prefilling any opening sentence removes the bias — except the one that states the goal, which\n"
+                  "returns it to the unprefilled level. So the denial sentence is epiphenomenal: it does no more than \u201clet me think step by step\u201d.\n"
+                  "Panel B is the confound check: every prefill collapses reasoning length ~8\u00d7, but the admission arm is equally short and keeps the effect.",
+                  x=0.215)
+    F.save(fig, OUT / "f6_prefill_tests.png")
+
+
+
 if __name__ == "__main__":
     print("regenerating figures ->", OUT)
     fig_thinking(); fig_framing(); fig_revision(); fig_covertness()
+    if (RUNS / "prefill_tests" / "results.json").exists():
+        fig_prefill()
     print("done")
