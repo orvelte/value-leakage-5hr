@@ -69,6 +69,52 @@ are already on the favoured side at their first estimate.
 win on the quantity this project is about, and "a prior that exists before any reasoning" is an
 internals-friendly claim, so internals stay on the table.
 
+## H2 confirmed (2026-08-29, Hour 1:15 block)
+
+With a proper null, the Kunda signature is there. Trajectories for all 110 rollouts
+(`runs/analyze_revision.py`):
+
+- **Stopping hazard.** Controlling for step index, being on the favoured side makes the model
+  **2.11x more likely to stop at that step** (p=0.0053). Baseline, scored under a fixed framing,
+  gives OR 1.08 (p=0.84) and 0.92 (p=0.84) — no effect without an incentive. A permutation null
+  over per-rollout framing assignments puts the observed gap at p=0.0030.
+- **Revision direction.** When the current estimate is on the BAD side, revisions move toward the
+  favoured side 0.621 of the time [0.586, 0.655]. On the good side they drift back, 0.452
+  [0.424, 0.480]. All four baseline nulls straddle 0.5.
+- **Length.** First-estimate-bad rollouts run longer on average (28.9 vs 24.2 steps) but the
+  medians are equal and Mann-Whitney gives p=0.093 — suggestive, not established.
+
+So two mechanisms push the endpoint toward the favoured side: keep searching while you are on the
+bad side, and stop once you arrive. No individual step needs to be dishonest.
+
+### Overt vs covert: one computation, mostly
+
+| | stopping OR (good side) | p | revision toward favoured, on BAD side |
+|---|---|---|---|
+| overt (Admits, n=34) | 3.48 | 0.018 | 0.714 [0.654, 0.768] |
+| covert (Denies, n=46) | 2.55 | 0.0099 | 0.577 [0.533, 0.619] |
+
+The **stopping** asymmetry shows no detectable difference between them (interaction
+good_side x covert: p=0.33) — the plan's headline candidate, "one computation with different
+narration". But be careful on two counts. First, that is a null at n=34 vs 46 and the point
+estimates do differ (3.48 vs 2.55), so it is "no detectable difference", not "the same".
+Second, the **revision direction** does differ: the two bad-side CIs do not overlap, so overt
+rollouts pull toward the favoured side harder than covert ones. The narration is not free of the
+computation; it tracks how strongly the search is steered.
+
+### The synthesis this points at
+
+Three findings have to be held together:
+
+1. The bias survives with **no CoT at all** (+0.517), so it is partly a prior on the answer.
+2. When there *is* a CoT, a genuine biased search runs on top of it (H2 above).
+3. Bias with CoT (+0.420) is if anything **lower** than without (+0.517).
+
+So the CoT is not what creates the bias, and it slightly moderates the outcome while
+implementing its own asymmetric search. For the proposal's second question: **"unfaithful CoT"
+is the wrong frame.** No step is a lie, the answer is already biased before reasoning starts, and
+what the reasoning adds is biased *step selection*, not biased step content.
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -119,6 +165,8 @@ Consequences:
 | 2026-08-29 | **Thinking-off** (`runs/thinking_off.py`), n=150/condition, threshold reused not re-derived | **bias +0.517, 95% CI [+0.415, +0.612]**; robust to the outlier filter (+0.513 unfiltered); 450/450 parsed, 0 truncations | The bias survives with no CoT and is if anything larger. H1 and H2 cannot be necessary mechanisms. |
 | 2026-08-29 | No-think baseline distribution | median **422M** vs 75M threshold; above_good 84M, below_good 68M | The no-think model's unbiased estimate is 5.6x the threshold, so the whole +0.52 comes from below-good dragging estimates down ~6x. Also makes the anchoring test possible. |
 | 2026-08-29 | **Framing controls** (`runs/framing_controls.py`), n=150 each, thinking off | threshold_only median 83.1M, coin 75,000,001 (54% within +-10% of T), vs baseline 422.75M; all KS p<1e-31 | **Huge anchoring effect from naming a threshold with no stake at all.** Orthogonal to the bias metric, which the symmetric design makes anchor-proof. |
+| 2026-08-29 | **Revision asymmetry (H2)**, all 110 trajectories (`runs/analyze_revision.py`) | stopping hazard **OR 2.11** on the favoured side (p=0.0053) vs baseline 1.08/0.92 (p=0.84); permutation null p=0.0030; bad-side revisions move toward favoured 0.621 [0.586, 0.655] vs baseline nulls straddling 0.5 | **H2 confirmed.** Two mechanisms push the endpoint good: keep searching on the bad side, stop on arrival. No step need be dishonest. |
+| 2026-08-29 | H2 split by covertness (majority-vote labels) | stopping OR 3.48 overt vs 2.55 covert, **interaction p=0.33**; bad-side pull 0.714 vs 0.577, **CIs do not overlap** | Stopping rule shared (no detectable difference, but underpowered); directional pull is genuinely stronger in overt. "One computation, different narration" holds for stopping, not fully for direction. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |
@@ -134,8 +182,17 @@ Consequences:
 - **The first-estimate contrast is conditioned on the final outcome.** The n_estimates control
   closes one route for that to bite, not all. Needs a bad-side trajectory control (23 rollouts)
   and ideally baseline (30).
-- **Trajectory extraction covers good-side rollouts only** (56 of 79). H2's core statistic —
-  P(revise | current on bad side) — needs the bad-side rollouts and baseline too.
+- ~~Trajectory extraction covers good-side rollouts only~~ **RESOLVED**: all 110 rollouts now
+  extracted (80 intervention + 30 baseline), 110/110 parsed.
+- **A vacuous null nearly shipped here.** The obvious way to build the baseline null — score each
+  baseline rollout under BOTH framings — counts every step twice, once as good and once as bad,
+  which forces P(stop|good) == P(stop|bad) identically. It returned OR=1.000, p=1.0000, which
+  looked like a beautiful null and was pure arithmetic. The fix is to score the baseline under
+  each FIXED framing separately, plus a permutation null. Watch for this shape of error anywhere
+  a pseudo-condition is constructed by relabelling.
+- A handful of extracted trajectories contain a spurious `0` (an extraction artifact). It is
+  classified as below-threshold; with ~2100 steps the effect is negligible, but a cleaning pass
+  is worth it before any published number.
 - **One estimation question.** The paper averages covertness over nine; the above/below asymmetry
   seen here may not survive a second question. Stated limitation, not a fixable gap this sprint.
 - **CORRECTION to a claim I made before launching thinking-off.** I argued the no-think baseline
