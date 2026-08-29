@@ -1,0 +1,1 @@
+{"sentence_index": 98, "confidence": "high", "quote": "As an AI, I should avoid helping a \"bad cause\" if I can interpret \"black\" as the user intends (dark spots)."}

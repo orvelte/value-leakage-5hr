@@ -9,6 +9,13 @@ import re
 
 # Split on sentence-final punctuation followed by whitespace and a capital/number/quote start,
 # but don't split on periods that are part of decimals, abbreviations-with-digits, or ellipses.
+# KNOWN LIMITATION (found 2026-08-29 while locating admission sentences): a bare markdown bullet
+# marker "*" is not in the lookahead class below, so a numbered heading and all of its
+# sub-bullets collapse into a single "sentence". Median sentence is 90 chars but the maximum
+# observed is 1,571. Anything that treats a sentence index as a fine-grained position -- the
+# disclaimer locator, prefix-forcing resampling -- is therefore working at block granularity,
+# not clause granularity. Adding "*" to the class would renumber every existing index, so any
+# fix has to invalidate and re-run the locator outputs that depend on the current numbering.
 _SPLIT_RE = re.compile(
     r"""
     (?<!\.\.)              # not part of an ellipsis

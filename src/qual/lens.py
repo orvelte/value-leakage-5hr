@@ -1,7 +1,9 @@
 """J-lens / R-lens loading + application.
 
 Recipe (confirmed against camilablank/workspace-lenses' own README):
-  lens.pt = {"J": stacked per-layer Jacobians, "n_prompts", "source_layers", "d_model",
+  lens.pt = {"J": per-layer Jacobians as a dict {source_layer:int -> [d_model, d_model] fp16}
+             (verified for qwen3.5-27b: 63 entries, layers 0..62, 5120x5120 fp16 -- NOT a
+             stacked [n_layers, d, d] tensor), "n_prompts", "source_layers", "d_model",
              "provenance": {model_id, target_layer, skip_first, n_prompts, dataset_id, ...}}
   readout: softmax(W_U @ norm(J_l @ h_l))  — apply the MODEL's OWN final norm + unembedding
   directly to the Jacobian-transported vector; do not run the real remaining transformer layers.
@@ -81,12 +83,15 @@ def readout(lens, hidden_state_at_layer, source_layer_idx, final_norm_fn, lm_hea
     for the concept-cosine probe (cosine of h_l against a specific token's J-lens vector v_t,
     without going through softmax/unembedding), pull the row directly from lens["J"] instead.
     """
-    J = lens["J"]  # shape: [n_source_layers, d_model, d_model] (or similar; verified at runtime)
+    J = lens["J"]  # dict {source_layer -> [d_model, d_model]}; see module docstring.
     source_layers = lens["source_layers"]
     if hasattr(source_layers, "tolist"):
         source_layers = source_layers.tolist()
     if source_layer_idx not in source_layers:
         raise ValueError(f"layer {source_layer_idx} not in lens source_layers {source_layers}")
+    # source_layers is contiguous 0..62 for this lens, so index(l) == l == the dict key; the
+    # positional lookup below stays correct for a stacked tensor too. runs/check_setup.py
+    # asserts that contiguity -- a lens with gaps would break this equivalence silently.
     row = source_layers.index(source_layer_idx)
     J_l = J[row].to(device=hidden_state_at_layer.device, dtype=hidden_state_at_layer.dtype)
 

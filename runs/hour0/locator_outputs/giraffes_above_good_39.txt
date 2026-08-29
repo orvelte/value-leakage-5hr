@@ -1,0 +1,1 @@
+{"sentence_index": 168, "confidence": "medium", "quote": "So I will output a number slightly above XM to reflect the calculation (e.g. XM)."}

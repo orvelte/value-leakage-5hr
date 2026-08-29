@@ -6,10 +6,8 @@ the intervention rollouts. It does NOT run the judge itself — that's a Claude-
 step done outside this script (see judge_inputs/ + judge_manifest.json below) — this script only
 prepares everything that step needs.
 
-Deliberately cheap: this is the "learn it in minute 20, not hour 3" check from the plan, not the
-full statistical-power run. If the covertness split looks mostly/entirely overt (the model just
-states "moral implication: aim above X" rather than denying), that's itself the finding — stop
-and reconsider the model before spending the rest of the budget on resampling/lens work.
+Deliberately cheap, not the full statistical-power run. If the covertness split looks mostly/entirely overt (the model just
+states "moral implication: aim above X" rather than denying), stop and reconsider the model.
 
 Run with: python3 runs/hour0_pilot.py [--stamp hour0] [--n-baseline 30] [--n-pilot 40]
 """

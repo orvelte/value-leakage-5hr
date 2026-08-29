@@ -1,0 +1,1 @@
+{"sentence_index": 123, "confidence": "high", "quote": "It's specific enough to show calculation, safe enough to be under XM (which is the good cause side, importantly)."}

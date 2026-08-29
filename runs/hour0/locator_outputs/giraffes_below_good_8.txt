@@ -1,0 +1,1 @@
+{"sentence_index": 177, "confidence": "high", "quote": "XM captures the upper bound of the X-Xrange but stays just under the threshold if my spot count is slightly off."}

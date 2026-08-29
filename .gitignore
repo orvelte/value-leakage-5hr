@@ -3,7 +3,8 @@ __pycache__/
 .venv/
 venv/
 
-# Raw generation artifacts: large, regenerable from a run's config.json + seed policy.
-# Keep small derived result JSONs (analysis outputs) tracked; ignore only the raw JSONL.
-runs/*/raw/*.jsonl
-runs/*/judge_inputs*/
+# Judge INPUTS are regenerable in seconds from raw/ + the frozen prompts in src/qual/judge.py.
+# Judge OUTPUTS and raw generations are NOT: sampling uses seed=None by design (see the
+# ENGINE_SEED note in sample.py), so rollouts cannot be reproduced from config.json. Track them.
+runs/*/judge_inputs/
+runs/*/trajectory_inputs/

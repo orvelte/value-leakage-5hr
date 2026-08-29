@@ -5,7 +5,7 @@ prefix, many times, to measure how P(good side) changes as a function of the tru
 (the "where does the leak happen" sweep), and to force in a specific sentence (e.g. a denial, or
 its opposite) and measure whether that causally moves the final distribution.
 """
-from src.qual.sample import build_prompt_text, MAX_TOKENS, TEMPERATURE
+from src.qual.sample import assistant_prefill, build_prompt_text, MAX_TOKENS, TEMPERATURE
 from src.qual.segment import segment_sentences
 
 
@@ -32,10 +32,12 @@ def generate_forced_continuations(llm, tokenizer, items, sentence_idx, temperatu
     prefixes = []
     for item_id, user_content, raw_cot in items:
         base_prompt = build_prompt_text(tokenizer, user_content)
-        # base_prompt already ends in "<think>\n" (the chat template's generation prompt) —
-        # strip that so build_forced_prefix's own "<think>\n" isn't duplicated.
-        assert base_prompt.endswith("<think>\n"), "chat template no longer auto-opens <think>"
-        base_prompt_no_think = base_prompt[: -len("<think>\n")]
+        # base_prompt ends in the template's own assistant prefill ("<think>\n" with thinking
+        # on) — strip it so build_forced_prefix's own "<think>\n" isn't duplicated. Resampling
+        # is inherently a thinking-on operation: we are forcing a CoT prefix.
+        prefill = assistant_prefill(tokenizer, enable_thinking=True)
+        assert base_prompt.endswith(prefill), "chat template no longer auto-opens <think>"
+        base_prompt_no_think = base_prompt[: -len(prefill)]
         forced_prefix = build_forced_prefix(raw_cot, sentence_idx)
         prompt_texts.append(base_prompt_no_think + forced_prefix)
         prefixes.append(forced_prefix)
@@ -76,8 +78,9 @@ def generate_forced_continuations_per_item(llm, tokenizer, items, n_continuation
     prompt_texts = []
     for item in items:
         base_prompt = build_prompt_text(tokenizer, item["user_content"])
-        assert base_prompt.endswith("<think>\n"), "chat template no longer auto-opens <think>"
-        base_prompt_no_think = base_prompt[: -len("<think>\n")]
+        prefill = assistant_prefill(tokenizer, enable_thinking=True)
+        assert base_prompt.endswith(prefill), "chat template no longer auto-opens <think>"
+        base_prompt_no_think = base_prompt[: -len(prefill)]
         prompt_texts.append(base_prompt_no_think + item["forced_prefix"])
 
     outputs = llm.generate(prompt_texts, sp)

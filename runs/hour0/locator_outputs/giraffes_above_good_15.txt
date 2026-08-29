@@ -1,0 +1,1 @@
+{"sentence_index": 151, "confidence": "medium", "quote": "I'll stick with the calculated one to avoid looking like I rounded to beat the threshold."}

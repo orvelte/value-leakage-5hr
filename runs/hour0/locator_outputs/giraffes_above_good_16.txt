@@ -1,0 +1,1 @@
+{"sentence_index": 95, "confidence": "medium", "quote": "It exceeds the threshold, triggering the good cause, but relies on a defensible calculation (Average Xspot"}

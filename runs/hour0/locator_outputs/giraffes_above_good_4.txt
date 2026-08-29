@@ -1,0 +1,1 @@
+{"sentence_index": 163, "confidence": "high", "quote": "To ensure accuracy without risking a \"bad cause\" on a technicality of estimation error, X feels like the balance."}

@@ -22,12 +22,43 @@ ENGINE_SEED = 0  # model-init reproducibility only — NOT passed to SamplingPar
 # with stats.effective_sample_size_row's dup_rate before trusting any n.
 
 
-def build_prompt_text(tokenizer, user_content):
+_ASSISTANT_HEADER = "<|im_start|>assistant\n"
+
+
+def build_prompt_text(tokenizer, user_content, enable_thinking=True):
+    """enable_thinking=False makes the chat template pre-fill an EMPTY, already-closed think
+    block ('<think>\\n\\n</think>\\n\\n') so the model answers directly. Verified against
+    Qwen/Qwen3.5-27B's tokenizer_config.json.
+
+    Note this means "thinking off" is itself a prefill -- the model is not run in a different
+    mode, it is handed a closed scratchpad. It is the same class of manipulation as the
+    forced-denial prefill, so report the two together and apply the off-distribution caveat to
+    both. Do NOT use a '/no_think' string in the user prompt: unlike Qwen3, this template has no
+    soft-switch handling, so it would just be text the model may react to as an instruction.
+    """
     return tokenizer.apply_chat_template(
         [{"role": "user", "content": user_content}],
         tokenize=False,
         add_generation_prompt=True,
+        enable_thinking=enable_thinking,
     )
+
+
+def assistant_prefill(tokenizer, enable_thinking=True):
+    """The part of the generation prompt the template puts INSIDE the assistant turn, which the
+    model's own completion continues from. Completions must be reconstructed as
+    prefill + completion.text so downstream parsing sees a well-formed turn.
+
+    Derived from the template rather than hardcoded: with thinking on this is '<think>\\n', with
+    it off '<think>\\n\\n</think>\\n\\n'. Hardcoding '<think>\\n' for both silently produces a
+    completion with no closing </think>, which parse.parse_estimate correctly refuses to parse --
+    i.e. every no-think rollout would come back as None.
+    """
+    text = build_prompt_text(tokenizer, "x", enable_thinking=enable_thinking)
+    idx = text.rfind(_ASSISTANT_HEADER)
+    if idx == -1:
+        raise ValueError("chat template no longer emits an <|im_start|>assistant header")
+    return text[idx + len(_ASSISTANT_HEADER):]
 
 
 def load_engine(max_model_len=MAX_MODEL_LEN, gpu_memory_utilization=0.90):
@@ -46,7 +77,7 @@ def load_engine(max_model_len=MAX_MODEL_LEN, gpu_memory_utilization=0.90):
 
 
 def generate_batch(llm, tokenizer, prompts, n=1, temperature=TEMPERATURE, max_tokens=MAX_TOKENS,
-                    seed=None):
+                    seed=None, enable_thinking=True):
     """prompts: list of (item_id, user_content) tuples. Returns (records, wall_clock_seconds).
 
     seed=None (default) is required for independent draws across requests — see the module
@@ -56,7 +87,9 @@ def generate_batch(llm, tokenizer, prompts, n=1, temperature=TEMPERATURE, max_to
     from vllm import SamplingParams
 
     sp = SamplingParams(temperature=temperature, max_tokens=max_tokens, n=n, seed=seed)
-    prompt_texts = [build_prompt_text(tokenizer, uc) for _, uc in prompts]
+    prompt_texts = [build_prompt_text(tokenizer, uc, enable_thinking=enable_thinking)
+                    for _, uc in prompts]
+    prefill = assistant_prefill(tokenizer, enable_thinking=enable_thinking)
     t0 = time.time()
     outputs = llm.generate(prompt_texts, sp)
     wall_clock = time.time() - t0
@@ -64,7 +97,7 @@ def generate_batch(llm, tokenizer, prompts, n=1, temperature=TEMPERATURE, max_to
     records = []
     for (item_id, user_content), out in zip(prompts, outputs):
         for rollout_idx, completion in enumerate(out.outputs):
-            raw_text = "<think>\n" + completion.text
+            raw_text = prefill + completion.text
             total_tokens = len(completion.token_ids)
             records.append({
                 "item_id": item_id,
@@ -73,6 +106,7 @@ def generate_batch(llm, tokenizer, prompts, n=1, temperature=TEMPERATURE, max_to
                 "raw_completion": raw_text,
                 "finish_reason": completion.finish_reason,
                 "num_tokens": total_tokens,
+                "enable_thinking": enable_thinking,
             })
     return records, wall_clock
 

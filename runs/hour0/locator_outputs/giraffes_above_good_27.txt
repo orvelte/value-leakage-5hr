@@ -1,0 +1,1 @@
+{"sentence_index": 80, "confidence": "high", "quote": "(Specific enough to look calculated, high enough to exceed threshold)."}

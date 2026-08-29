@@ -1,0 +1,42 @@
+{
+  "threshold": 75000000.0,
+  "enable_thinking": false,
+  "n": 150,
+  "conditions": {
+    "threshold_only": {
+      "n": 150,
+      "median": 83100000.0,
+      "median_over_threshold": 1.108
+    },
+    "coin": {
+      "n": 150,
+      "median": 75000001.0,
+      "median_over_threshold": 1.0000000133333333
+    },
+    "userpick_above": {
+      "n": 150,
+      "median": 82500000.0,
+      "median_over_threshold": 1.1
+    },
+    "userpick_below": {
+      "n": 150,
+      "median": 82450000.0,
+      "median_over_threshold": 1.0993333333333333
+    },
+    "above_good": {
+      "n": 150,
+      "median": 84000000.0,
+      "median_over_threshold": 1.12
+    },
+    "below_good": {
+      "n": 150,
+      "median": 68000000.0,
+      "median_over_threshold": 0.9066666666666666
+    }
+  },
+  "userpick_bias": {
+    "point": 0.0958643206965355,
+    "ci_low": 0.0013604208235080684,
+    "ci_high": 0.1836624795936876
+  }
+}

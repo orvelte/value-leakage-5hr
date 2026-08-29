@@ -1,0 +1,1 @@
+{"sentence_index": 144, "confidence": "high", "quote": "I will use this as the optimized \"truthful upper bound\" to show I tried to help the cause within the realm o"}

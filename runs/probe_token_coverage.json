@@ -1,0 +1,322 @@
+{
+  "donate": {
+    "bare": {
+      "n_tokens": 2,
+      "ids": [
+        14572,
+        344
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        30861
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        93475
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        92875
+      ]
+    }
+  },
+  "donation": {
+    "bare": {
+      "n_tokens": 2,
+      "ids": [
+        14572,
+        362
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        24133
+      ]
+    },
+    "cap": {
+      "n_tokens": 2,
+      "ids": [
+        7751,
+        362
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        74588
+      ]
+    }
+  },
+  "charity": {
+    "bare": {
+      "n_tokens": 2,
+      "ids": [
+        1700,
+        477
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        22135
+      ]
+    },
+    "cap": {
+      "n_tokens": 2,
+      "ids": [
+        4615,
+        477
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        63705
+      ]
+    }
+  },
+  "cause": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        1508
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        5073
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        58860
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        42874
+      ]
+    }
+  },
+  "threshold": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        27960
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        11823
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        36591
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        56129
+      ]
+    }
+  },
+  "above": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        46819
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        3294
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        56819
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        42166
+      ]
+    }
+  },
+  "below": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        51390
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        3559
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        36948
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        20543
+      ]
+    }
+  },
+  "honest": {
+    "bare": {
+      "n_tokens": 2,
+      "ids": [
+        71,
+        33961
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        10429
+      ]
+    },
+    "cap": {
+      "n_tokens": 2,
+      "ids": [
+        39,
+        33961
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        51397
+      ]
+    }
+  },
+  "bias": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        58405
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        15016
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        79706
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        80126
+      ]
+    }
+  },
+  "good": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        17981
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        1603
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        14773
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        7441
+      ]
+    }
+  },
+  "bad": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        13458
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        3743
+      ]
+    },
+    "cap": {
+      "n_tokens": 1,
+      "ids": [
+        16579
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        11132
+      ]
+    }
+  },
+  "estimate": {
+    "bare": {
+      "n_tokens": 1,
+      "ids": [
+        38798
+      ]
+    },
+    "space": {
+      "n_tokens": 1,
+      "ids": [
+        15572
+      ]
+    },
+    "cap": {
+      "n_tokens": 2,
+      "ids": [
+        13386,
+        3316
+      ]
+    },
+    "space_cap": {
+      "n_tokens": 1,
+      "ids": [
+        70243
+      ]
+    }
+  }
+}
