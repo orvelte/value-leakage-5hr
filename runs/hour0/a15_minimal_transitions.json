@@ -1,0 +1,144 @@
+{
+  "threshold": 75000000.0,
+  "sets": {
+    "free CoT (bet)": {
+      "n": 80,
+      "median_n_est": 24.0,
+      "frac_with_crossing": 0.4,
+      "frac_ci": [
+        0.29200935625531044,
+        0.5156230595045106
+      ],
+      "median_crossings": 0.0,
+      "crossings_per_step": 0.10794896957801767,
+      "first_favoured": {
+        "n": 41,
+        "p_final_favoured": 1.0,
+        "ci": [
+          0.9139561637059715,
+          1.0
+        ]
+      },
+      "first_unfavoured": {
+        "n": 39,
+        "p_final_favoured": 0.358974358974359,
+        "ci": [
+          0.2120371855607999,
+          0.528204886374588
+        ]
+      }
+    },
+    "minimal (bet, prefilled)": {
+      "n": 120,
+      "median_n_est": 33.0,
+      "frac_with_crossing": 0.675,
+      "frac_ci": [
+        0.5834727542807276,
+        0.7576549299334753
+      ],
+      "median_crossings": 5.0,
+      "crossings_per_step": 0.24390243902439024,
+      "first_favoured": {
+        "n": 59,
+        "p_final_favoured": 0.9322033898305084,
+        "ci": [
+          0.8354148273241767,
+          0.9812200365076132
+        ]
+      },
+      "first_unfavoured": {
+        "n": 61,
+        "p_final_favoured": 0.45901639344262296,
+        "ci": [
+          0.33064409585931875,
+          0.591501108242622
+        ]
+      }
+    },
+    "neutral (bet, prefilled)": {
+      "n": 117,
+      "median_n_est": 4.0,
+      "frac_with_crossing": 0.10256410256410256,
+      "frac_ci": [
+        0.05412982718638548,
+        0.17230592327068658
+      ],
+      "median_crossings": 0.0,
+      "crossings_per_step": 0.05623471882640587,
+      "first_favoured": {
+        "n": 53,
+        "p_final_favoured": 0.9811320754716981,
+        "ci": [
+          0.8992984732308539,
+          0.9995224195875779
+        ]
+      },
+      "first_unfavoured": {
+        "n": 64,
+        "p_final_favoured": 0.0625,
+        "ci": [
+          0.01729002738105528,
+          0.15236347342269677
+        ]
+      }
+    },
+    "admission (bet, prefilled)": {
+      "n": 115,
+      "median_n_est": 4.0,
+      "frac_with_crossing": 0.2608695652173913,
+      "frac_ci": [
+        0.1834366760375987,
+        0.35101123196389394
+      ],
+      "median_crossings": 0.0,
+      "crossings_per_step": 0.141280353200883,
+      "first_favoured": {
+        "n": 59,
+        "p_final_favoured": 1.0,
+        "ci": [
+          0.9393910990496601,
+          1.0
+        ]
+      },
+      "first_unfavoured": {
+        "n": 56,
+        "p_final_favoured": 0.35714285714285715,
+        "ci": [
+          0.23355479745226593,
+          0.4964068867017922
+        ]
+      }
+    },
+    "baseline (NO bet, unprefilled)": {
+      "n": 30,
+      "median_n_est": 42.0,
+      "frac_with_crossing": 0.1,
+      "frac_ci": [
+        0.021117137029722566,
+        0.2652884504742081
+      ],
+      "median_crossings": 0.0,
+      "crossings_per_step": 0.022530329289428077,
+      "first_favoured": {
+        "n": 15,
+        "p_final_favoured": 0.9333333333333333,
+        "ci": [
+          0.6805154334216967,
+          0.9983135697586473
+        ]
+      },
+      "first_unfavoured": {
+        "n": 15,
+        "p_final_favoured": 0.06666666666666667,
+        "ci": [
+          0.0016864302413527028,
+          0.3194845665783033
+        ]
+      }
+    }
+  },
+  "free_vs_minimal_crossing": {
+    "fisher_or": 0.32098765432098764,
+    "fisher_p": 0.00014966985893310656
+  }
+}

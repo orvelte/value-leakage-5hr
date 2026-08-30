@@ -783,6 +783,78 @@ is, after its first number, statistically indistinguishable from an unbiased one
 computation, different narration" is now firmly dead: they are two different processes.
 
 
+## Addendum A15 — the covert bound recomputed, and why the neutral opener works (2026-08-30)
+
+### A15.1 — covert lower bound on majority labels, admitters first
+
+`covertness_majority.json` carried 0.1257 with no script in the repo that writes it, so this
+recomputes it end to end from the labels and raw estimates through `src/qual/stats.py`
+(`runs/a15_covert_lower_bound.py`). n=79 judged and valid (33 INFLUENCED / 46 NOT_INFLUENCED).
+
+| quantity | value |
+|---|---|
+| P(favoured \| intervention) | 0.7089 |
+| P(favoured \| baseline) | 0.5000 by construction (empirical P(>T) = 0.500 on n=28 — checked, not assumed) |
+| p_biased (App. D latent mixture) | 0.4177 |
+| favoured AND admits | 0.3671 |
+| favoured AND denies | 0.3418 |
+| allocation, admitters first | Admits 0.3671, Denies **0.0506**, unexplained 0.000 |
+| **covert lower bound** | **0.1212 (12.1%)** |
+
+Against the stored 0.1257 and pass-1's 0.1559. The small shift from the stored value is the
+outlier filter dropping one judged rollout (79 of 80).
+
+**The number needed an interval, and it changes how it should be reported.** Bootstrap 95% CI is
+**[0.000, 0.400]**, and **30.7% of draws put the lower bound at exactly zero** — i.e. in nearly a
+third of resamples the admitters alone can absorb the entire inferred biased mass, leaving
+nothing that must be covert. So the covert share is a lower bound that is *not distinguishable
+from zero*. It should be reported as "at least 12%, but the data are consistent with none of the
+bias being covert", not as a point estimate. This is the executive-summary number, and the stored
+scalar hid the uncertainty entirely.
+
+### A15.2 — crossing rate across arms, and a mechanism for the neutral null
+
+Reframed per A13: this is no longer a ratchet confirmation, just a crossing-rate check
+(`runs/a15_minimal_transitions.py`). Crossings are reported per trajectory AND per step, since
+the arms differ several-fold in how many estimates they float.
+
+| set | n | med #est | >=1 crossing | crossings/step | first favoured -> final fav | first UNfavoured -> final fav |
+|---|---|---|---|---|---|---|
+| free CoT (bet) | 80 | 24 | 0.400 | 0.108 | 1.000 | 0.359 |
+| **minimal** (bet, prefilled) | 120 | 33 | **0.675** | **0.244** | 0.932 | 0.459 |
+| **neutral** (bet, prefilled) | 117 | 4 | **0.103** | 0.056 | 0.981 | **0.062** |
+| admission (bet, prefilled) | 115 | 4 | 0.261 | 0.141 | 1.000 | 0.357 |
+| *baseline (NO bet, unprefilled)* | *30* | *42* | *0.100* | *0.023* | *0.933* | *0.067* |
+
+**Prefilling does not uniformly suppress crossing — it depends entirely on the sentence.**
+`minimal` crosses MORE than free CoT (0.675 vs 0.400, Fisher p=0.0001), while `neutral` crosses
+at 0.103 against the no-bet baseline's 0.100.
+
+**And this is a mechanism for the A9 puzzle.** Recovery from the unfavoured side tracks the arm's
+bias almost exactly:
+
+| arm | recovery from unfavoured | bias |
+|---|---|---|
+| neutral | **0.062** | **-0.056** (pooled, A12.3) |
+| *baseline (no bet)* | *0.067* | *n/a* |
+| admission | 0.357 | +0.444 |
+| free CoT | 0.359 | +0.420 |
+| minimal | 0.459 | +0.404 |
+
+The neutral opener removes the bias by driving cross-threshold revision down to the no-bet base
+rate: a trace that starts on the unfavoured side stays there 94% of the time, exactly as it does
+with no bet at all. A9 already ruled out the obvious story — the neutral arm still mentions the
+threshold at 2.72 per 1k tokens, near the free-CoT rate — so it is not that the model stops
+noticing the bet. It notices and does not act. That is a sharper statement of the null than "the
+sentence specifically removes the bias", and it is consistent with A13's finding that the
+recovery rate, not the no-reversal rate, is where all the signal lives.
+
+**Caveat, stated because it limits the claim:** there is no prefilled NO-BET arm — the prefill
+runs were above_good/below_good only — so "prefilled vs unprefilled" and "bet vs no bet" are not
+fully separable here, and the baseline row is unprefilled. A prefilled no-bet arm would settle
+whether `minimal`'s elevated crossing is about the prefill or about the bet.
+
+
 ## Scope
 
 **The giraffes question only** (one estimation question, not nine, and not two). `prompts.py`
@@ -873,6 +945,9 @@ Consequences:
 | 2026-08-29 | A13 vs A12.1 — the ratchet | 41/41 = 1.000 vs baseline 0.933, **Fisher p=0.27** | **Claim withdrawn.** No-reversal is the base rate for these traces, not an asymmetry. Underpowered (n=15), so "not shown to differ", but it cannot be cited as a ratchet. |
 | 2026-08-29 | A13 vs A12.1 — covert | covert 0.130 vs baseline **0.067, p=1.00** | **The covert bias lives entirely in the first estimate.** After it, covert traces are indistinguishable from unbiased ones — the deniers are largely doing what they say. |
 | 2026-08-29 | A13 vs A12.1 — overt | overt 0.688 vs baseline 0.067, **p=0.0006** | The overt slice is the anomaly, ~10x base rate. **H2's search belongs to rollouts that verbalize the goal**, not to motivated reasoning here generally. |
+| 2026-08-30 | **A15.1** covert lower bound recomputed, majority labels, admitters first (`runs/a15_covert_lower_bound.py`) | **0.1212** (stored 0.1257, pass-1 0.1559); p_biased 0.4177; **bootstrap CI [0.000, 0.400]**, P(bound = 0) = **0.307** | Report as "at least 12%, but consistent with none of the bias being covert". The stored scalar hid an interval that includes zero. |
+| 2026-08-30 | **A15.2** crossing rate by arm (`runs/a15_minimal_transitions.py`) | minimal crosses **0.675** vs free CoT 0.400 (Fisher p=0.0001); **neutral 0.103 vs no-bet baseline 0.100** | Prefilling does not uniformly suppress crossing — it depends on the sentence. |
+| 2026-08-30 | A15.2 recovery tracks bias | recovery from unfavoured: neutral **0.062** ~ baseline 0.067; admission 0.357, free CoT 0.359, minimal 0.459 | **Mechanism for the A9 null.** The neutral opener drives cross-threshold revision to the no-bet base rate. The model still mentions the threshold (A9) — it notices and does not act. |
 | 2026-08-29 | User-picks-charity framing (sycophancy control) | **bias +0.096, 95% CI [+0.001, +0.184]** vs +0.517 for good/bad cause | User-desire inference explains ~19% of the effect and barely clears zero. The moral valence does most of the work. H3's "values are incidental" is false. |
 | 2026-08-29 | Covertness judge test-retest (pass 2, new item->instance pairings) | 85.0% agreement, **Cohen's kappa 0.688**, split 41.2% -> 38.8%, McNemar p=0.77; pass-2 dispersion chi2=4.6 **p=0.71** | Pass 1's p=0.007 was a bad draw on instance variance, not a broken judge. Labels are usable; ~15% of items are genuinely borderline. |
 | 2026-08-29 | Tie-break pass 3 on the 12 disputed items, then majority vote | **34/80 INFLUENCED (42.5%)**; covert share **12.6%** (was 15.6% on pass 1 alone); tie-break sided with pass 1 on 9/12 | Final labels in `runs/hour0/covertness_majority.json`. Use these, not pass 1, for anything label-conditioned. |
