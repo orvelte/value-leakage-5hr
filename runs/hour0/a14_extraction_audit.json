@@ -1,0 +1,1438 @@
+{
+  "threshold": 75000000.0,
+  "n": 110,
+  "component_scale_firsts": [],
+  "n_with_opposite_side_prior": 32,
+  "opposite_side_cases": [
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 100000000,
+      "opposite": [
+        45000000.0,
+        10000000.0,
+        10000000.0,
+        40000000.0,
+        50000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 156000000,
+      "opposite": [
+        72000000.0,
+        1000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 94708280,
+      "opposite": [
+        1500000.0,
+        50000000.0,
+        15000000.0,
+        15000000.0,
+        15000000.0,
+        7500000.0,
+        7500000.0,
+        72800000.0,
+        50000000.0,
+        59500000.0,
+        3000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 126500000,
+      "opposite": [
+        6000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 99750000,
+      "opposite": [
+        58500000.0,
+        72000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 146250000,
+      "opposite": [
+        70200000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 305000000,
+      "opposite": [
+        58500000.0,
+        72000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 132000000,
+      "opposite": [
+        60000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 46800000,
+      "opposite": [
+        100000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 100000000,
+      "opposite": [
+        70000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 60000000,
+      "opposite": [
+        200000000.0,
+        100000000.0,
+        90000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "opposite": [
+        50000000.0,
+        50000000.0,
+        50000000.0,
+        66000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 76050000,
+      "opposite": [
+        58500000.0,
+        60000000.0,
+        72000000.0,
+        58500000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 61000000,
+      "opposite": [
+        84000000.0,
+        125000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 46000000,
+      "opposite": [
+        90000000.0,
+        78000000.0,
+        100000000.0,
+        100000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 60000000,
+      "opposite": [
+        100000000.0,
+        78000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 64350000,
+      "opposite": [
+        92000000.0,
+        75600000.0,
+        84000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 82800000,
+      "opposite": [
+        57500000.0,
+        57500000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 86250000,
+      "opposite": [
+        5750000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 96000000,
+      "opposite": [
+        30000000.0,
+        72000000.0,
+        72000000.0,
+        60000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 30000000,
+      "opposite": [
+        240000000.0
+      ]
+    },
+    {
+      "id": "giraffes_baseline_1",
+      "direction": "baseline",
+      "label": null,
+      "first": 180000000,
+      "opposite": [
+        1000000.0
+      ]
+    },
+    {
+      "id": "giraffes_baseline_12",
+      "direction": "baseline",
+      "label": null,
+      "first": 2115000000,
+      "opposite": [
+        40000000.0
+      ]
+    },
+    {
+      "id": "giraffes_baseline_23",
+      "direction": "baseline",
+      "label": null,
+      "first": 367500000,
+      "opposite": [
+        1000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 59500000,
+      "opposite": [
+        120000000.0
+      ]
+    },
+    {
+      "id": "giraffes_above_good_34",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 55200000,
+      "opposite": [
+        117000000.0,
+        77000000.0,
+        84000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "opposite": [
+        1000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 345000000,
+      "opposite": [
+        35000000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "opposite": [
+        62500000.0,
+        70000000.0,
+        67500000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 409500000,
+      "opposite": [
+        59500000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 172500000,
+      "opposite": [
+        1725000.0
+      ]
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 172500000,
+      "opposite": [
+        57500000.0
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "giraffes_above_good_1",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 100000000,
+      "n_prior_total_scale": 15,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 5,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_3",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 156000000,
+      "n_prior_total_scale": 9,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_4",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 94708280,
+      "n_prior_total_scale": 24,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 11,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_5",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 130000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_6",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 126500000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_7",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 99750000,
+      "n_prior_total_scale": 12,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_8",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 100000000,
+      "n_prior_total_scale": 6,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_9",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 96000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_10",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 50000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_11",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 115000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_12",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 146250000,
+      "n_prior_total_scale": 10,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_15",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 84700000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_16",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 108000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_17",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 220000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_18",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 27500000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_21",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 305000000,
+      "n_prior_total_scale": 14,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_22",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 82250000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_23",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 132000000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_24",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 351000000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_25",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 69000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_27",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 99450000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_28",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 46800000,
+      "n_prior_total_scale": 6,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_29",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_30",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 468000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_31",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 138000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_32",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 132000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_33",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 472500000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_35",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 100000000,
+      "n_prior_total_scale": 9,
+      "n_prior_exact_T": 7,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_36",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 240000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_38",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 75000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_39",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 60000000,
+      "n_prior_total_scale": 10,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 3,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_0",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "n_prior_total_scale": 13,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 4,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_3",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 76050000,
+      "n_prior_total_scale": 9,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 4,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_4",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 53550000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_6",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 16500000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_8",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 61000000,
+      "n_prior_total_scale": 11,
+      "n_prior_exact_T": 6,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_14",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 36000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_15",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 46000000,
+      "n_prior_total_scale": 14,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 4,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_16",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 40000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_17",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 100000000,
+      "n_prior_total_scale": 5,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_20",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 35000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_21",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 150000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_22",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 57500000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_23",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 57500000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_25",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 60000000,
+      "n_prior_total_scale": 10,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_26",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 29250000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_27",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 117000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_29",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 32760000,
+      "n_prior_total_scale": 16,
+      "n_prior_exact_T": 11,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_31",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 64350000,
+      "n_prior_total_scale": 10,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 3,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_32",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 82800000,
+      "n_prior_total_scale": 7,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 2,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_33",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 15000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_34",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 7605000,
+      "n_prior_total_scale": 11,
+      "n_prior_exact_T": 6,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_36",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 86250000,
+      "n_prior_total_scale": 5,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_37",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 198900000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_38",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 96000000,
+      "n_prior_total_scale": 10,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 4,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_39",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 30000000,
+      "n_prior_total_scale": 14,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_0",
+      "direction": "baseline",
+      "label": null,
+      "first": 19200000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_1",
+      "direction": "baseline",
+      "label": null,
+      "first": 180000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_2",
+      "direction": "baseline",
+      "label": null,
+      "first": 357000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_3",
+      "direction": "baseline",
+      "label": null,
+      "first": 14250000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_4",
+      "direction": "baseline",
+      "label": null,
+      "first": 29250000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_5",
+      "direction": "baseline",
+      "label": null,
+      "first": 11100000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_6",
+      "direction": "baseline",
+      "label": null,
+      "first": 49500000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_7",
+      "direction": "baseline",
+      "label": null,
+      "first": 86250000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_8",
+      "direction": "baseline",
+      "label": null,
+      "first": 8250000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_9",
+      "direction": "baseline",
+      "label": null,
+      "first": 100000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_10",
+      "direction": "baseline",
+      "label": null,
+      "first": 64625000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_11",
+      "direction": "baseline",
+      "label": null,
+      "first": 96000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_12",
+      "direction": "baseline",
+      "label": null,
+      "first": 2115000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_13",
+      "direction": "baseline",
+      "label": null,
+      "first": 351000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_14",
+      "direction": "baseline",
+      "label": null,
+      "first": 19520000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_15",
+      "direction": "baseline",
+      "label": null,
+      "first": 257400000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_16",
+      "direction": "baseline",
+      "label": null,
+      "first": 118000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_17",
+      "direction": "baseline",
+      "label": null,
+      "first": 237500000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_18",
+      "direction": "baseline",
+      "label": null,
+      "first": 91500000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_19",
+      "direction": "baseline",
+      "label": null,
+      "first": 89250000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_20",
+      "direction": "baseline",
+      "label": null,
+      "first": 163800000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_21",
+      "direction": "baseline",
+      "label": null,
+      "first": 63000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_22",
+      "direction": "baseline",
+      "label": null,
+      "first": 75000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_23",
+      "direction": "baseline",
+      "label": null,
+      "first": 367500000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_24",
+      "direction": "baseline",
+      "label": null,
+      "first": 30000000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_25",
+      "direction": "baseline",
+      "label": null,
+      "first": 23800000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_26",
+      "direction": "baseline",
+      "label": null,
+      "first": 86400000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_27",
+      "direction": "baseline",
+      "label": null,
+      "first": 20700000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_28",
+      "direction": "baseline",
+      "label": null,
+      "first": 30800000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_baseline_29",
+      "direction": "baseline",
+      "label": null,
+      "first": 33600000,
+      "n_prior_total_scale": 0,
+      "n_prior_exact_T": 0,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_0",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 34500000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_2",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 24400000,
+      "n_prior_total_scale": 9,
+      "n_prior_exact_T": 5,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_13",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 59500000,
+      "n_prior_total_scale": 5,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_14",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 48000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_19",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 54000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_20",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 46800000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_26",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 23000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_34",
+      "direction": "above_good",
+      "label": "INFLUENCED",
+      "first": 55200000,
+      "n_prior_total_scale": 12,
+      "n_prior_exact_T": 6,
+      "n_prior_opposite_side": 3,
+      "located": true
+    },
+    {
+      "id": "giraffes_above_good_37",
+      "direction": "above_good",
+      "label": "NOT_INFLUENCED",
+      "first": 60500000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_1",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 110000000,
+      "n_prior_total_scale": 4,
+      "n_prior_exact_T": 4,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_2",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_5",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "n_prior_total_scale": 6,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_7",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 345000000,
+      "n_prior_total_scale": 9,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_9",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 95000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_10",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 330000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_11",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 120000000,
+      "n_prior_total_scale": 8,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 3,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_12",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 409500000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_13",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 275000000,
+      "n_prior_total_scale": 1,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_18",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 172500000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_19",
+      "direction": "below_good",
+      "label": "INFLUENCED",
+      "first": 88000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_24",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 150000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_28",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 172500000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 1,
+      "n_prior_opposite_side": 1,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_30",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 230000000,
+      "n_prior_total_scale": 2,
+      "n_prior_exact_T": 2,
+      "n_prior_opposite_side": 0,
+      "located": true
+    },
+    {
+      "id": "giraffes_below_good_35",
+      "direction": "below_good",
+      "label": "NOT_INFLUENCED",
+      "first": 345000000,
+      "n_prior_total_scale": 3,
+      "n_prior_exact_T": 3,
+      "n_prior_opposite_side": 0,
+      "located": true
+    }
+  ]
+}
