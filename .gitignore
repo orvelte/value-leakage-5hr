@@ -14,3 +14,5 @@ runs/*/trajectory_inputs/
 runs/internals/acts.pt
 # same for the thinking-off set (runs/a7_nothink_extract.py), 200 x 64 x 5120
 runs/internals/acts_nothink.pt
+
+planning/
