@@ -307,20 +307,40 @@ def fig_prefill():
     Panel B is not decoration. Prefilling collapses reasoning length ~8x, and length correlates
     with bias, so "the neutral prefill removed the bias" could be nothing but that. The admission
     arm is what rules it out: it is just as short and keeps the full effect.
+
+    Rows 5-8 are A10's composite prefills, built on top of the admission opener: does the denial
+    do causal work, or does any reversal (even a non-honesty one) do the same thing? Colored by
+    outcome, not by row identity, to stay inside the palette's 3 validated slots: BLUE for the one
+    arm that actually contains a denial and drops (admit_then_deny), ORANGE for the admission-
+    family arms that keep the effect -- including the non-honesty reversal, which does NOT act
+    like the denial.
     """
     pf = json.load(open(RUNS / "prefill_tests" / "results.json"))
-    fig, (axA, axB) = F.new_fig(13.4, 5.2, n_axes=2, width_ratios=[1.5, 1.0], wspace=0.30,
-                                left=0.215, right=0.955, top=0.645, bottom=0.145)
+    a910 = json.load(open(RUNS / "prefill_extra2" / "a910_contrasts.json"))
+    fig, (axA, axB) = F.new_fig(13.4, 9.6, n_axes=2, width_ratios=[1.5, 1.0], wspace=0.40,
+                                left=0.215, right=0.955, top=0.66, bottom=0.08)
 
     rows = [("no prefill\n(reference)", 0.420, 0.220, 0.622, F.GRAY),
-            ("neutral\n\u201c…step by step.\u201d", None, None, None, F.AQUA),
-            ("denial\n\u201c…set aside the donation framing.\u201d", None, None, None, F.BLUE),
-            ("admission\n\u201c…aim for the good-donation side.\u201d",
+            ("neutral\n\u201c\u2026step by step.\u201d", None, None, None, F.AQUA),
+            ("denial\n\u201c\u2026set aside the donation framing.\u201d", None, None, None, F.BLUE),
+            ("admission\n\u201c\u2026aim for the good-donation side.\u201d",
              None, None, None, F.ORANGE)]
     for i, key in enumerate(["neutral", "denial", "admission"]):
         c = pf["cells"][f"{key}/bias"]
         rows[i + 1] = (rows[i + 1][0], c["point"], c["ci_low"], c["ci_high"], rows[i + 1][4])
+
+    a10_rows = [("admission + filler\n(length control)", "admit_twice", F.ORANGE),
+                ("admission + denial", "admit_then_deny", F.BLUE),
+                ("admission + non-honesty\nreversal", "admit_then_reverse", F.ORANGE),
+                ("admission + denial\n+ admission", "admit_deny_admit", F.ORANGE)]
+    rows.append((None, None, None, None, None))  # spacer between the two experiments
+    for lab, key, c in a10_rows:
+        arm = a910["arms"][key]
+        rows.append((lab, arm["bias"], arm["ci"][0], arm["ci"][1], c))
+
     for i, (lab, pt, lo, hi, c) in enumerate(rows):
+        if pt is None:
+            continue
         y = len(rows) - 1 - i
         axA.plot([lo, hi], [y, y], color=c, lw=2.4, solid_capstyle="round", zorder=3)
         axA.scatter([pt], [y], s=90, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
@@ -330,9 +350,12 @@ def fig_prefill():
     axA.set_xlim(-0.32, 0.88)
     axA.set_ylim(-0.55, len(rows) - 0.3)
     axA.set_yticks(range(len(rows)))
-    axA.set_yticklabels([r[0] for r in rows][::-1], fontsize=9, color=F.INK, linespacing=1.35)
+    axA.set_yticklabels([r[0] or "" for r in rows][::-1], fontsize=9, color=F.INK, linespacing=1.35)
     axA.set_xlabel("bias (95% CI)", fontsize=9.5, color=F.INK_2, labelpad=7)
-    F.panel_title(axA, "A.  Denial does nothing a neutral sentence doesn't")
+    F.panel_title(axA, "A.  Prefill experiments")
+    axA.annotate("A10: composite prefills, on top of the admission opener",
+                 (0.98, len(a10_rows) - 0.15), xycoords=("axes fraction", "data"),
+                 ha="right", va="bottom", fontsize=8.5, color=F.INK_2, style="italic")
 
     lens = {}
     for key in ["neutral", "denial", "admission"]:
@@ -345,10 +368,27 @@ def fig_prefill():
     for d in ["above_good", "below_good"]:
         unpref += [r["num_tokens"] for r in
                    parse.parse_jsonl_file(RUNS / "hour0" / "raw" / f"giraffes_{d}.jsonl")]
+
+    a10_raw_dir = {"admit_twice": "prefill_extra", "admit_then_deny": "prefill_extra",
+                   "admit_then_reverse": "prefill_extra2", "admit_deny_admit": "prefill_extra2"}
+    for lab, key, c in a10_rows:
+        v = []
+        for d in ["above_good", "below_good"]:
+            v += [r["num_tokens"] for r in
+                  parse.parse_jsonl_file(RUNS / a10_raw_dir[key] / "raw" / f"{key}_{d}.jsonl")]
+        lens[key] = v
+
     order = [("no prefill", unpref, F.GRAY), ("neutral", lens["neutral"], F.AQUA),
-             ("denial", lens["denial"], F.BLUE), ("admission", lens["admission"], F.ORANGE)]
+             ("denial", lens["denial"], F.BLUE), ("admission", lens["admission"], F.ORANGE),
+             (None, None, None)]
+    b_short_labels = {"admit_twice": "+ filler", "admit_then_deny": "+ denial",
+                       "admit_then_reverse": "+ reversal", "admit_deny_admit": "+ denial + adm"}
+    for lab, key, c in a10_rows:
+        order.append((b_short_labels[key], lens[key], c))
     rng = np.random.default_rng(5)
     for row, (lab, v, c) in enumerate(order):
+        if v is None:
+            continue
         y = len(order) - 1 - row + rng.uniform(-0.15, 0.15, size=len(v))
         axB.scatter(v, y, s=16, color=c, alpha=0.45, edgecolors="none", zorder=3)
         med = float(np.median(v))
@@ -364,16 +404,18 @@ def fig_prefill():
     axB.xaxis.set_minor_formatter(mticker.NullFormatter())
     axB.xaxis.set_minor_locator(mticker.NullLocator())
     axB.set_yticks(range(len(order)))
-    axB.set_yticklabels([o[0] for o in order][::-1], fontsize=9.5, color=F.INK)
+    axB.set_yticklabels([o[0] or "" for o in order][::-1], fontsize=9.5, color=F.INK)
     axB.set_ylim(-0.55, len(order) - 0.25)
     axB.set_xlabel("CoT length (tokens, log)", fontsize=9.5, color=F.INK_2, labelpad=7)
     F.panel_title(axB, "B.  Every prefill shortens the CoT")
 
     F.title_block(fig, "Forcing the denial changes nothing; forcing the goal restores everything",
-                  "n=60 per cell, thinking on. Prefilling any opening sentence removes the bias — except the one that states the goal, which\n"
+                  "n=60 per cell, thinking on. Prefilling any opening sentence removes the bias \u2014 except the one that states the goal, which\n"
                   "returns it to the unprefilled level. So the denial sentence is epiphenomenal: it does no more than \u201clet me think step by step\u201d.\n"
-                  "Panel B is the confound check: every prefill collapses reasoning length ~8\u00d7, but the admission arm is equally short and keeps the effect.",
-                  x=0.215)
+                  "Panel B is the confound check: every prefill collapses reasoning length ~8\u00d7, but the admission arm is equally short and keeps the effect.\n"
+                  "Below the gap (A10): stacking a denial onto the admission drops the effect (admission + denial, +0.124); stacking a non-honesty\n"
+                  "reversal that isn't a denial does not (+0.366, indistinguishable from the length-matched control). The denial does specific causal work.",
+                  x=0.215, y_title=0.965, y_sub=0.925)
     F.save(fig, OUT / "f6_prefill_tests.png")
 
 
@@ -598,6 +640,57 @@ def fig_ablate_cot():
     F.save(fig, OUT / "f9_ablate_during_cot.png")
 
 
+# ---------------------------------------------------------------- F10: the wrong-side crossover
+def fig_wrongside_crossover():
+    """A13/A12.1's headline as one comparison: does a wrong-side start recover, and for whom?
+
+    Conditioning throughout is "started on the unfavoured side" -- the only slice where overt and
+    covert rollouts can be told apart at all, since both recover to favoured 100% of the time when
+    they start there. The no-bet baseline (scored under a fixed framing with no real stake) is the
+    rate an unbiased trace crosses T anyway; it is the reference line, not a bar to beat.
+    """
+    a12 = json.load(open(RUNS / "hour0" / "a12_transitions.json"))
+    a13 = json.load(open(RUNS / "hour0" / "a13_baseline_crossing_null.json"))
+
+    base = dict(a13["framings"]["above_good"]["unfavoured"])
+    base["k_final_favoured"] = base["k"]
+    covert = a12["FREE CoT (unprefilled intervention rollouts)"]["covert (denies)"]["unfavoured"]
+    overt = a12["FREE CoT (unprefilled intervention rollouts)"]["overt (INFLUENCED)"]["unfavoured"]
+    fisher_p = {"covert": a13["comparisons"]
+                ["covert_unfav vs baseline[above_good] (started unfavoured)"]["fisher_p"],
+                "overt": a13["comparisons"]
+                ["overt_unfav vs baseline[above_good] (started unfavoured)"]["fisher_p"]}
+
+    rows = [("overt\n(admits aiming for the good side)", overt, F.BLUE, fisher_p["overt"]),
+            ("covert\n(denies it)", covert, F.ORANGE, fisher_p["covert"]),
+            ("no-bet baseline\n(no real stake)", base, F.GRAY, None)]
+
+    fig, ax = F.new_fig(12.2, 4.8, top=0.575, bottom=0.16, left=0.30, right=0.94)
+    for i, (lab, r, c, p) in enumerate(rows):
+        y = len(rows) - 1 - i
+        lo, hi = r["ci"]
+        ax.plot([lo, hi], [y, y], color=c, lw=2.4, solid_capstyle="round", zorder=3)
+        ax.scatter([r["p"]], [y], s=110, color=c, edgecolors=F.SURFACE, linewidths=1.6, zorder=4)
+        ax.annotate(f"{r['p']:.3f}  ({r['k_final_favoured']}/{r['n']})", (hi + 0.025, y),
+                    va="center", ha="left", fontsize=10.5, color=F.INK, fontweight="semibold",
+                    zorder=6)
+    base_rate = base["p"]
+    F.null_line(ax, base_rate, "no-bet baseline rate", y=len(rows) - 0.55)
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(-0.55, len(rows) - 0.15)
+    ax.set_yticks(range(len(rows)))
+    ax.set_yticklabels([r[0] for r in rows][::-1], fontsize=10, color=F.INK, linespacing=1.4)
+    ax.set_xlabel("P(final estimate favoured | started unfavoured), 95% CI", fontsize=9.5,
+                  color=F.INK_2, labelpad=7)
+
+    F.title_block(fig, "The bet lives in one cell",
+                  "Free CoT, thinking on. Conditioned on rollouts that start on the wrong side of the threshold: overt rollouts recover to the favoured\n"
+                  "side 69% of the time (11/16) — ten times the no-bet baseline's 7% (1/15, Fisher p=0.0006). Covert rollouts that deny aiming for the\n"
+                  "good side recover only 13% (3/23), statistically indistinguishable from the no-bet rate (p=1.00). Once a rollout starts favoured,\n"
+                  "everyone stays there (100%, all three groups) — the whole split is in what happens after a bad start.",
+                  x=0.30, y_title=0.945, y_sub=0.85)
+    F.save(fig, OUT / "f10_wrongside_crossover.png")
+
 
 if __name__ == "__main__":
     print("regenerating figures ->", OUT)
@@ -610,4 +703,7 @@ if __name__ == "__main__":
         fig_internals()
     if (RUNS / "ablate_during_cot" / "results.json").exists():
         fig_ablate_cot()
+    if (RUNS / "hour0" / "a12_transitions.json").exists() and \
+       (RUNS / "hour0" / "a13_baseline_crossing_null.json").exists():
+        fig_wrongside_crossover()
     print("done")
