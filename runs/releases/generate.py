@@ -57,9 +57,9 @@ def n_done(path):
     return len(parse.parse_jsonl_file(path)) if path.exists() else 0
 
 
-def run_cells(llm, tok, run_dir, cells, thresholds):
+def run_cells(llm, tok, run_dir, cells, thresholds, modes=(True, False)):
     """All cells sharing a thinking mode go into ONE generate call so vLLM batches them."""
-    for think in (True, False):
+    for think in modes:
         items, owners = [], []
         for stem, cond, q, th, n in cells:
             if th != think:
@@ -104,6 +104,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True, choices=sorted(sample.MODELS))
     ap.add_argument("--phase", default="all", choices=["1", "2", "all"])
+    ap.add_argument("--off-first", action="store_true",
+                    help="phase 2: run the short thinking-off cells before the thinking-on ones "
+                         "(used for q38, so the primary measure lands first; DECISIONS.md #15)")
     args = ap.parse_args()
 
     sample.set_model(args.model)
@@ -137,7 +140,8 @@ def main():
     if args.phase in ("2", "all"):
         th = {"giraffes": json.load(open(run_dir / "threshold.json"))["threshold"],
               "turns": json.load(open(run_dir / "turns_threshold.json"))["threshold"]}
-        run_cells(llm, tok, run_dir, PHASE2, th)
+        run_cells(llm, tok, run_dir, PHASE2, th,
+                  modes=(False, True) if args.off_first else (True, False))
 
     print(f"done in {(time.time()-t0)/60:.1f} min", flush=True)
 

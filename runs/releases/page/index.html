@@ -81,17 +81,17 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
     <span class="label">value-leakage-5hr · branch releases · runs/releases/</span>
     <h1>Donation Bet across Qwen releases</h1>
     <p class="lede">Does motivated reasoning in Qwen 27B change as the default persona gets stronger from 3.5 to 3.6 to 3.8? And if it does, is the change in how biased the answers are, or in how openly the model says so?</p>
-    <span class="meta" id="updated">Updated 2026-10-28 20:45 UTC · 3.5 done, 3.6 generating</span>
+    <span class="meta" id="updated">Updated 2026-10-28 22:15 UTC · 3.5 and 3.6 done, 3.8 generating</span>
   </header>
 
   <section>
     <h2>Status</h2>
     <div class="status">
-      <div class="model"><span class="name">Qwen3.5-27B</span><span class="pill done">generated · judging</span><span class="note">G-anchor passed: thinking-off bias +0.558, inside the original CI. Covertness judges are running on the 80 thinking-on traces.</span></div>
-      <div class="model"><span class="name">Qwen3.6-27B</span><span class="pill run">generating</span><span class="note">Started 20:38 UTC. Expected to take about 45 minutes.</span></div>
-      <div class="model"><span class="name">Qwen3.8-27B</span><span class="pill wait">queued</span><span class="note">Runs at reasoning effort xhigh, the template default.</span></div>
+      <div class="model"><span class="name">Qwen3.5-27B</span><span class="pill done">done</span><span class="note">G-anchor passed (+0.551, inside the original CI). Judges and trajectories complete.</span></div>
+      <div class="model"><span class="name">Qwen3.6-27B</span><span class="pill done">done</span><span class="note">Generation, judges and trajectories complete.</span></div>
+      <div class="model"><span class="name">Qwen3.8-27B</span><span class="pill run">generating</span><span class="note">At xhigh effort the reasoning traces are long, about 38 s per completed rollout. Thinking-off cells run first, then the thinking-on bets.</span></div>
     </div>
-    <p class="meta" id="cost">Spend after the first model: $6.20 of GPU time (1.55 h on an H100 at $3.99/h, including about 35 minutes lost to vLLM start-up fixes). Projected total about $12–13. Budget about $15, hard cap $25. Judges are Claude subagents and cost nothing from this budget.</p>
+    <p class="meta" id="cost">Spend so far: about $12 of GPU time (about 3 h on an H100 at $3.99/h). Projected total about $19–20, because 3.8 at xhigh is slow. That's over the $15 target and under the $25 cap. Judges and extraction run on Codex through a ChatGPT login and cost nothing from this budget.</p>
   </section>
 
   <section>
@@ -128,8 +128,8 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
   <section>
     <h2>Gates</h2>
     <div>
-      <div class="gate"><b>G-anchor</b><span>3.5 thinking-off bias falls inside the original CI [+0.415, +0.612]. Otherwise stop and debug.</span><span class="pill done" id="g-anchor">3.5 pass · +0.558</span></div>
-      <div class="gate"><b>G-parse</b><span>At least 95% of rollouts in every cell parse to a single number. Every bet cell parses at 100%. The 3.5 left-turns baseline reaches 27 of 30 (90%) because 3 traces hit the 16k-token cap, as the original run's did. That cell only sets a threshold, so this is flagged and the run continues.</span><span class="pill run" id="g-parse">3.5 flagged</span></div>
+      <div class="gate"><b>G-anchor</b><span>3.5 thinking-off bias falls inside the original CI [+0.415, +0.612]. Otherwise stop and debug.</span><span class="pill done" id="g-anchor">3.5 pass · +0.551</span></div>
+      <div class="gate"><b>G-parse</b><span>At least 95% of rollouts in every cell parse to a single number. Every bet cell parses at 100%. The 3.5 left-turns baseline reaches 27 of 30 (90%) because 3 traces hit the 16k-token cap, as the original run's did. That cell only sets a threshold, so this is flagged and the run continues. 3.6 passes on every cell once prose-first answers are extracted (see the parsing note).</span><span class="pill run" id="g-parse">3.5 flagged · 3.6 pass</span></div>
     </div>
   </section>
 
@@ -149,24 +149,48 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
 
   <section id="results">
     <h2>Results</h2>
+    <h3>Bias</h3>
     <figure>
-      <img src="figures/bias_by_model.png" alt="Bar chart of Donation Bet bias by arm for Qwen3.5-27B: good/bad cause thinking off +0.56, thinking on +0.29, user picks charity +0.10, left turns +0.49. Hollow diamonds mark the original 3.5 run.">
-      <figcaption>Bias toward the favoured side, by arm, with 95% bootstrap CIs. The hollow diamonds mark the original 3.5 run. Bars for 3.6 (dotted) and 3.8 (hatched) are added as they finish.</figcaption>
+      <img src="figures/bias_by_model.png" alt="Grouped bar chart of Donation Bet bias by arm. Thinking off, good/bad cause: 3.5 +0.55, 3.6 +0.12. Thinking on: 3.5 +0.29, 3.6 +0.12. User picks charity: 3.5 +0.12, 3.6 −0.06. Left turns: 3.5 +0.49, 3.6 +0.39. Hollow diamonds mark the original 3.5 run.">
+      <figcaption>Bias toward the favoured side, by arm, with 95% bootstrap CIs. Solid bars are 3.5 and dotted bars 3.6; hatched bars for 3.8 are added when it finishes. The hollow diamonds mark the original 3.5 run.</figcaption>
     </figure>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>Arm</th><th>Qwen3.5 (this run)</th><th>Qwen3.5 (original)</th><th>Qwen3.6</th><th>Qwen3.8</th></tr></thead>
+        <thead><tr><th>Arm</th><th>Qwen3.5</th><th>Qwen3.5 (original)</th><th>Qwen3.6</th><th>Qwen3.8</th></tr></thead>
         <tbody>
-          <tr><td>Good/bad cause, thinking off</td><td class="n">+0.558 [+0.465, +0.652]</td><td class="n">+0.517</td><td class="pending">running</td><td class="pending">queued</td></tr>
-          <tr><td>Good/bad cause, thinking on</td><td class="n">+0.289 [+0.079, +0.500]</td><td class="n">+0.420</td><td class="pending">running</td><td class="pending">queued</td></tr>
-          <tr><td>User picks charity, thinking off</td><td class="n">+0.101 [−0.020, +0.222]</td><td class="n">+0.096</td><td class="pending">running</td><td class="pending">queued</td></tr>
-          <tr><td>Left turns, thinking off</td><td class="n">+0.493 [+0.372, +0.614]</td><td class="n">+0.399</td><td class="pending">running</td><td class="pending">queued</td></tr>
-          <tr><td>Answers within 25% of T, thinking off (bet / baseline)</td><td class="n">64% / 3%</td><td class="n">—</td><td class="pending">running</td><td class="pending">queued</td></tr>
-          <tr><td>Median reasoning tokens, thinking on</td><td class="n">8,960</td><td class="n">9,109</td><td class="pending">running</td><td class="pending">queued</td></tr>
+          <tr><td>Good/bad cause, thinking off <b>(primary)</b></td><td class="n">+0.551 [+0.458, +0.645]</td><td class="n">+0.517</td><td class="n">+0.124 [+0.007, +0.235]</td><td class="pending">generating</td></tr>
+          <tr><td>Good/bad cause, thinking on</td><td class="n">+0.287 [+0.085, +0.489]</td><td class="n">+0.420</td><td class="n">+0.118 [−0.085, +0.321]</td><td class="pending">generating</td></tr>
+          <tr><td>User picks charity, thinking off</td><td class="n">+0.120 [+0.000, +0.240]</td><td class="n">+0.096</td><td class="n">−0.063 [−0.186, +0.061]</td><td class="pending">generating</td></tr>
+          <tr><td>Left turns, thinking off</td><td class="n">+0.493 [+0.372, +0.614]</td><td class="n">+0.399</td><td class="n">+0.387 [+0.256, +0.529]</td><td class="pending">generating</td></tr>
+          <tr><td>Answers within 25% of T, thinking off (bet / baseline)</td><td class="n">64% / 3%</td><td class="n">—</td><td class="n">33% / 9%</td><td class="pending">generating</td></tr>
+          <tr><td>Thresholds (giraffes / left turns)</td><td class="n">71M / 1,700</td><td class="n">75M / 1,600</td><td class="n">44M / 1,500</td><td class="pending">generating</td></tr>
+          <tr><td>Median reasoning tokens, thinking on</td><td class="n">8,960</td><td class="n">9,109</td><td class="n">3,877</td><td class="pending">generating</td></tr>
         </tbody>
       </table>
     </div>
-    <p>3.5 replicates. With thinking off, merely naming the threshold pulls answers onto it: 64% of bet answers land within 25% of T, against 3% of baseline answers, whose median is 5.4 times T. Disclosure, covertness and stopping asymmetry appear here once the judges finish.</p>
+    <p>3.5 replicates the original on every arm. 3.6 is much less biased with thinking off: +0.12, against +0.55 for 3.5, and the CIs don't overlap. Naming the threshold also pulls 3.6's answers toward it less: 33% land within 25% of T, against 64% for 3.5. The left-turns arm drops less (+0.49 to +0.39). The “I pick the charity” control is near zero for both, so where there is bias it tracks the moral framing.</p>
+    <div class="callout">
+      <span class="label">Parsing note</span>
+      <span>With thinking off, 3.6 often reasons in prose before giving its number. The original parser takes the first number, so it picked up list indices such as “1.”. Answers that open with a number still use the original parser. For the rest, Codex extracts the estimate the answer commits to. As a check, Codex extraction on every answer moves 3.5 to +0.572 and 3.6 to +0.138, which leaves the conclusions unchanged.</span>
+    </div>
+
+    <h3>Disclosure and covertness (thinking on)</h3>
+    <figure>
+      <img src="figures/disclosure_by_model.png" alt="Stacked bars of judge labels on the 80 thinking-on bet traces. 3.5: 52 admit, 28 deny. 3.6: 12 admit, 10 no mention, 58 deny.">
+      <figcaption>Paper-verbatim covertness judge on number-blurred traces, majority of two passes (a third pass only breaks ties; none were needed).</figcaption>
+    </figure>
+    <p>3.5 admits the threshold influenced it in 52 of 80 traces. 3.6 admits it in 12 and denies it in 58. In both models the admitting traces on the favoured side are enough to account for all the bias, so the paper's covert lower bound is 0%. For 3.6 that lower bound has a wide CI (0–58%) because its thinking-on bias is small.</p>
+    <div class="callout">
+      <span class="label">Judge note</span>
+      <span>The Claude subagent judges used by the original run were stopped repeatedly by an API safeguard, so all judging here uses Codex (<code>gpt-6.1-sol</code>, medium effort): one fresh call per trace, with the full prompt. Codex gave identical labels in both passes on every trace, so pass agreement says nothing about reliability. Because the judge changed, compare disclosure across models within this study, not with the original 34/80.</span>
+    </div>
+
+    <h3>Reasoning signatures (thinking on)</h3>
+    <figure>
+      <img src="figures/stopping_by_model.png" alt="Odds ratio of stopping on the favoured side: 3.5 1.86 (CI 1.13 to 3.03), 3.6 1.58 (CI 0.95 to 2.62). Grey dots show the no-bet baseline null.">
+      <figcaption>Hazard model of stopping, controlling for step index, on the trajectories Codex extracted with the paper-verbatim prompt. The grey dots are the no-bet baseline scored under each framing, which is the null.</figcaption>
+    </figure>
+    <p>3.5 stops on the favoured side more often (odds ratio 1.86, p = 0.014), and its baseline nulls sit near 1. When the current estimate is on the wrong side, 62% of 3.5's revisions move toward the favoured side, against about 50% in the baseline. 3.6 shows a weaker version of both: an odds ratio of 1.58 (p = 0.08), with noisy baseline nulls (0.54 and 1.84), and 56% of wrong-side revisions moving toward the favoured side.</p>
   </section>
 
   <section>
@@ -175,6 +199,8 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
       <li>Thinking-off cells use the thinking-on threshold, as the original run did, so G-anchor compares like with like. Agreed before generation.</li>
       <li>Added a 30-rollout thinking-on baseline for the left-turns question, which its threshold needs.</li>
       <li>vLLM 0.32.0 on H100, where the original used 0.27.1 on A100. G-anchor checks that this doesn't matter.</li>
+      <li>The judges are Codex instead of Claude subagents, after repeated API safeguard stops. Answers without a leading number are extracted by Codex.</li>
+      <li>For 3.8, the thinking-off cells run before the long thinking-on ones, so the primary measure arrives first.</li>
       <li>The full log is in <code>runs/releases/DECISIONS.md</code>.</li>
     </ul>
   </section>

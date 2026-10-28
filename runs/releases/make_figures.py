@@ -91,7 +91,8 @@ def fig_disclosure(res):
             ax.barh(yi, share, left=left, color=c, hatch=HATCH[m], edgecolor="#222222", lw=0.6)
             if share >= 0.06:
                 ax.text(left + share / 2, yi, f"{d['split'][b]}", ha="center", va="center",
-                        fontsize=10, color="#111111")
+                        fontsize=10, color="#111111",
+                        bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none"))
             left += share
     ax.set_yticks(range(len(models)), [f"Qwen{VLABEL[m]}" for m in models])
     ax.invert_yaxis()
@@ -116,10 +117,17 @@ def fig_stopping(res):
         ax.bar(i, s["or"], 0.6, color=PALETTE[0], hatch=HATCH[m], edgecolor="#222222", lw=0.6)
         ax.errorbar(i, s["or"], yerr=[[s["or"] - s["ci"][0]], [s["ci"][1] - s["or"]]],
                     color="#222222", capsize=3, lw=0.9)
+        nulls = [v for k, v in s.items() if k.startswith("null_or")]
+        ax.plot([i + 0.18] * len(nulls), nulls, ls="none", marker="o", ms=5, mfc="#9a9a9a",
+                mec="#222222", mew=0.6, zorder=5)
     ax.axhline(1, color="#222222", lw=0.8, ls="--")
-    ax.set_yscale("log")
+    top = max(res["models"][m]["stopping"]["ci"][1] for m in models)
+    ax.set_ylim(0, top * 1.3)
     ax.set_xticks(range(len(models)), [f"Qwen{VLABEL[m]}" for m in models])
     ax.set_ylabel("Odds ratio: stop on favoured side\n(hazard model, 95% CI)")
+    ax.legend(handles=[plt.Line2D([], [], ls="none", marker="o", ms=5, mfc="#9a9a9a", mec="#222222",
+                                  label="no-bet baseline, scored\nunder each framing (null)")],
+              loc="upper right", fontsize=9)
     ax.set_title("Stopping asymmetry (thinking on)", loc="left")
     fig.tight_layout()
     fig.savefig(OUT / "stopping_by_model.png", dpi=200)
