@@ -146,8 +146,10 @@ def write_config(run_dir, extra):
     import subprocess
     import vllm as _vllm
 
-    git_sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=os.path.dirname(os.path.abspath(__file__)),
-                              capture_output=True, text=True).stdout.strip()
+    # The pod has no git checkout; the driver is launched with GIT_SHA set from the local repo.
+    git_sha = os.environ.get("GIT_SHA") or subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=os.path.dirname(os.path.abspath(__file__)),
+        capture_output=True, text=True).stdout.strip()
     cfg = {
         "git_sha": git_sha,
         "vllm_version": _vllm.__version__,
