@@ -1,16 +1,16 @@
 {
-  "git_sha": "e9cc11bf6856d64acea1d58ce1e2c7ef8f440793",
+  "git_sha": "ed295b0ece97ffa22571f644302a7e36bde3d71a",
   "vllm_version": "0.32.0",
   "model_id": "Qwen/Qwen3.8-27B",
   "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
-  "reasoning_effort": "xhigh",
+  "reasoning_effort": "medium",
   "sampling": {
     "temperature": 1.0,
     "max_tokens": 16000,
     "seed": null,
     "engine_init_seed": 0
   },
-  "wall_clock_utc": "2026-10-28T21:24:44Z",
+  "wall_clock_utc": "2026-10-28T22:58:00Z",
   "phase": "releases",
   "model_key": "q38",
   "max_tokens_think": 16000,

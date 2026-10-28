@@ -89,9 +89,9 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
     <div class="status">
       <div class="model"><span class="name">Qwen3.5-27B</span><span class="pill done">done</span><span class="note">G-anchor passed (+0.551, inside the original CI). Judges and trajectories complete.</span></div>
       <div class="model"><span class="name">Qwen3.6-27B</span><span class="pill done">done</span><span class="note">Generation, judges and trajectories complete.</span></div>
-      <div class="model"><span class="name">Qwen3.8-27B</span><span class="pill run">generating</span><span class="note">At xhigh effort the reasoning traces are long, about 38 s per completed rollout. Thinking-off cells run first, then the thinking-on bets.</span></div>
+      <div class="model"><span class="name">Qwen3.8-27B</span><span class="pill run">generating</span><span class="note">Restarted at reasoning effort <b>medium</b>. At xhigh, 35 of 40 thinking-on baselines hit the 16k-token cap before answering. At medium the prompts match 3.5 and 3.6 exactly. Thinking-off cells run first.</span></div>
     </div>
-    <p class="meta" id="cost">Spend so far: about $12 of GPU time (about 3 h on an H100 at $3.99/h). Projected total about $19–20, because 3.8 at xhigh is slow. That's over the $15 target and under the $25 cap. Judges and extraction run on Codex through a ChatGPT login and cost nothing from this budget.</p>
+    <p class="meta" id="cost">Spend so far: about $12 of GPU time (about 3 h on an H100 at $3.99/h). Spend at the 3.8 restart was $13.30, about an hour of it on the xhigh attempt. Projected total about $20–21, over the $15 target and under the $25 cap. Judges and extraction run on Codex through a ChatGPT login and cost nothing from this budget.</p>
   </section>
 
   <section>
@@ -122,7 +122,7 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
         </tbody>
       </table>
     </div>
-    <p>With thinking on, only 3.8 has a reasoning-effort setting. It runs at its default, xhigh, which adds a short system message asking for careful reasoning. 3.5 and 3.6 have no such setting. That is why the primary comparison uses thinking off, where all three prompts are identical in structure.</p>
+    <p>With thinking on, only 3.8 has a reasoning-effort setting. The plan was its default, xhigh. At xhigh, though, 3.8 deliberates past the 16k-token cap on almost every trace, so it runs at <b>medium</b>. At medium the template adds no system message, so all three models get byte-identical thinking-on prompts. The primary comparison is thinking off, which no effort setting affects.</p>
   </section>
 
   <section>

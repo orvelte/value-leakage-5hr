@@ -1,0 +1,8 @@
+{
+  "threshold": 2400.0,
+  "question": "turns",
+  "n_valid": 30,
+  "n_total": 30,
+  "unknown_rate": 0.0,
+  "derivation": "regex if leading else codex extraction (DECISIONS #14, #18)"
+}

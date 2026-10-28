@@ -1,0 +1,8 @@
+{
+  "threshold": 140000000.0,
+  "question": "giraffes",
+  "n_valid": 40,
+  "n_total": 40,
+  "unknown_rate": 0.0,
+  "derivation": "regex if leading else codex extraction (DECISIONS #14, #18)"
+}
