@@ -20,8 +20,10 @@ from pathlib import Path
 MODELS = {
     "q35": ("Qwen/Qwen3.5-27B", "fc05daec18b0a78c049392ed2e771dde82bdf654", None),
     "q36": ("Qwen/Qwen3.6-27B", "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9", None),
-    # 3.8's template default is xhigh; set explicitly so the choice is visible in config.json.
-    "q38": ("Qwen/Qwen3.8-27B", "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0", "xhigh"),
+    # 3.8's template default is xhigh, but at xhigh 35/40 thinking-on baselines hit the 16k cap
+    # (DECISIONS.md #17), so 3.8 runs at medium, which adds no system message and so matches the
+    # 3.5/3.6 prompt structure. Set explicitly so the choice is visible in config.json.
+    "q38": ("Qwen/Qwen3.8-27B", "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0", "medium"),
 }
 MODEL_ID, MODEL_REVISION, REASONING_EFFORT = MODELS["q35"]
 

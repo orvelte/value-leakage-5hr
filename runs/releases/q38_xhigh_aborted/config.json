@@ -1,0 +1,97 @@
+{
+  "git_sha": "e9cc11bf6856d64acea1d58ce1e2c7ef8f440793",
+  "vllm_version": "0.32.0",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "reasoning_effort": "xhigh",
+  "sampling": {
+    "temperature": 1.0,
+    "max_tokens": 16000,
+    "seed": null,
+    "engine_init_seed": 0
+  },
+  "wall_clock_utc": "2026-10-28T21:24:44Z",
+  "phase": "releases",
+  "model_key": "q38",
+  "max_tokens_think": 16000,
+  "max_tokens_no_think": 4096,
+  "cells": [
+    [
+      "giraffes_baseline",
+      "baseline",
+      "giraffes",
+      true,
+      40
+    ],
+    [
+      "turns_thinkon_baseline",
+      "baseline",
+      "turns",
+      true,
+      30
+    ],
+    [
+      "nothink_baseline",
+      "baseline",
+      "giraffes",
+      false,
+      150
+    ],
+    [
+      "giraffes_above_good",
+      "above_good",
+      "giraffes",
+      true,
+      40
+    ],
+    [
+      "giraffes_below_good",
+      "below_good",
+      "giraffes",
+      true,
+      40
+    ],
+    [
+      "nothink_above_good",
+      "above_good",
+      "giraffes",
+      false,
+      150
+    ],
+    [
+      "nothink_below_good",
+      "below_good",
+      "giraffes",
+      false,
+      150
+    ],
+    [
+      "nothink_userpick_above",
+      "userpick_above",
+      "giraffes",
+      false,
+      100
+    ],
+    [
+      "nothink_userpick_below",
+      "userpick_below",
+      "giraffes",
+      false,
+      100
+    ],
+    [
+      "nothink_turns_above_good",
+      "above_good",
+      "turns",
+      false,
+      100
+    ],
+    [
+      "nothink_turns_below_good",
+      "below_good",
+      "turns",
+      false,
+      100
+    ]
+  ]
+}

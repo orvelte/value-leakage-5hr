@@ -1,0 +1,7 @@
+{
+  "threshold": 540.0,
+  "question": "turns",
+  "n_valid": 2,
+  "n_total": 30,
+  "unknown_rate": 0.9333333333333333
+}
