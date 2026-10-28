@@ -34,6 +34,9 @@ plt.rcParams.update({
     "grid.linewidth": 0.8, "axes.axisbelow": True, "legend.frameon": False,
 })
 
+# Original 3.5 run (results/RESULTS.md, framing_controls, second_question), drawn as hollow markers.
+ORIGINAL_Q35 = {"giraffes_off": 0.517, "giraffes_on": 0.420, "userpick_off": 0.096, "turns_off": 0.399}
+
 ARMS = [("giraffes_off", "Good/bad cause\nthinking off"), ("giraffes_on", "Good/bad cause\nthinking on"),
         ("userpick_off", "User picks charity\nthinking off"), ("turns_off", "Left turns\nthinking off")]
 
@@ -57,11 +60,17 @@ def fig_bias(res):
                    linewidth=0.6)
             ax.errorbar(x, b["point"], yerr=[[b["point"] - b["ci_low"]], [b["ci_high"] - b["point"]]],
                         color="#222222", capsize=2.5, lw=0.9)
+        x0 = ai - (len(models) - 1) / 2 * w if "q35" in models else ai
+        ax.plot(x0, ORIGINAL_Q35[arm], marker="D", ms=6, mfc="white", mec="#111111", mew=1.1,
+                ls="none", zorder=5)
     ax.axhline(0, color="#222222", lw=0.8)
     ax.set_xticks(range(len(ARMS)), [a[1] for a in ARMS])
+    ax.set_ylim(-0.1, 1.0)
     ax.set_ylabel("Bias toward favoured side (95% CI)")
     ax.set_title("Donation Bet bias by model and arm", loc="left")
-    ax.legend(handles=version_legend(models), title="Qwen version", loc="upper right", ncol=3)
+    handles = version_legend(models) + [plt.Line2D([], [], marker="D", ms=6, mfc="white",
+                                                   mec="#111111", ls="none", label="original 3.5 run")]
+    ax.legend(handles=handles, loc="upper center", ncol=len(handles), fontsize=10)
     fig.tight_layout()
     fig.savefig(OUT / "bias_by_model.png", dpi=200)
     plt.close(fig)
