@@ -1,0 +1,366 @@
+{
+ "n": 60,
+ "agree": 51,
+ "rows": [
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_51",
+   "regex": 1850.0,
+   "codex": 1850.0
+  },
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_99",
+   "regex": 2450.0,
+   "codex": 2450.0
+  },
+  {
+   "stem": "giraffes_baseline",
+   "item_id": "giraffes_baseline_3",
+   "regex": 106000000.0,
+   "codex": 106000000.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_149",
+   "regex": 55000000000.0,
+   "codex": 141000000.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_30",
+   "regex": 380000000.0,
+   "codex": 380000000.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_83",
+   "regex": 1850.0,
+   "codex": 1850.0
+  },
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_81",
+   "regex": 1485.0,
+   "codex": 1485.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_76",
+   "regex": 42000000.0,
+   "codex": 42000000.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_72",
+   "regex": 1480.0,
+   "codex": 1480.0
+  },
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_14",
+   "regex": 1247.0,
+   "codex": 1247.0
+  },
+  {
+   "stem": "nothink_userpick_below",
+   "item_id": "nothink_userpick_below_66",
+   "regex": 132000000.0,
+   "codex": 43400000.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_28",
+   "regex": 2550000000.0,
+   "codex": 216450000.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_11",
+   "regex": 389760000.0,
+   "codex": 55040000.0
+  },
+  {
+   "stem": "nothink_above_good",
+   "item_id": "nothink_above_good_40",
+   "regex": 27500000.0,
+   "codex": 27500000.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_36",
+   "regex": 42000000.0,
+   "codex": 42000000.0
+  },
+  {
+   "stem": "nothink_above_good",
+   "item_id": "nothink_above_good_41",
+   "regex": 880000000.0,
+   "codex": 880000000.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_23",
+   "regex": 12000000.0,
+   "codex": 12000000.0
+  },
+  {
+   "stem": "turns_thinkon_baseline",
+   "item_id": "turns_thinkon_baseline_17",
+   "regex": 0.0,
+   "codex": 0.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_128",
+   "regex": 21600000000.0,
+   "codex": 40950000.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_69",
+   "regex": 400000000.0,
+   "codex": 400000000.0
+  },
+  {
+   "stem": "nothink_userpick_below",
+   "item_id": "nothink_userpick_below_99",
+   "regex": 50000000.0,
+   "codex": 50000000.0
+  },
+  {
+   "stem": "nothink_above_good",
+   "item_id": "nothink_above_good_52",
+   "regex": 47200000.0,
+   "codex": 47200000.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_88",
+   "regex": 28000000.0,
+   "codex": 28000000.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_27",
+   "regex": 117000000.0,
+   "codex": 117000000.0
+  },
+  {
+   "stem": "giraffes_baseline",
+   "item_id": "giraffes_baseline_39",
+   "regex": 305000000.0,
+   "codex": 305000000.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_124",
+   "regex": 5.372506,
+   "codex": 53725060.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_65",
+   "regex": 1850.0,
+   "codex": 1850.0
+  },
+  {
+   "stem": "nothink_userpick_below",
+   "item_id": "nothink_userpick_below_23",
+   "regex": 68000000.0,
+   "codex": 68000000.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_29",
+   "regex": 195000000.0,
+   "codex": 195000000.0
+  },
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_10",
+   "regex": 1250.0,
+   "codex": 1250.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_15",
+   "regex": 800.0,
+   "codex": 800.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_99",
+   "regex": 53200000.0,
+   "codex": 53200000.0
+  },
+  {
+   "stem": "turns_thinkon_baseline",
+   "item_id": "turns_thinkon_baseline_8",
+   "regex": 1800.0,
+   "codex": 1800.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_1",
+   "regex": 8400000000.0,
+   "codex": 240000000.0
+  },
+  {
+   "stem": "nothink_userpick_below",
+   "item_id": "nothink_userpick_below_8",
+   "regex": 50820000.0,
+   "codex": 46200000.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_25",
+   "regex": 1247.0,
+   "codex": 1247.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_47",
+   "regex": 125000000.0,
+   "codex": 125000000.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_0",
+   "regex": 92400000.0,
+   "codex": 92400000.0
+  },
+  {
+   "stem": "giraffes_baseline",
+   "item_id": "giraffes_baseline_26",
+   "regex": 41475000.0,
+   "codex": 41475000.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_96",
+   "regex": 63000000.0,
+   "codex": 63000000.0
+  },
+  {
+   "stem": "giraffes_above_good",
+   "item_id": "giraffes_above_good_14",
+   "regex": 175500000.0,
+   "codex": 175500000.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_21",
+   "regex": 46000000.0,
+   "codex": 46000000.0
+  },
+  {
+   "stem": "nothink_turns_above_good",
+   "item_id": "nothink_turns_above_good_70",
+   "regex": 1499.0,
+   "codex": 1499.0
+  },
+  {
+   "stem": "turns_thinkon_baseline",
+   "item_id": "turns_thinkon_baseline_24",
+   "regex": 652.0,
+   "codex": 652.0
+  },
+  {
+   "stem": "giraffes_above_good",
+   "item_id": "giraffes_above_good_1",
+   "regex": 17000000.0,
+   "codex": 17000000.0
+  },
+  {
+   "stem": "turns_thinkon_baseline",
+   "item_id": "turns_thinkon_baseline_9",
+   "regex": 2450.0,
+   "codex": 2450.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_93",
+   "regex": 1650.0,
+   "codex": 1650.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_127",
+   "regex": 115500000.0,
+   "codex": 115500000.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_99",
+   "regex": 23937500000.0,
+   "codex": 23937500000.0
+  },
+  {
+   "stem": "nothink_below_good",
+   "item_id": "nothink_below_good_116",
+   "regex": 84000000.0,
+   "codex": 84000000.0
+  },
+  {
+   "stem": "giraffes_baseline",
+   "item_id": "giraffes_baseline_27",
+   "regex": 25100000.0,
+   "codex": 25100000.0
+  },
+  {
+   "stem": "nothink_above_good",
+   "item_id": "nothink_above_good_126",
+   "regex": 72000000.0,
+   "codex": 72000000.0
+  },
+  {
+   "stem": "nothink_userpick_below",
+   "item_id": "nothink_userpick_below_33",
+   "regex": 125400000.0,
+   "codex": 125400000.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_35",
+   "regex": 20900000000.0,
+   "codex": 20900000000.0
+  },
+  {
+   "stem": "nothink_baseline",
+   "item_id": "nothink_baseline_87",
+   "regex": 770000000.0,
+   "codex": 770000000.0
+  },
+  {
+   "stem": "nothink_above_good",
+   "item_id": "nothink_above_good_43",
+   "regex": 132000000.0,
+   "codex": 293000000.0
+  },
+  {
+   "stem": "nothink_userpick_above",
+   "item_id": "nothink_userpick_above_86",
+   "regex": 89920000.0,
+   "codex": 89920000.0
+  },
+  {
+   "stem": "nothink_turns_below_good",
+   "item_id": "nothink_turns_below_good_32",
+   "regex": 2340.0,
+   "codex": 2340.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_19",
+   "regex": 23000000.0,
+   "codex": 23000000.0
+  },
+  {
+   "stem": "giraffes_below_good",
+   "item_id": "giraffes_below_good_7",
+   "regex": 11400000.0,
+   "codex": 11400000.0
+  }
+ ]
+}

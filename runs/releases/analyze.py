@@ -7,7 +7,11 @@ Filters follow the original scripts: giraffes cells (incl. userpick) use the [T/
 filter (thinking_off.py, framing_controls.py); turns uses none, only v > 0 (a5_second_question.py).
 Anchoring uses unfiltered giraffes values, since the filter would drop exactly the far estimates.
 
-Run with: python3 runs/releases/analyze.py --model q35   -> runs/releases/<model>/behavior.json
+Estimates come from estimate(): the original regex when the final response leads with a number,
+otherwise the Codex extraction cached by extract.py (DECISIONS.md #14). --regex-only reproduces
+the original parser everywhere, as a sensitivity check (written to behavior_regex_only.json).
+
+Run with: python3 runs/releases/analyze.py --model q35 [--regex-only]  -> <model>/behavior.json
 """
 import argparse
 import json
@@ -19,7 +23,23 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent.parent))
+sys.path.insert(0, str(HERE))
 from src.qual import parse, stats
+from extract import final_text, leads
+
+EXT, REGEX_ONLY, CODEX_ALL = {}, False, False
+
+
+def estimate(r):
+    """-> (value | None, reason)."""
+    raw = r["raw_completion"]
+    if REGEX_ONLY or final_text(raw) is None or (leads(raw) and not CODEX_ALL):
+        return parse.parse_estimate(raw)
+    items = EXT.get(r["_stem"], {})
+    if r["item_id"] not in items:
+        raise KeyError(f"{r['_stem']}/{r['item_id']} not extracted; run extract.py first")
+    v = items[r["item_id"]]
+    return (v, "ok_extracted") if v is not None else (None, "no_number_found")
 
 ARMS = {  # arm -> (above-favoured stem, below-favoured stem, question)
     "giraffes_off": ("nothink_above_good", "nothink_below_good", "giraffes"),
@@ -32,14 +52,19 @@ ORIGINAL_Q35_OFF_CI = (0.415, 0.612)
 
 def load(run_dir, stem):
     p = run_dir / "raw" / f"{stem}.jsonl"
-    return parse.parse_jsonl_file(p) if p.exists() else []
+    recs = parse.parse_jsonl_file(p) if p.exists() else []
+    for r in recs:
+        r["_stem"] = stem
+    return recs
 
 
 def cell_stats(recs):
-    reasons = [parse.parse_estimate(r["raw_completion"])[1] for r in recs]
+    reasons = [estimate(r)[1] for r in recs]
     toks = [r["num_tokens"] for r in recs]
     dup = stats.effective_sample_size_row(recs, parse.parse_estimate)["dup_rate"] if recs else None
-    return {"n_raw": len(recs), "parse_ok_rate": reasons.count("ok") / len(recs) if recs else None,
+    n_ok = sum(x.startswith("ok") for x in reasons)
+    return {"n_raw": len(recs), "parse_ok_rate": n_ok / len(recs) if recs else None,
+            "n_extracted": reasons.count("ok_extracted"),
             "n_truncated": sum(r["finish_reason"] == "length" for r in recs),
             "median_tokens": st.median(toks) if toks else None, "dup_rate": dup}
 
@@ -47,7 +72,7 @@ def cell_stats(recs):
 def values(recs, T, question):
     out = []
     for r in recs:
-        v, _ = parse.parse_estimate(r["raw_completion"])
+        v, _ = estimate(r)
         if v is None:
             continue
         if question == "giraffes" and not parse.apply_outlier_filter(v, T):
@@ -61,8 +86,15 @@ def values(recs, T, question):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
+    ap.add_argument("--regex-only", action="store_true")
+    ap.add_argument("--codex-all", action="store_true")
     args = ap.parse_args()
     run_dir = HERE / args.model
+    global REGEX_ONLY, CODEX_ALL
+    REGEX_ONLY, CODEX_ALL = args.regex_only, args.codex_all
+    ext = run_dir / ("extracted_all.json" if CODEX_ALL else "extracted.json")
+    if ext.exists():
+        EXT.update(json.load(open(ext)))
     T = {"giraffes": json.load(open(run_dir / "threshold.json"))["threshold"],
          "turns": json.load(open(run_dir / "turns_threshold.json"))["threshold"]}
     out = {"model": args.model, "thresholds": T, "cells": {}, "bias": {}, "anchoring": {}}
@@ -88,7 +120,7 @@ def main():
     Tg = T["giraffes"]
     for s in ["nothink_baseline", "nothink_above_good", "nothink_below_good",
               "nothink_userpick_above", "nothink_userpick_below"]:
-        v = [x for x in (parse.parse_estimate(r["raw_completion"])[0] for r in load(run_dir, s))
+        v = [x for x in (estimate(r)[0] for r in load(run_dir, s))
              if x is not None and x > 0]
         if v:
             a = np.asarray(v)
@@ -107,14 +139,18 @@ def main():
         out["gates"]["G_anchor_point"] = b
         out["gates"]["G_anchor_pass"] = bool(ORIGINAL_Q35_OFF_CI[0] <= b <= ORIGINAL_Q35_OFF_CI[1])
 
-    json.dump(out, open(run_dir / "behavior.json", "w"), indent=2)
+    out["parser"] = ("regex_only" if REGEX_ONLY else "codex_all" if CODEX_ALL
+                     else "regex_if_leading_else_codex_extraction")
+    name = ("behavior_regex_only.json" if REGEX_ONLY else "behavior_codex_all.json" if CODEX_ALL
+            else "behavior.json")
+    json.dump(out, open(run_dir / name, "w"), indent=2)
     print(f"{args.model}  T_g={Tg:,.0f}  T_t={T['turns']:,.0f}  "
           f"median think tokens={out['median_reasoning_tokens_on']}")
     for arm, b in out["bias"].items():
         print(f"  {arm:13s} {b['point']:+.3f} [{b['ci_low']:+.3f}, {b['ci_high']:+.3f}]  "
               f"n={b['n_valid_above']}/{b['n_valid_below']}")
     for s, c in out["cells"].items():
-        print(f"  {s:26s} parse={c['parse_ok_rate']:.3f} trunc={c['n_truncated']} "
+        print(f"  {s:26s} parse={c['parse_ok_rate']:.3f} extracted={c['n_extracted']} trunc={c['n_truncated']} "
               f"tok={c['median_tokens']} dup={c['dup_rate']:.3f}")
     for s, a in out["anchoring"].items():
         print(f"  anchor {s:24s} within25%={a['within_25pct']:.3f} median/T={a['median_over_T']:.2f}")

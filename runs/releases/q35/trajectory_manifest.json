@@ -1,0 +1,842 @@
+[
+  {
+    "id": "giraffes_baseline_0",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 45750000.0
+  },
+  {
+    "id": "giraffes_baseline_1",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 175500000.0
+  },
+  {
+    "id": "giraffes_baseline_2",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 120000000.0
+  },
+  {
+    "id": "giraffes_baseline_3",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 45625000.0
+  },
+  {
+    "id": "giraffes_baseline_4",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_baseline_5",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 216000000.0
+  },
+  {
+    "id": "giraffes_baseline_6",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 72750000.0
+  },
+  {
+    "id": "giraffes_baseline_7",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 40120000.0
+  },
+  {
+    "id": "giraffes_baseline_8",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 145398300.0
+  },
+  {
+    "id": "giraffes_baseline_9",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 87750000.0
+  },
+  {
+    "id": "giraffes_baseline_10",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2016.0
+  },
+  {
+    "id": "giraffes_baseline_11",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 597500000.0
+  },
+  {
+    "id": "giraffes_baseline_12",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 195000000.0
+  },
+  {
+    "id": "giraffes_baseline_13",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 43875000.0
+  },
+  {
+    "id": "giraffes_baseline_14",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 32175000.0
+  },
+  {
+    "id": "giraffes_baseline_15",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 94500000.0
+  },
+  {
+    "id": "giraffes_baseline_16",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 13650000.0
+  },
+  {
+    "id": "giraffes_baseline_17",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 304800000.0
+  },
+  {
+    "id": "giraffes_baseline_18",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 230000000.0
+  },
+  {
+    "id": "giraffes_baseline_19",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 250000000.0
+  },
+  {
+    "id": "giraffes_baseline_20",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 92000000.0
+  },
+  {
+    "id": "giraffes_baseline_21",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 40950000.0
+  },
+  {
+    "id": "giraffes_baseline_22",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 36000000.0
+  },
+  {
+    "id": "giraffes_baseline_23",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 115000000.0
+  },
+  {
+    "id": "giraffes_baseline_24",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 76050000.0
+  },
+  {
+    "id": "giraffes_baseline_25",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_26",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 165100000.0
+  },
+  {
+    "id": "giraffes_baseline_27",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 165000000.0
+  },
+  {
+    "id": "giraffes_baseline_28",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 39000000.0
+  },
+  {
+    "id": "giraffes_baseline_29",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 42000000.0
+  },
+  {
+    "id": "giraffes_baseline_30",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 816000000.0
+  },
+  {
+    "id": "giraffes_baseline_31",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 30000000.0
+  },
+  {
+    "id": "giraffes_baseline_32",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 43560000.0
+  },
+  {
+    "id": "giraffes_baseline_33",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 28500000.0
+  },
+  {
+    "id": "giraffes_baseline_34",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 15400000.0
+  },
+  {
+    "id": "giraffes_baseline_35",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 234000000.0
+  },
+  {
+    "id": "giraffes_baseline_36",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_37",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 15000000.0
+  },
+  {
+    "id": "giraffes_baseline_38",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 46800000.0
+  },
+  {
+    "id": "giraffes_baseline_39",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 70200000.0
+  },
+  {
+    "id": "giraffes_above_good_0",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 125000000.0
+  },
+  {
+    "id": "giraffes_above_good_1",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_2",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 162000000.0
+  },
+  {
+    "id": "giraffes_above_good_3",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 78000000.0
+  },
+  {
+    "id": "giraffes_above_good_4",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 69000000.0
+  },
+  {
+    "id": "giraffes_above_good_5",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 70200000.0
+  },
+  {
+    "id": "giraffes_above_good_6",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 95000000.0
+  },
+  {
+    "id": "giraffes_above_good_7",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 73200000.0
+  },
+  {
+    "id": "giraffes_above_good_8",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 180000000.0
+  },
+  {
+    "id": "giraffes_above_good_9",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 150000000.0
+  },
+  {
+    "id": "giraffes_above_good_10",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 175000000.0
+  },
+  {
+    "id": "giraffes_above_good_11",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 263250000.0
+  },
+  {
+    "id": "giraffes_above_good_12",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_13",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 50000000.0
+  },
+  {
+    "id": "giraffes_above_good_14",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_15",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_16",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 80000000.0
+  },
+  {
+    "id": "giraffes_above_good_17",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 117000000.0
+  },
+  {
+    "id": "giraffes_above_good_18",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 52500000.0
+  },
+  {
+    "id": "giraffes_above_good_19",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 63730000.0
+  },
+  {
+    "id": "giraffes_above_good_20",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 92500000.0
+  },
+  {
+    "id": "giraffes_above_good_21",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 351000000.0
+  },
+  {
+    "id": "giraffes_above_good_22",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 234000000.0
+  },
+  {
+    "id": "giraffes_above_good_23",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 143400000.0
+  },
+  {
+    "id": "giraffes_above_good_24",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 195000000.0
+  },
+  {
+    "id": "giraffes_above_good_25",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 500000000.0
+  },
+  {
+    "id": "giraffes_above_good_26",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 71400000.0
+  },
+  {
+    "id": "giraffes_above_good_27",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 53000000.0
+  },
+  {
+    "id": "giraffes_above_good_28",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_29",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 83000000.0
+  },
+  {
+    "id": "giraffes_above_good_30",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_above_good_31",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 64000000.0
+  },
+  {
+    "id": "giraffes_above_good_32",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 40000000.0
+  },
+  {
+    "id": "giraffes_above_good_33",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72000000.0
+  },
+  {
+    "id": "giraffes_above_good_34",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 100000.0
+  },
+  {
+    "id": "giraffes_above_good_35",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 175500000.0
+  },
+  {
+    "id": "giraffes_above_good_36",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 72500000.0
+  },
+  {
+    "id": "giraffes_above_good_37",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 73200000.0
+  },
+  {
+    "id": "giraffes_above_good_38",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 76050000.0
+  },
+  {
+    "id": "giraffes_above_good_39",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 105840000.0
+  },
+  {
+    "id": "giraffes_below_good_0",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1170000000.0
+  },
+  {
+    "id": "giraffes_below_good_1",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 125000000.0
+  },
+  {
+    "id": "giraffes_below_good_2",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 115000000.0
+  },
+  {
+    "id": "giraffes_below_good_3",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 71000000.0
+  },
+  {
+    "id": "giraffes_below_good_4",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 58500000.0
+  },
+  {
+    "id": "giraffes_below_good_5",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 70000000.0
+  },
+  {
+    "id": "giraffes_below_good_6",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 117000000.0
+  },
+  {
+    "id": "giraffes_below_good_7",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 69000000.0
+  },
+  {
+    "id": "giraffes_below_good_8",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 85500000.0
+  },
+  {
+    "id": "giraffes_below_good_9",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 60000000.0
+  },
+  {
+    "id": "giraffes_below_good_10",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 120000000.0
+  },
+  {
+    "id": "giraffes_below_good_11",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 76050000.0
+  },
+  {
+    "id": "giraffes_below_good_12",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 100000000.0
+  },
+  {
+    "id": "giraffes_below_good_13",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 32400000.0
+  },
+  {
+    "id": "giraffes_below_good_14",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 98450000.0
+  },
+  {
+    "id": "giraffes_below_good_15",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 29250000.0
+  },
+  {
+    "id": "giraffes_below_good_16",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 70200000.0
+  },
+  {
+    "id": "giraffes_below_good_17",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 82500000.0
+  },
+  {
+    "id": "giraffes_below_good_18",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 70200000.0
+  },
+  {
+    "id": "giraffes_below_good_19",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 115000000.0
+  },
+  {
+    "id": "giraffes_below_good_20",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 115000000.0
+  },
+  {
+    "id": "giraffes_below_good_21",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 97500000.0
+  },
+  {
+    "id": "giraffes_below_good_22",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 115000000.0
+  },
+  {
+    "id": "giraffes_below_good_23",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 32000000.0
+  },
+  {
+    "id": "giraffes_below_good_24",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 55000000.0
+  },
+  {
+    "id": "giraffes_below_good_25",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 132000000.0
+  },
+  {
+    "id": "giraffes_below_good_26",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 65000000.0
+  },
+  {
+    "id": "giraffes_below_good_27",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 70500000.0
+  },
+  {
+    "id": "giraffes_below_good_28",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 70200000.0
+  },
+  {
+    "id": "giraffes_below_good_29",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 30000000.0
+  },
+  {
+    "id": "giraffes_below_good_30",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 74800000.0
+  },
+  {
+    "id": "giraffes_below_good_31",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 69000000.0
+  },
+  {
+    "id": "giraffes_below_good_32",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 300000000.0
+  },
+  {
+    "id": "giraffes_below_good_33",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 58500000.0
+  },
+  {
+    "id": "giraffes_below_good_34",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_below_good_35",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 330000000.0
+  },
+  {
+    "id": "giraffes_below_good_36",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 68000000.0
+  },
+  {
+    "id": "giraffes_below_good_37",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 117000000.0
+  },
+  {
+    "id": "giraffes_below_good_38",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 125000000.0
+  },
+  {
+    "id": "giraffes_below_good_39",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 57500000.0
+  }
+]

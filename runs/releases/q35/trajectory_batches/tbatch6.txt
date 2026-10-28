@@ -1,0 +1,15 @@
+giraffes_baseline_6
+giraffes_baseline_14
+giraffes_baseline_22
+giraffes_baseline_30
+giraffes_baseline_38
+giraffes_above_good_6
+giraffes_above_good_14
+giraffes_above_good_22
+giraffes_above_good_30
+giraffes_above_good_38
+giraffes_below_good_6
+giraffes_below_good_14
+giraffes_below_good_22
+giraffes_below_good_30
+giraffes_below_good_38

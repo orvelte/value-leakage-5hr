@@ -23,3 +23,6 @@ runs/releases/pod/ssh_key*
 runs/releases/pod/known_hosts
 runs/releases/pod/.cost_per_hr*
 runs/releases/pod/.created*
+runs/releases/*/judge_inputs/
+runs/releases/*/trajectory_inputs/
+runs/releases/_selftest/

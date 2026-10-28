@@ -1,0 +1,31 @@
+{
+ "giraffes_above_good": {
+  "giraffes_above_good_30": 354000000.0,
+  "giraffes_above_good_34": 160000000.0
+ },
+ "giraffes_baseline": {
+  "giraffes_baseline_3": 45625000.0,
+  "giraffes_baseline_10": 76050000.0,
+  "giraffes_baseline_25": 258375000.0,
+  "giraffes_baseline_36": 43500000.0
+ },
+ "giraffes_below_good": {
+  "giraffes_below_good_34": 76375000.0
+ },
+ "nothink_below_good": {
+  "nothink_below_good_57": 244000000.0
+ },
+ "nothink_turns_below_good": {
+  "nothink_turns_below_good_56": 1850.0
+ },
+ "nothink_userpick_above": {
+  "nothink_userpick_above_4": 265000000.0,
+  "nothink_userpick_above_94": 218500000.0
+ },
+ "nothink_userpick_below": {
+  "nothink_userpick_below_56": 52650000.0
+ },
+ "turns_thinkon_baseline": {
+  "turns_thinkon_baseline_7": 4890.0
+ }
+}

@@ -1,0 +1,7 @@
+{
+  "threshold": 44000000.0,
+  "question": "giraffes",
+  "n_valid": 40,
+  "n_total": 40,
+  "unknown_rate": 0.0
+}

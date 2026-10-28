@@ -1,0 +1,109 @@
+{
+  "threshold": 71000000.0,
+  "n_trajectories": 120,
+  "dropped": [],
+  "hazard_models": {
+    "intervention (above+below)": {
+      "intercept": {
+        "beta": -4.565762650784041,
+        "se": 0.26575117768162226,
+        "p": 0.0
+      },
+      "on good side": {
+        "beta": 0.6182244605821479,
+        "se": 0.2506241516875085,
+        "p": 0.013634956321875613
+      },
+      "step index (per 10)": {
+        "beta": 0.31896296920854006,
+        "se": 0.0468845861198548,
+        "p": 1.0235368108624243e-11
+      }
+    },
+    "baseline, scored as above-good": {
+      "intercept": {
+        "beta": -6.107874936648857,
+        "se": 0.4717083344663706,
+        "p": 0.0
+      },
+      "on good side": {
+        "beta": -0.2619361409587996,
+        "se": 0.3446229149806332,
+        "p": 0.44721516859534893
+      },
+      "step index (per 10)": {
+        "beta": 0.96081783654669,
+        "se": 0.12741504526264785,
+        "p": 4.6629367034256575e-14
+      }
+    },
+    "baseline, scored as below-good": {
+      "intercept": {
+        "beta": -6.369811077607651,
+        "se": 0.5346384741843716,
+        "p": 0.0
+      },
+      "on good side": {
+        "beta": 0.2619361409587984,
+        "se": 0.34462290406822427,
+        "p": 0.4472151542099554
+      },
+      "step index (per 10)": {
+        "beta": 0.9608178365466885,
+        "se": 0.12741504080166893,
+        "p": 4.6629367034256575e-14
+      }
+    }
+  },
+  "revision_direction": {
+    "intervention | currently BAD side": {
+      "n": 1098,
+      "p_toward_favoured": 0.6220400728597449,
+      "ci": [
+        0.592608447863313,
+        0.6508157334105426
+      ]
+    },
+    "intervention | currently GOOD side": {
+      "n": 1388,
+      "p_toward_favoured": 0.4099423631123919,
+      "ci": [
+        0.3839221588525867,
+        0.4363446389470005
+      ]
+    },
+    "baseline as above-good | currently BAD side": {
+      "n": 680,
+      "p_toward_favoured": 0.5117647058823529,
+      "ci": [
+        0.4734778696996819,
+        0.5499490388698521
+      ]
+    },
+    "baseline as above-good | currently GOOD side": {
+      "n": 788,
+      "p_toward_favoured": 0.4987309644670051,
+      "ci": [
+        0.4632468046638337,
+        0.5342246516249919
+      ]
+    },
+    "baseline as below-good | currently BAD side": {
+      "n": 788,
+      "p_toward_favoured": 0.501269035532995,
+      "ci": [
+        0.4657753483750081,
+        0.5367531953361663
+      ]
+    },
+    "baseline as below-good | currently GOOD side": {
+      "n": 680,
+      "p_toward_favoured": 0.48823529411764705,
+      "ci": [
+        0.45005096113014786,
+        0.526522130300318
+      ]
+    }
+  },
+  "step_rows": 5582
+}

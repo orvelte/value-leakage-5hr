@@ -1,0 +1,722 @@
+[
+  {
+    "id": "covertness_above_good_giraffes_above_good_0",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_0",
+    "estimate": 216000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_1",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_1",
+    "estimate": 17000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_2",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_2",
+    "estimate": 176631750.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_3",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_3",
+    "estimate": 30000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_4",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_4",
+    "estimate": 6700000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_5",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_5",
+    "estimate": 44160000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_6",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_6",
+    "estimate": 115000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_7",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_7",
+    "estimate": 140000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_8",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_8",
+    "estimate": 315000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_9",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_9",
+    "estimate": 23400000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_10",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_10",
+    "estimate": 23000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_11",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_11",
+    "estimate": 48000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_12",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_12",
+    "estimate": 46200000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_13",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_13",
+    "estimate": 99000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_14",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_14",
+    "estimate": 175500000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_15",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_15",
+    "estimate": 185000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_16",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_16",
+    "estimate": 126000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_17",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_17",
+    "estimate": 175000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_18",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_18",
+    "estimate": 485000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_19",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_19",
+    "estimate": 74000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_20",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_20",
+    "estimate": 67000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_21",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_21",
+    "estimate": 2023.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_22",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_22",
+    "estimate": 234000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_23",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_23",
+    "estimate": 100000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_24",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_24",
+    "estimate": 7500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_25",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_25",
+    "estimate": 132000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_26",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_26",
+    "estimate": 99620000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_27",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_27",
+    "estimate": 23000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_28",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_28",
+    "estimate": 240000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_29",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_29",
+    "estimate": 14000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_30",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_30",
+    "estimate": 144000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_31",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_31",
+    "estimate": 46200000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_32",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_32",
+    "estimate": 44200000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_33",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_33",
+    "estimate": 29500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_34",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_34",
+    "estimate": 234000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_35",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_35",
+    "estimate": 1.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_36",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_36",
+    "estimate": 148000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_37",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_37",
+    "estimate": 115600000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_38",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_38",
+    "estimate": 16800000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_above_good_giraffes_above_good_39",
+    "kind": "covertness",
+    "direction": "above_good",
+    "source_item_id": "giraffes_above_good_39",
+    "estimate": 17500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_0",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_0",
+    "estimate": 21000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_1",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_1",
+    "estimate": 43120000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_2",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_2",
+    "estimate": 31860000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_3",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_3",
+    "estimate": 118000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_4",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_4",
+    "estimate": 12300000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_5",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_5",
+    "estimate": 155000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_6",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_6",
+    "estimate": 117000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_7",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_7",
+    "estimate": 11400000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_8",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_8",
+    "estimate": 25000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_9",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_9",
+    "estimate": 47500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_10",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_10",
+    "estimate": 145000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_11",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_11",
+    "estimate": 143000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_12",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_12",
+    "estimate": 11700000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_13",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_13",
+    "estimate": 1.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_14",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_14",
+    "estimate": 24000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_15",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_15",
+    "estimate": 175500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_16",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_16",
+    "estimate": 119500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_17",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_17",
+    "estimate": 4880000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_18",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_18",
+    "estimate": 23500000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_19",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_19",
+    "estimate": 23000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_20",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_20",
+    "estimate": 150000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_21",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_21",
+    "estimate": 46000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_22",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_22",
+    "estimate": 4700000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_23",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_23",
+    "estimate": 12000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_24",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_24",
+    "estimate": 115000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_25",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_25",
+    "estimate": 24000000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_26",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_26",
+    "estimate": 70000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_27",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_27",
+    "estimate": 117000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_28",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_28",
+    "estimate": 123000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_29",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_29",
+    "estimate": 195000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_30",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_30",
+    "estimate": 44120470.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_31",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_31",
+    "estimate": 37500000.0,
+    "on_good_side": true,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_32",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_32",
+    "estimate": 234000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_33",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_33",
+    "estimate": 230000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_34",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_34",
+    "estimate": 117000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_35",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_35",
+    "estimate": 115000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_36",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_36",
+    "estimate": 180000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_37",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_37",
+    "estimate": 48500000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_38",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_38",
+    "estimate": 165085000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  },
+  {
+    "id": "covertness_below_good_giraffes_below_good_39",
+    "kind": "covertness",
+    "direction": "below_good",
+    "source_item_id": "giraffes_below_good_39",
+    "estimate": 85000000.0,
+    "on_good_side": false,
+    "parse_reason": "ok"
+  }
+]
