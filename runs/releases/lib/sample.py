@@ -98,10 +98,11 @@ def load_engine(max_model_len=MAX_MODEL_LEN, gpu_memory_utilization=0.95):
         # vLLM 0.32's default (1024) exceeds the ~300 Mamba cache blocks this hybrid model gets
         # at 16k context on an H100, and engine init fails. Scheduling only; sampling unchanged.
         max_num_seqs=256,
-        # Text-only task: reserve no memory for the vision encoder, leaving it to the KV cache.
-        # At 0.90 and default mm limits only ~15.7 GiB (~20 concurrent 9k-token traces) was
-        # left, which ran at ~280 output tok/s. Scheduling/memory only; sampling unchanged.
-        limit_mm_per_prompt={"image": 0, "video": 0},
+        # Text-only task: don't load the vision tower, leaving its memory to the KV cache. At 0.90
+        # with it loaded only ~15.7 GiB (~20 concurrent 9k-token traces) was left, which ran at
+        # ~280 output tok/s. (limit_mm_per_prompt=0 crashes the offline engine at compile time on
+        # vLLM 0.32.) Memory/scheduling only; the language model and sampling are unchanged.
+        language_model_only=True,
     )
     return llm, tokenizer
 
