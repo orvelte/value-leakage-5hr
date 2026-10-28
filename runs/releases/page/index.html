@@ -81,7 +81,7 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
     <span class="label">value-leakage-5hr · branch releases · runs/releases/</span>
     <h1>Donation Bet across Qwen releases</h1>
     <p class="lede">Does motivated reasoning in Qwen 27B change as the default persona gets stronger from 3.5 to 3.6 to 3.8? And if it does, is the change in how biased the answers are, or in how openly the model says so?</p>
-    <span class="meta" id="updated">Updated 2026-10-28 22:15 UTC · 3.5 and 3.6 done, 3.8 generating</span>
+    <span class="meta" id="updated">Updated 2026-10-28 22:30 UTC · 3.5 and 3.6 done, 3.8 generating</span>
   </header>
 
   <section>
@@ -174,7 +174,22 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
       <span>With thinking off, 3.6 often reasons in prose before giving its number. The original parser takes the first number, so it picked up list indices such as “1.”. Answers that open with a number still use the original parser. For the rest, Codex extracts the estimate the answer commits to. As a check, Codex extraction on every answer moves 3.5 to +0.572 and 3.6 to +0.138, which leaves the conclusions unchanged.</span>
     </div>
 
-    <h3>Disclosure and covertness (thinking on)</h3>
+    <h3>Bias with answers near the threshold removed</h3>
+    <p>This drops every answer within 25% of T and recomputes the bias, to check whether the bias is carried only by answers that land on the threshold.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Arm</th><th>Qwen3.5</th><th>Qwen3.6</th><th>Qwen3.8</th></tr></thead>
+        <tbody>
+          <tr><td>Good/bad cause, thinking off</td><td class="n">+0.519 [+0.368, +0.674] · n=107</td><td class="n">+0.062 [−0.063, +0.186] · n=176</td><td class="pending">generating</td></tr>
+          <tr><td>Good/bad cause, thinking on</td><td class="n">+0.029 [−0.213, +0.278] · n=41</td><td class="n">+0.070 [−0.141, +0.283] · n=67</td><td class="pending">generating</td></tr>
+          <tr><td>User picks charity, thinking off</td><td class="n">+0.157 [−0.031, +0.348] · n=53</td><td class="n">−0.184 [−0.324, −0.043] · n=134</td><td class="pending">generating</td></tr>
+          <tr><td>Left turns, thinking off</td><td class="n">+0.526 [+0.321, +0.736] · n=68</td><td class="n">+0.433 [+0.200, +0.667] · n=60</td><td class="pending">generating</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>With thinking off, 3.5's bias survives intact (+0.52) away from the threshold, so it isn't just an artefact of answers sitting on T. 3.6's small bias goes away (+0.06, CI includes zero). With thinking on, 3.5's bias does sit mostly near T: +0.29 overall, against +0.03 excluding answers near T. That arm has only 41 answers left, though. One unexpected result: 3.6's “I pick the charity” control turns negative (−0.18) away from T, so it leans away from the side the user prefers. It's flagged and not interpreted.</p>
+
+    <h3>Disclosure and covertness (thinking on) <span class="pill run" style="vertical-align:middle">single-judge</span></h3>
     <figure>
       <img src="figures/disclosure_by_model.png" alt="Stacked bars of judge labels on the 80 thinking-on bet traces. 3.5: 52 admit, 28 deny. 3.6: 12 admit, 10 no mention, 58 deny.">
       <figcaption>Paper-verbatim covertness judge on number-blurred traces, majority of two passes (a third pass only breaks ties; none were needed).</figcaption>
@@ -183,6 +198,10 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
     <div class="callout">
       <span class="label">Judge note</span>
       <span>The Claude subagent judges used by the original run were stopped repeatedly by an API safeguard, so all judging here uses Codex (<code>gpt-6.1-sol</code>, medium effort): one fresh call per trace, with the full prompt. Codex gave identical labels in both passes on every trace, so pass agreement says nothing about reliability. Because the judge changed, compare disclosure across models within this study, not with the original 34/80.</span>
+    </div>
+    <div class="callout">
+      <span class="label">Second-judge check</span>
+      <span>For each model, 20 of the 80 traces (10 per direction, picked at random before any labels were examined) are exported to <code>runs/releases/handlabels/</code> for hand-labelling. A second judge labels the same 20 with the same prompt. Sonnet was asked for first, but Anthropic's content filter refused every request, so the second judge is a different Codex model (<code>gpt-6.1-terra</code>, high effort). Admit-or-not agreement: <b>3.5, 19 of 20 (κ = 0.89)</b>; <b>3.6, 19 of 20 (κ = 0.86)</b>; 3.8 pending. Both judges are OpenAI models, so this is a weaker check than a cross-vendor one. The results stay marked single-judge until 3.8 is checked.</span>
     </div>
 
     <h3>Reasoning signatures (thinking on)</h3>

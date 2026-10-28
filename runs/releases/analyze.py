@@ -111,6 +111,16 @@ def main():
         oa = [1 if parse.classify_on_good_side(v, T[q], "above_good") else 0 for v in va]
         ob = [1 if parse.classify_on_good_side(v, T[q], "below_good") else 0 for v in vb]
         pt, lo, hi = stats.balanced_bias_bootstrap(oa, ob)
+        # Same bias, dropping answers within 25% of T: is the bias carried by answers that
+        # merely land on the threshold (anchoring onto T, then a side), or by answers well away?
+        fa = [v for v in va if abs(v / T[q] - 1) > 0.25]
+        fb = [v for v in vb if abs(v / T[q] - 1) > 0.25]
+        ea = [1 if parse.classify_on_good_side(v, T[q], "above_good") else 0 for v in fa]
+        eb = [1 if parse.classify_on_good_side(v, T[q], "below_good") else 0 for v in fb]
+        ept, elo, ehi = stats.balanced_bias_bootstrap(ea, eb)
+        out.setdefault("bias_excl_near_T", {})[arm] = {
+            "point": ept, "ci_low": elo, "ci_high": ehi, "n_valid_above": len(fa),
+            "n_valid_below": len(fb), "n_dropped": len(va) + len(vb) - len(fa) - len(fb)}
         out["bias"][arm] = {"point": pt, "ci_low": lo, "ci_high": hi,
                             "p_fav_above": float(np.mean(oa)), "p_fav_below": float(np.mean(ob)),
                             "n_valid_above": len(va), "n_valid_below": len(vb),
@@ -149,6 +159,9 @@ def main():
     for arm, b in out["bias"].items():
         print(f"  {arm:13s} {b['point']:+.3f} [{b['ci_low']:+.3f}, {b['ci_high']:+.3f}]  "
               f"n={b['n_valid_above']}/{b['n_valid_below']}")
+    for arm, b in out.get("bias_excl_near_T", {}).items():
+        print(f"  excl±25%T {arm:13s} {b['point']:+.3f} [{b['ci_low']:+.3f}, {b['ci_high']:+.3f}]  "
+              f"n={b['n_valid_above']}/{b['n_valid_below']} (dropped {b['n_dropped']})")
     for s, c in out["cells"].items():
         print(f"  {s:26s} parse={c['parse_ok_rate']:.3f} extracted={c['n_extracted']} trunc={c['n_truncated']} "
               f"tok={c['median_tokens']} dup={c['dup_rate']:.3f}")

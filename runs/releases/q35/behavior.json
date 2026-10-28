@@ -172,6 +172,40 @@
       "median_over_T": 1.06056338028169
     }
   },
+  "bias_excl_near_T": {
+    "giraffes_off": {
+      "point": 0.5190677966101696,
+      "ci_low": 0.3679378531073447,
+      "ci_high": 0.6740819209039548,
+      "n_valid_above": 48,
+      "n_valid_below": 59,
+      "n_dropped": 192
+    },
+    "giraffes_on": {
+      "point": 0.028708133971291794,
+      "ci_low": -0.2129186602870814,
+      "ci_high": 0.27751196172248793,
+      "n_valid_above": 22,
+      "n_valid_below": 19,
+      "n_dropped": 38
+    },
+    "userpick_off": {
+      "point": 0.15669515669515666,
+      "ci_low": -0.031339031339031376,
+      "ci_high": 0.3475783475783476,
+      "n_valid_above": 27,
+      "n_valid_below": 26,
+      "n_dropped": 147
+    },
+    "turns_off": {
+      "point": 0.5256410256410255,
+      "ci_low": 0.3205128205128205,
+      "ci_high": 0.7362637362637363,
+      "n_valid_above": 42,
+      "n_valid_below": 26,
+      "n_dropped": 130
+    }
+  },
   "median_reasoning_tokens_on": 8960.0,
   "gates": {
     "G_parse_min_cell": 0.9,
