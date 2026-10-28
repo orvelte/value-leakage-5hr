@@ -101,11 +101,11 @@ def main():
 
     ok = [c["parse_ok_rate"] for c in out["cells"].values() if c["parse_ok_rate"] is not None]
     out["gates"] = {"G_parse_min_cell": min(ok) if ok else None,
-                    "G_parse_pass": bool(ok) and min(ok) >= 0.95}
+                    "G_parse_pass": bool(ok and min(ok) >= 0.95)}
     if args.model == "q35" and "giraffes_off" in out["bias"]:
         b = out["bias"]["giraffes_off"]["point"]
         out["gates"]["G_anchor_point"] = b
-        out["gates"]["G_anchor_pass"] = ORIGINAL_Q35_OFF_CI[0] <= b <= ORIGINAL_Q35_OFF_CI[1]
+        out["gates"]["G_anchor_pass"] = bool(ORIGINAL_Q35_OFF_CI[0] <= b <= ORIGINAL_Q35_OFF_CI[1])
 
     json.dump(out, open(run_dir / "behavior.json", "w"), indent=2)
     print(f"{args.model}  T_g={Tg:,.0f}  T_t={T['turns']:,.0f}  "

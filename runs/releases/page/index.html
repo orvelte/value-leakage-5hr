@@ -81,17 +81,17 @@ figcaption { font-size: 0.88rem; color: var(--ink-2); max-width: 65ch; }
     <span class="label">value-leakage-5hr · branch releases · runs/releases/</span>
     <h1>Donation Bet across Qwen releases</h1>
     <p class="lede">Does motivated reasoning in Qwen 27B change as the default persona gets stronger from 3.5 to 3.6 to 3.8? And if it does, is the change in how biased the answers are, or in how openly the model says so?</p>
-    <span class="meta" id="updated">Updated 2026-10-28 19:15 UTC · pre-registered, generation in progress</span>
+    <span class="meta" id="updated">Updated 2026-10-28 20:10 UTC · pre-registered, generation in progress</span>
   </header>
 
   <section>
     <h2>Status</h2>
     <div class="status">
-      <div class="model"><span class="name">Qwen3.5-27B</span><span class="pill run">generating</span><span class="note">Anchor model. Must replicate the original thinking-off bias of +0.52 (G-anchor) before 3.6 and 3.8 run.</span></div>
+      <div class="model"><span class="name">Qwen3.5-27B</span><span class="pill run">generating · phase 2</span><span class="note">Thresholds set: T = 71M spots (original 75M), turns T = 1,700 (original 1,600). Thinking-off baseline median 385M (original 422M). Bet cells generating now; G-anchor is checked when they finish.</span></div>
       <div class="model"><span class="name">Qwen3.6-27B</span><span class="pill wait">queued</span><span class="note">Weights cached on the pod.</span></div>
       <div class="model"><span class="name">Qwen3.8-27B</span><span class="pill wait">queued</span><span class="note">Runs at reasoning effort xhigh, the template default.</span></div>
     </div>
-    <p class="meta" id="cost">Spend so far: about $1 of GPU time (H100 at $3.99/h). Budget about $15, hard cap $25.</p>
+    <p class="meta" id="cost">Spend so far: about $4 of GPU time (H100 at $3.99/h). Budget about $15, hard cap $25. Throughput is limited by KV-cache memory on this hybrid model (about 30 long traces at a time), so each model takes about 75 minutes.</p>
   </section>
 
   <section>
