@@ -95,6 +95,9 @@ def load_engine(max_model_len=MAX_MODEL_LEN, gpu_memory_utilization=0.90):
         max_model_len=max_model_len,
         gpu_memory_utilization=gpu_memory_utilization,
         seed=ENGINE_SEED,
+        # vLLM 0.32's default (1024) exceeds the ~300 Mamba cache blocks this hybrid model gets
+        # at 16k context on an H100, and engine init fails. Scheduling only; sampling unchanged.
+        max_num_seqs=256,
     )
     return llm, tokenizer
 
