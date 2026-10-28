@@ -16,3 +16,10 @@ runs/internals/acts.pt
 runs/internals/acts_nothink.pt
 
 planning/
+.env
+runs/releases/pod/.pod_id*
+runs/releases/pod/.ssh*
+runs/releases/pod/ssh_key*
+runs/releases/pod/known_hosts
+runs/releases/pod/.cost_per_hr*
+runs/releases/pod/.created*
