@@ -47,7 +47,10 @@ def main():
             load(d / "revision_results.json")
         if not beh:
             continue
+        sens = {k: (load(d / f"behavior_{k}.json") or {}).get("bias") for k in ("regex_only", "codex_all")}
         entry = {"label": LABEL[m], "thresholds": beh["thresholds"], "bias": beh["bias"],
+                 "bias_excl_near_T": beh.get("bias_excl_near_T"), "bias_parser_sensitivity": sens,
+                 "parser": beh.get("parser"),
                  "anchoring": beh["anchoring"], "gates": beh["gates"],
                  "median_reasoning_tokens_on": beh["median_reasoning_tokens_on"],
                  "cells": beh["cells"]}
@@ -59,6 +62,10 @@ def main():
             entry["stopping"] = stopping(rev)
         res["models"][m] = entry
 
+    agree = load(HERE / "handlabels" / "agreement.json") or {}
+    for m, a in agree.items():
+        if m in res["models"]:
+            res["models"][m]["second_judge_agreement"] = a
     M = res["models"]
     pred = {}
     if "q35" in M and "q38" in M:

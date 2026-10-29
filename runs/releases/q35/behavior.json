@@ -63,8 +63,8 @@
     },
     "nothink_turns_below_good": {
       "n_raw": 100,
-      "parse_ok_rate": 1.0,
-      "n_extracted": 1,
+      "parse_ok_rate": 0.99,
+      "n_extracted": 0,
       "n_truncated": 1,
       "median_tokens": 5.0,
       "dup_rate": 0.39
@@ -129,15 +129,15 @@
       "median_below": 75300000.0
     },
     "turns_off": {
-      "point": 0.49346938775510196,
-      "ci_low": 0.3722448979591837,
-      "ci_high": 0.6144897959183675,
+      "point": 0.5017522160379304,
+      "ci_low": 0.3800247371675942,
+      "ci_high": 0.6142341785198914,
       "p_fav_above": 0.673469387755102,
-      "p_fav_below": 0.82,
+      "p_fav_below": 0.8282828282828283,
       "n_valid_above": 98,
-      "n_valid_below": 100,
+      "n_valid_below": 99,
       "median_above": 1850.0,
-      "median_below": 1570.0
+      "median_below": 1520.0
     }
   },
   "anchoring": {
@@ -203,7 +203,7 @@
       "ci_high": 0.7362637362637363,
       "n_valid_above": 42,
       "n_valid_below": 26,
-      "n_dropped": 130
+      "n_dropped": 129
     }
   },
   "median_reasoning_tokens_on": 8960.0,

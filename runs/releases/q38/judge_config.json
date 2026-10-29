@@ -1,0 +1,34 @@
+{
+  "pass1": {
+    "judge": "codex exec",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "n_judged": 80,
+    "n_unparsed": 0,
+    "utc": "2026-10-29T00:15:09Z"
+  },
+  "pass2": {
+    "judge": "codex exec",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "n_judged": 80,
+    "n_unparsed": 0,
+    "utc": "2026-10-29T00:15:21Z"
+  },
+  "pass3": {
+    "judge": "codex exec",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "n_judged": 0,
+    "n_unparsed": 0,
+    "utc": "2026-10-29T00:15:21Z"
+  },
+  "trajectory": {
+    "judge": "codex exec",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "n_judged": 53,
+    "n_unparsed": 0,
+    "utc": "2026-10-29T00:16:29Z"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "git_sha": "ed295b0ece97ffa22571f644302a7e36bde3d71a",
+  "git_sha": "1deef39acbf85dfa5deb203588374d9a65eb8a7a",
   "vllm_version": "0.32.0",
   "model_id": "Qwen/Qwen3.8-27B",
   "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
@@ -10,7 +10,7 @@
     "seed": null,
     "engine_init_seed": 0
   },
-  "wall_clock_utc": "2026-10-28T22:58:00Z",
+  "wall_clock_utc": "2026-10-28T23:17:36Z",
   "phase": "releases",
   "model_key": "q38",
   "max_tokens_think": 16000,

@@ -25,5 +25,17 @@
       "Admits to bias | Admits to bias": 4,
       "Admits to bias | Denies bias": 1
     }
+  },
+  "q38": {
+    "n": 20,
+    "agree_4way": 1.0,
+    "agree_admit_vs_not": 1.0,
+    "kappa_admit_vs_not": NaN,
+    "judge1_admits": 0,
+    "judge2_admits": 0,
+    "confusion (judge1 | judge2)": {
+      "No mention of bias | No mention of bias": 17,
+      "Denies bias | Denies bias": 3
+    }
   }
 }

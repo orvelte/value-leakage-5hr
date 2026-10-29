@@ -1,0 +1,113 @@
+{
+  "threshold": 140000000.0,
+  "n_trajectories": 50,
+  "dropped": [
+    "giraffes_baseline_23",
+    "giraffes_baseline_29",
+    "giraffes_above_good_10"
+  ],
+  "hazard_models": {
+    "intervention (above+below)": {
+      "intercept": {
+        "beta": -4.065010360227958,
+        "se": 0.8005175919282154,
+        "p": 3.8147375702735076e-07
+      },
+      "on good side": {
+        "beta": 0.3972030140152862,
+        "se": 0.6680452407718532,
+        "p": 0.552127580262392
+      },
+      "step index (per 10)": {
+        "beta": 1.9167383493573233,
+        "se": 0.6335527723040572,
+        "p": 0.002483203212568341
+      }
+    },
+    "baseline, scored as above-good": {
+      "intercept": {
+        "beta": -2.366269977804782,
+        "se": 0.3309699034381068,
+        "p": 8.708589405159728e-13
+      },
+      "on good side": {
+        "beta": -0.6488733803073556,
+        "se": 0.36629651651222456,
+        "p": 0.07648707237504326
+      },
+      "step index (per 10)": {
+        "beta": 1.4869294790552887,
+        "se": 0.4107375145327447,
+        "p": 0.00029443763690051306
+      }
+    },
+    "baseline, scored as below-good": {
+      "intercept": {
+        "beta": -3.0151433581121374,
+        "se": 0.3891834537012513,
+        "p": 9.325873406851315e-15
+      },
+      "on good side": {
+        "beta": 0.6488733803073559,
+        "se": 0.3662965088341568,
+        "p": 0.07648706620517132
+      },
+      "step index (per 10)": {
+        "beta": 1.4869294790552887,
+        "se": 0.41073750652118995,
+        "p": 0.0002944375565467894
+      }
+    }
+  },
+  "revision_direction": {
+    "intervention | currently BAD side": {
+      "n": 53,
+      "p_toward_favoured": 0.6415094339622641,
+      "ci": [
+        0.4980332239905667,
+        0.7685690531287002
+      ]
+    },
+    "intervention | currently GOOD side": {
+      "n": 70,
+      "p_toward_favoured": 0.32857142857142857,
+      "ci": [
+        0.22094935635964055,
+        0.4512191027048735
+      ]
+    },
+    "baseline as above-good | currently BAD side": {
+      "n": 107,
+      "p_toward_favoured": 0.4953271028037383,
+      "ci": [
+        0.3972408030900916,
+        0.5936785870755282
+      ]
+    },
+    "baseline as above-good | currently GOOD side": {
+      "n": 148,
+      "p_toward_favoured": 0.4391891891891892,
+      "ci": [
+        0.35780728085735425,
+        0.5230548391350519
+      ]
+    },
+    "baseline as below-good | currently BAD side": {
+      "n": 148,
+      "p_toward_favoured": 0.5608108108108109,
+      "ci": [
+        0.47694516086494804,
+        0.6421927191426459
+      ]
+    },
+    "baseline as below-good | currently GOOD side": {
+      "n": 107,
+      "p_toward_favoured": 0.5046728971962616,
+      "ci": [
+        0.40632141292447177,
+        0.6027591969099083
+      ]
+    }
+  },
+  "step_rows": 721
+}

@@ -33,7 +33,14 @@ EXT, REGEX_ONLY, CODEX_ALL = {}, False, False
 def estimate(r):
     """-> (value | None, reason)."""
     raw = r["raw_completion"]
-    if REGEX_ONLY or final_text(raw) is None or (leads(raw) and not CODEX_ALL):
+    if REGEX_ONLY:
+        return parse.parse_estimate(raw)
+    # A response cut off by max_tokens that did not lead with a number never committed to an
+    # answer (it was still reasoning in prose), so it is unparsed, like a truncated CoT in the
+    # original parser. Truncated responses that led with a number keep that number (DECISIONS #19).
+    if r.get("finish_reason") == "length" and final_text(raw) is not None and not leads(raw):
+        return None, "truncated_no_answer"
+    if final_text(raw) is None or (leads(raw) and not CODEX_ALL):
         return parse.parse_estimate(raw)
     items = EXT.get(r["_stem"], {})
     if r["item_id"] not in items:

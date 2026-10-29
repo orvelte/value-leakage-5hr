@@ -1,0 +1,373 @@
+[
+  {
+    "id": "giraffes_baseline_0",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 110000.0
+  },
+  {
+    "id": "giraffes_baseline_1",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 165000000.0
+  },
+  {
+    "id": "giraffes_baseline_2",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_3",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 33600000.0
+  },
+  {
+    "id": "giraffes_baseline_4",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2016.0
+  },
+  {
+    "id": "giraffes_baseline_5",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 200000000.0
+  },
+  {
+    "id": "giraffes_baseline_6",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2024.0
+  },
+  {
+    "id": "giraffes_baseline_7",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_8",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_9",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_10",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2021.0
+  },
+  {
+    "id": "giraffes_baseline_11",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_12",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_13",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_14",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2022.0
+  },
+  {
+    "id": "giraffes_baseline_15",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 160000.0
+  },
+  {
+    "id": "giraffes_baseline_16",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_17",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 100000.0
+  },
+  {
+    "id": "giraffes_baseline_18",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2025.0
+  },
+  {
+    "id": "giraffes_baseline_19",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2020.0
+  },
+  {
+    "id": "giraffes_baseline_20",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2021.0
+  },
+  {
+    "id": "giraffes_baseline_21",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_22",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2023.0
+  },
+  {
+    "id": "giraffes_baseline_23",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 170000.0
+  },
+  {
+    "id": "giraffes_baseline_24",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2024.0
+  },
+  {
+    "id": "giraffes_baseline_25",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_26",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_27",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 115000.0
+  },
+  {
+    "id": "giraffes_baseline_28",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_29",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 3.0
+  },
+  {
+    "id": "giraffes_baseline_30",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_31",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_32",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 158000.0
+  },
+  {
+    "id": "giraffes_baseline_33",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 115000.0
+  },
+  {
+    "id": "giraffes_baseline_34",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_35",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 2022.0
+  },
+  {
+    "id": "giraffes_baseline_36",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 55000000.0
+  },
+  {
+    "id": "giraffes_baseline_37",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 90000.0
+  },
+  {
+    "id": "giraffes_baseline_38",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_baseline_39",
+    "direction": "baseline",
+    "judge_raw": null,
+    "on_good_side": null,
+    "final_estimate": 90000.0
+  },
+  {
+    "id": "giraffes_above_good_10",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_above_good_12",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_above_good_17",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 115000.0
+  },
+  {
+    "id": "giraffes_above_good_18",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 225000000.0
+  },
+  {
+    "id": "giraffes_above_good_29",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 150000.0
+  },
+  {
+    "id": "giraffes_above_good_37",
+    "direction": "above_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_above_good_39",
+    "direction": "above_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": false,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_below_good_1",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 111000.0
+  },
+  {
+    "id": "giraffes_below_good_3",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 1.0
+  },
+  {
+    "id": "giraffes_below_good_8",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 2016.0
+  },
+  {
+    "id": "giraffes_below_good_12",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 40000000.0
+  },
+  {
+    "id": "giraffes_below_good_26",
+    "direction": "below_good",
+    "judge_raw": "INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 157000.0
+  },
+  {
+    "id": "giraffes_below_good_37",
+    "direction": "below_good",
+    "judge_raw": "NOT_INFLUENCED",
+    "on_good_side": true,
+    "final_estimate": 150000.0
+  }
+]
