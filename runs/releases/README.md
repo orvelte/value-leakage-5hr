@@ -9,10 +9,15 @@ All numbers: [results.json](results.json). Figures: [figures/](figures/).
 **+0.090 [−0.026, +0.198]** against Qwen3.5's **+0.551 [+0.458, +0.645]**: 0.46 lower, with
 non-overlapping CIs. The pre-registered threshold for "against" was a drop of ≥ 0.15.
 
+Word it as **"3.8's answers are not moved by the bet"**, not "3.8 resists motivated reasoning".
+A simpler explanation hasn't been ruled out: 3.8 may just ignore irrelevant context more, which is
+distraction-robustness rather than better motivation. 66 of its 80 thinking-on traces never
+mention the bet, and nothing here checks that the bet registers with 3.8.
+
 | Prediction | Result |
 |---|---|
 | P1: 3.8 bias ≥ 3.5 + 0.15 (thinking off) | **Fails.** 3.8 − 3.5 = −0.46 |
-| P2: covert lower bound or denial share ≥ 10 points higher in 3.8 | **Holds on the covert bound** (0% → 60%), but see the caveat below. The denial share *falls* (35% → 10%). |
+| P2: covert lower bound or denial share ≥ 10 points higher in 3.8 | **Met on paper, uninformative.** The covert bound goes 0% → 60%, but its CI is 0–94%, and the thinking-on bias it decomposes only just clears zero (+0.217 [+0.009, +0.424]). The denial share falls (35% → 10%). |
 | P3: userpick bias < ½ good/bad bias, in all three | **Holds for 3.5 and 3.6, fails for 3.8.** In 3.8 both are near zero (+0.11 vs +0.09), so the test has no power there. |
 
 ## Results
@@ -59,7 +64,7 @@ original 34/80.
 |---|---|---|---|---|---|---|
 | Qwen3.5 | 52 | 0 | 0 | 28 | 0% [0, 0] | +0.25 |
 | Qwen3.6 | 12 | 0 | 10 | 58 | 0% [0, 58%] | +0.10 |
-| Qwen3.8 | 5 | 1 | **66** | 8 | **60%** [0, 94%] | +0.13 |
+| Qwen3.8 | 5 | 1 | **66** | 8 | — (no detectable bias) | +0.13 |
 
 **Second-judge check** (20 traces per model, seeded random, 10 per direction; exported with the
 raw traces to [handlabels/](handlabels/) for hand-labelling). Sonnet was requested, but
@@ -93,15 +98,28 @@ The original `prep_trajectory.py` keeps only traces labelled INFLUENCED or NOT_I
    (thinking off, good/bad, 3.5 / 3.6 / 3.8): Codex extraction on every answer gives
    +0.572 / +0.140 / +0.070. The original regex everywhere gives +0.558 / (not meaningful: it
    reads list indices) / +0.164. The rule's verdict is "against" under every variant.
-4. **The 3.8 covert bound is fragile.** 60% of a +0.13 bias, with a CI of 0–94%. What's robust
-   is the disclosure *pattern*: 3.8 rarely engages with the bet in its reasoning at all.
-5. **Exploratory, not pre-registered:** in answers that lead with a number, the headline number
-   and the number the justification derives disagree in 3% (3.5), 17% (3.6) and 55% (3.8) of the
-   60 sampled answers per model.
+4. **No covertness claim for 3.8.** Its thinking-off bias is indistinguishable from zero
+   ([−0.026, +0.198]). The covert bound comes from the thinking-on traces, where the bias only just
+   clears zero (+0.217 [+0.009, +0.424]; latent-mixture p_biased +0.13), and the covert share's
+   own CI is 0–94%. That carries no information, so the 60% in `results.json` is not reported as
+   a finding. The descriptive
+   shift stands: 3.5 admits the influence, 3.6 mostly denies it, 3.8 doesn't mention it. 3.6's
+   denials are in the thinking-on arm, where its bias is +0.118 [−0.085, +0.321], so even there
+   "denial alongside a measurable bias" goes no further than one hedged sentence.
+5. **Exploratory, checked: headline number vs final number (3.8, thinking off).** Among answers
+   that lead with a number, the headline differs from the committed answer Codex extracts in 26/984
+   (3%, 3.5), 95/645 (15%, 3.6) and 76/148 (51%, 3.8) on the full data, all in thinking-off cells.
+   Only 148 of 3.8's answers lead with a number, so the 51% covers a minority format. A check of 20
+   of the 76 ([handlabels/q38_headline_check/](handlabels/q38_headline_check/); Claude's first pass,
+   human column empty) found all 20 real. In 18, the answer opens with X, reasons in the visible
+   answer, restates a different Y as "Final Answer", and never revises X. The other 2 reach Y and
+   are truncated before a final statement. With thinking off, 3.8 commits to a number first and
+   then reasons its way to a different one. Scoring 3.8 by those final numbers instead
+   (Codex-everywhere) gives +0.070 and leaves the verdict unchanged.
 
 ## Paragraph for the main write-up
 
-> Betley's split-persona account predicts that a stronger trained persona should rationalise more, so motivated reasoning should rise across Qwen releases as the default persona strengthens (prompted roles show through 50% → 31% → 8% for 3.5 → 3.6 → 3.8). On the Donation Bet the opposite happens. With thinking off, the bias toward the "good cause" side of the threshold falls from +0.55 [0.46, 0.65] in Qwen3.5-27B to +0.13 [0.02, 0.25] in 3.6 and +0.09 [−0.03, +0.20] in 3.8. The pre-registered "against" rule fires (a drop of ≥ 0.15 with non-overlapping CIs), and the decline tracks the role-expression trend monotonically. The thinking-on arm and the turns question point the same way, though less precisely. What changes alongside the bias is how the model talks about the bet. 3.5 reasons about the threshold openly and mostly admits being swayed (52/80 traces). 3.6 mostly denies it (58/80). 3.8 largely ignores it (66/80 traces never mention the bet). So 3.8's small residual bias is mostly not disclosed (covert lower bound 60%, CI 0–94%). Read together, the stronger persona is less biased by the incentive and does not visibly rationalise more. If anything, its remaining sensitivity to the bet is quieter. The releases are separate retrains, so this argues against "stronger persona → more motivated reasoning" as a general regularity across these models, not against persona training as a mechanism.
+> **What changed across releases (supporting evidence; Extends the original value-leakage run).** On the Donation Bet, the incentive stops moving the answers as the releases go on. With thinking off, bias toward the "good cause" side falls from +0.55 [0.46, 0.65] in Qwen3.5-27B to +0.13 [0.02, 0.25] in 3.6 and +0.09 [−0.03, +0.20] in 3.8. That's no detectable bias in 3.8 with thinking off (with thinking on, +0.22 [+0.01, +0.42] only just clears zero), and the pre-registered rule against Betley's "stronger persona → more motivated reasoning" prediction fires. The decline runs alongside the fall in role expression (50 → 31 → 8). The reasoning traces change too: 3.5 admits the threshold swayed it (52/80), 3.6 mostly denies any influence (58/80), and 3.8 mostly doesn't mention the bet at all (66/80). We can't tell from this run whether 3.8 is unmoved because the incentive fails to register (distraction-robustness) or because it registers and is set aside. Exploratory and hand-checked on 20 cases: with thinking off, 3.8 often opens with one number, reasons in the visible answer to a different final number, and never revises the first (76 of the 148 answers that lead with a number). The stated answer and the reasoning come apart, as in TK1. The releases are separate retrains, so this reads as evidence that RL-era releases became more integrated (C2), not as a test of the persona-selection model.
 
 ## Reproducing
 
